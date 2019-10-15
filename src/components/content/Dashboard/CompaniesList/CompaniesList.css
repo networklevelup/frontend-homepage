@@ -1,0 +1,12 @@
+.companyTable {
+  border: 3px solid #57b368; /* OFICIAL GREEN*/
+  font-variant-caps: petite-caps;
+  font-size: larger;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-top: 10px solid #57b368;
+}
+.checkGreen {
+  width: 34px;
+  height: 34px;
+}

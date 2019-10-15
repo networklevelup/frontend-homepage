@@ -1,0 +1,55 @@
+@font-face {
+  /*to import local fonts*/
+  font-family: "MyriadPro";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../src/fonts/MyriadPro/MyriadPro-Regular.otf");
+}
+body {
+  font-family: "MyriadPro" !important; /*necesary important*/
+}
+h1 {
+  font-style: bolder !important;
+}
+.cookies {
+  position: fixed;
+  background-color: #545454;
+  z-index: 400;
+  height: 140px;
+  bottom: 0;
+  text-align: center;
+}
+.cookieTxt {
+  color: white!important;
+  margin-top:35px;
+}
+.cookies a {
+  color: orangered !important;
+  text-decoration: underline !important;
+}
+.btnCookie {
+  margin: auto !important;
+  margin-left: 10px !important;
+  border: 1px solid white !important;
+  margin-top: 5px !important;
+  padding: 8px!important;
+}
+/* iphone 6,7,8 --------*/
+@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  h1,
+  h2,
+  h3,
+  h4,
+  span,
+  p {
+    font-size: 0.7rem !important;
+  }
+  input {
+    height: 30px !important;
+    width: 200px !important;
+  }
+  h5,
+  h6 {
+    font-size: 0.5rem !important;
+  }
+}

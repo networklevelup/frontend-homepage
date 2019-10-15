@@ -1,0 +1,43 @@
+.btnPurple {
+  background-color: #67397d; /*OFICIAL VIOLET*/
+  border: none;
+  color: white !important;
+  overflow: hidden;
+  margin: 1rem;
+  padding: 6px;
+  text-transform: uppercase;
+  width: 230px;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-left: 0px;
+}
+.finalButton {
+  text-align: center;
+}
+.btnPurple a {
+  text-decoration: none !important;
+}
+.btnPurple a:link {
+  color: white !important;
+}
+.btnPurple a:visited {
+  color: white !important;
+}
+.btnPurple a:hover {
+  color: white !important;
+}
+.btnInPicture3 {
+  background: none !important;
+  height: 403px !important;
+  width: 73% !important;
+  margin-top: -6px !important;
+  margin-left: -31% !important;
+}
+
+@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .btnPurple {
+    font-size: 0.8rem;
+    width: 140px !important;
+    margin-top: 5px;
+  }
+}

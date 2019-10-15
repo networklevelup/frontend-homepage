@@ -1,0 +1,27 @@
+.blogPictureDetails {
+  justify-content: inherit !important;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: inline-grid;
+  justify-content: center;
+  padding-top: 25px !important;
+  padding-bottom: 65px !important;
+  margin-bottom: 65px !important;
+  margin-top: 65px !important;
+}
+.delete,
+.update {
+  margin: auto;
+}
+input,
+label,
+.file,
+.btn {
+  padding: 5px !important;
+  padding-bottom: 5px !important;
+  margin-top: 30px;
+}
+label {
+  font-size: x-large;
+}

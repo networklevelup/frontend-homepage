@@ -1,0 +1,11 @@
+.subtitle {
+  max-height: 19px;
+  overflow: hidden !important;
+  margin-bottom: 8px !important;
+}
+
+@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .subtitle {
+    max-height: 12px;
+  }
+}

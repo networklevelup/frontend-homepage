@@ -1,0 +1,13 @@
+.userTable {
+  border: 1px solid #67397d;
+  background: ghostwhite;
+  font-variant-caps: petite-caps;
+  font-size: larger;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-top: 10px solid #67397d;
+}
+.checkGreen {
+  width: 34px;
+  height: 34px;
+}

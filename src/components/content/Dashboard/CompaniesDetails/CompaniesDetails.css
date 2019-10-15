@@ -1,0 +1,15 @@
+.companiesDetails {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: inline-block;
+  font-variant-caps: petite-caps;
+}
+span {
+  padding: 25px;
+}
+.warning {
+  height: 80px;
+  margin-top: 200px;
+  display: initial;
+}

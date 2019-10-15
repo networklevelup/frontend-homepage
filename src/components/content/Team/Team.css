@@ -1,0 +1,82 @@
+.target {
+  margin-top: 145px !important;
+}
+.bold {
+  font-size: 22px;
+}
+.span1 {
+  text-align: inherit;
+}
+.target h1,
+h5 {
+  margin-bottom: 20px !important;
+}
+.col-6 {
+  padding: 0px;
+}
+.hands {
+  width: 100%;
+  pointer-events: none;
+}
+.meetTeam {
+  text-align: center;
+  margin-top: 100px;
+}
+.meetTeam h1 {
+  margin-bottom: 0px !important;
+}
+.meetTeam h5 {
+  margin-bottom: 60px !important;
+}
+.groupPictures {
+  width: 90%;
+  margin-left: 9%;
+  pointer-events: none;
+}
+.hiring {
+  text-align: center;
+  margin-top: 100px;
+}
+.hiring h1 {
+  margin-bottom: 0px !important;
+}
+.hiring h5 {
+  margin-bottom: 20px !important;
+}
+h1 a {
+  color: #e72862!important;
+  font-size: 50px!important;
+}
+
+@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .target {
+    margin-top: 15px !important;
+  }
+  .target h1 {
+    margin-bottom: 10px !important;
+  }
+  .target strong {
+    font-size: 0.7rem !important;
+  }
+  .span1 {
+    font-size: 0.5rem !important;
+  }
+  .target h5 {
+    margin-bottom: 5px !important;
+  }
+  .hands {
+    width: 115%;
+  }
+  .meetTeam {
+    margin-top: 0px;
+  }
+  .meetTeam h5 {
+    margin-bottom: 20px !important;
+  }
+  .hiring {
+    margin-top: 20px;
+  }
+  .hiring h5 {
+    margin-bottom: 15px !important;
+  }
+}

@@ -1,0 +1,29 @@
+/*these className/attributes are "inside" component/object Video*/
+
+.video {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+svg {
+  /*image in controls buttons*/
+  width: 30px;
+  height: 30px;
+}
+span {
+  padding: 0px;
+}
+.rh5v-Time_duration {
+  /*Timer*/
+  color: #fff;
+  margin-top: -70px;
+  margin-left: 64px;
+}
+.rh5v-Seek_input {
+  /*time bar*/
+}
+
+@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .video {
+    height: 49vh !important;
+  }
+}

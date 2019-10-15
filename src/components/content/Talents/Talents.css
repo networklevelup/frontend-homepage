@@ -1,0 +1,218 @@
+.pic1Talents {
+  width: 100%;
+  pointer-events: none;
+}
+.talents1 {
+  width: 100%;
+}
+.talentText {
+  margin-top: 77px;
+}
+.btnPink {
+  margin-top: 45px !important;
+  background-color: #e72862; /*OFICIAL PINK*/
+  border: none;
+  color: white;
+  overflow: hidden;
+  padding: 0px;
+  text-transform: uppercase;
+  width: 350px;
+  height: 50px;
+  border-radius: 30px;
+}
+.work {
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+.talents2 h1,
+.talents3 h1,
+.talents4 h1,
+.talents5 h1 {
+  margin-bottom: 0px !important;
+}
+.talents2 {
+  margin-top: 75px;
+  text-align: center;
+  background-image: url("../../../img/TalentsPage/Design2Talents.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 115px;
+}
+.steps {
+  background-image: url("../../../img/TalentsPage/Graphic2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: left;
+}
+.contract {
+  height: 263px;
+  margin-top: -70px;
+  margin-left: -109px;
+  pointer-events: none;
+}
+.five {
+  margin-left: 10% !important;
+}
+.three,
+.one {
+  margin-left: 28% !important;
+}
+.moved {
+  margin-left: 38% !important;
+}
+.NoImg {
+  height: 200px;
+  pointer-events: none;
+}
+.talents3 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.talents4 {
+  display: flex;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.down1,
+.down2 {
+  padding-top: 120px;
+  margin-left: 15px;
+  pointer-events: none;
+}
+.up {
+  padding-bottom: 0px;
+  margin-left: 27px;
+  pointer-events: none;
+}
+.GraphImg {
+  width: 70%;
+}
+.down1 {
+  width: 63%;
+}
+.talents5 {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+  overflow: auto;
+  background-color: #b2b2b2 !important;
+}
+.pinkBox {
+  width: 100%;
+  pointer-events: none;
+}
+.talents5 h1,
+.talents5 h4 {
+  line-height: 50px;
+}
+.talentForm {
+  display: inline-block;
+  width: 400px;
+  height: 60px;
+  font-size: xx-large;
+  border-radius: 20px;
+  margin: 5px;
+  border: 1px solid grey;
+}
+.talents6 {
+  text-align: center;
+  background-color: #b2b2b2; /*OFICIAL GREY*/
+}
+.span {
+  display: block;
+  color: red;
+  text-align: center;
+}
+.spanRegistered {
+  display: block;
+  color: red;
+  text-align: center;
+}
+.btnDoIt {
+  font-size: 44px;
+  background-color: #e72862; /*OFICIAL PINK*/
+  width: 50%;
+  color: white;
+  padding-left: 15px;
+  border: none;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .talentText {
+    margin-top: 28px;
+  }
+  .talentText h1 {
+    margin-bottom: 6px !important;
+  }
+  .pic1Talents {
+    width: 131%;
+  }
+  .btnPink {
+    margin-top: 0px !important;
+    width: 93px;
+    font-size: 7px;
+    height: 22px;
+  }
+  .talents2 {
+    margin-top: 0px;
+  }
+  .work {
+    margin-bottom: 50px;
+  }
+  .contract {
+    height: 80px !important;
+    margin-top: -8px !important;
+    margin-left: -41px !important;
+  }
+  .NoImg {
+    height: 95px !important;
+  }
+  .talents2 {
+    padding-bottom: 35px !important;
+  }
+  .talents3 {
+    margin-bottom: 20px;
+  }
+  .down1,
+  .down2 {
+    padding-top: 50px;
+  }
+  .up {
+    margin-left: 9px;
+  }
+  .marginRight {
+    margin-right: 30px;
+  }
+  .talents4 {
+    margin-bottom: 0px !important;
+  }
+  .talentForm {
+    font-size: smaller;
+  }
+  .span {
+    margin-left: 0px;
+    display: block;
+  }
+  .spanRegistered {
+    font-size: 0.6rem !important;
+  }
+  .btnDoIt {
+    font-size: 1rem !important;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+    padding: 0px;
+  }
+  .NoImg {
+    height: 110px;
+  }
+  .contract {
+    height: 133px;
+    margin-top: -31px;
+    margin-left: -78px;
+  }
+}

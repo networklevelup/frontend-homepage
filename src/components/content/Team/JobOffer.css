@@ -1,0 +1,26 @@
+.anuncioPic {
+  margin-bottom: 50px;
+  width: 100%;
+}
+h1,
+h2 {
+  font-weight: bold !important;
+}
+.jobOffer {
+  text-align: left;
+}
+.titles {
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px !important;
+}
+h5 {
+  margin-bottom: 10px !important;
+  font-weight: bold !important;
+}
+.moreMargin {
+  margin-bottom: 40px !important;
+}
