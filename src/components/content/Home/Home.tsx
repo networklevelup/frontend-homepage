@@ -8,9 +8,11 @@ import { Link, RouteComponentProps } from "react-router-dom";
 import styles from "./home.module.css";
 import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
 import img1 from "../../../img/HomePage/NewGirl.png";
+import homePic from "../../../img/HomePage/PictureHome1.jpg";
 import "./home.css";
 
 const proPicture = "/img/profesions-"; //Use to can change picture to translate
+const videoPicture = "/img/videoPicture-";
 
 interface IPropsGlobal {
   instagram: IInsta[];
@@ -60,23 +62,28 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
         <div className="prismBackground">
           <h1>{t("home_homeH1")}</h1>
           <div className="row allMatching">
-            <div className="col-6 matching">
-              <Link to="/register">
+            
+                {/* <img className="picAllMatching" alt="" src={homePic}/> */}
+                <div className="col-6">
+                <Link to="/register">
                 <button
                   onClick={goToTalents}
                   className="btnInPicture1"
-                ></button>
+                >Find an international remote job NOW</button>
               </Link>
-            </div>
-            {/*buttons hidden to redirect a form */}
-            <div className="col-6 matching2">
-              <Link to="/register">
+                </div>
+            <div className="col-6">
+            <Link to="/register">
                 <button
                   onClick={goToCompanies}
                   className={styles.btnInPicture3}
-                ></button>
+                >Hire a Spanish Top-Talent NOW</button>
               </Link>
             </div>
+             
+            
+            
+            
           </div>
 
           <div className="profesionPicture">
@@ -95,6 +102,11 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           <h1 className="levelUpTitle">{t("home_levelUPH1")}</h1>
         </div>
         <div className="levelUpPicture">
+          <img
+              className="videoPic"
+              alt=""
+              src={videoPicture + i18n.language + ".jpg"}
+            />
           <Link to="/video">
             <button className="btnInPicture2"></button>
           </Link>

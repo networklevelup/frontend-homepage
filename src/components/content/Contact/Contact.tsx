@@ -25,7 +25,8 @@ const Contact: React.FC = () => {
           </div>
           <div className="second">
             <h5>{t("contact_secondH5")}</h5>
-            <h5 className="grey">Graf-Zeppelin-Straße 32 31157 Sarstedt</h5>
+            <h5 className="grey">Graf-Zeppelin-Straße 32</h5>
+            <h5 className="grey">31157 Sarstedt</h5>
           </div>
           <div className="third">
             <h5>{t("contact_thirdH5")}</h5>

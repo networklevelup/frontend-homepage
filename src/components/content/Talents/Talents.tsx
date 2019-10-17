@@ -172,8 +172,8 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               <img className="NoImg" alt="" src={No5} />
             </div>
             <div className="col-4 hired">
-              <h1>{t("talents_talents2H12")}</h1>
-              <h5>{t("talents_talents2H52")}</h5>
+              <h3>{t("talents_talents2H32")}</h3>
+              <h6>{t("talents_talents2H62")}</h6>
             </div>
           </div>
           <div className="row moved">
@@ -181,8 +181,8 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               <img className="NoImg" alt="" src={No4} />
             </div>
             <div className="col-6">
-              <h1>{t("talents_talents2H13")}</h1>
-              <h5>{t("talents_talents2H53")}</h5>
+              <h3>{t("talents_talents2H33")}</h3>
+              <h6>{t("talents_talents2H63")}</h6>
             </div>
           </div>
 
@@ -191,8 +191,8 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               <img className="NoImg" alt="" src={No3} />
             </div>
             <div className="col-6">
-              <h1>{t("talents_talents2H14")}</h1>
-              <h5>{t("talents_talenst2H54")}</h5>
+              <h3>{t("talents_talents2H34")}</h3>
+              <h6>{t("talents_talenst2H64")}</h6>
             </div>
           </div>
 
@@ -201,8 +201,8 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               <img className="NoImg" alt="" src={No2} />
             </div>
             <div className="col-6">
-              <h1>{t("talents_talents2H15")}</h1>
-              <h5>{t("talents_talenst2H55")}</h5>
+              <h3>{t("talents_talents2H35")}</h3>
+              <h6>{t("talents_talenst2H65")}</h6>
             </div>
           </div>
 
@@ -211,8 +211,8 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               <img className="NoImg" alt="" src={No1} />
             </div>
             <div className="col-6">
-              <h1>{t("talents_talents2H16")}</h1>
-              <h5>{t("talents_talents2H56")}</h5>
+              <h3>{t("talents_talents2H36")}</h3>
+              <h6>{t("talents_talents2H66")}</h6>
             </div>
           </div>
         </div>
@@ -224,20 +224,20 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       </div>
 
       <div className="talents4">
-        <div>
+        <div className="divMarginLeft">
           <img className="down1" alt="" src={graph1} />
-          <h1>{t("talenst_talents4H1")}</h1>
-          <h5>{t("talents_talents4H5")}</h5>
-        </div>
-        <div>
+          <h3>{t("talenst_talents4H1")}</h3>
+          <h6>{t("talents_talents4H5")}</h6>
+        </div> 
+        <div className="divImgUp">
           <img className="GraphImg up" alt="" src={graph2} />
-          <h1>{t("talenst_talents4H12")}</h1>
-          <h5>{t("talents_talents4H52")}</h5>
+          <h3>{t("talenst_talents4H12")}</h3>
+          <h6>{t("talents_talents4H52")}</h6>
         </div>
         <div className="marginRight">
           <img className="GraphImg down2" alt="" src={graph3} />
-          <h1>{t("talenst_talents4H13")}</h1>
-          <h5>{t("talents_talents4H53")}</h5>
+          <h3>{t("talenst_talents4H13")}</h3>
+          <h6>{t("talents_talents4H53")}</h6>
         </div>
       </div>
 

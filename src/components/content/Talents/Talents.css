@@ -1,12 +1,16 @@
 .pic1Talents {
-  width: 100%;
+  width: 105%;
   pointer-events: none;
 }
 .talents1 {
   width: 100%;
+  margin-right: 0px;
 }
 .talentText {
   margin-top: 77px;
+}
+.Tpicture1 {
+  margin-right: 0px;
 }
 .btnPink {
   margin-top: 45px !important;
@@ -45,13 +49,13 @@
   text-align: left;
 }
 .contract {
-  height: 263px;
-  margin-top: -70px;
-  margin-left: -109px;
+  height: 150px;
+    margin-top: -26px;
+    margin-left: 28px;
   pointer-events: none;
 }
 .five {
-  margin-left: 10% !important;
+  margin-left: 6% !important;
 }
 .three,
 .one {
@@ -61,7 +65,7 @@
   margin-left: 38% !important;
 }
 .NoImg {
-  height: 200px;
+  height: 100px;
   pointer-events: none;
 }
 .talents3 {
@@ -73,11 +77,25 @@
   margin-bottom: 50px;
   text-align: center;
 }
-.down1,
-.down2 {
+.down1 {
+  margin-left: 47px;
   padding-top: 120px;
-  margin-left: 15px;
   pointer-events: none;
+}
+.down2 {
+  margin-left: 50px;
+  padding-top: 200px;
+  pointer-events: none;
+}
+.divImgUp {
+  margin-top: -20px;
+  margin-left: 5%;
+}
+.marginRight{
+  margin-right: 6%;
+}
+.divMarginLeft{
+  margin-left: 8%;
 }
 .up {
   padding-bottom: 0px;
@@ -85,10 +103,10 @@
   pointer-events: none;
 }
 .GraphImg {
-  width: 70%;
+  width: 60%;
 }
 .down1 {
-  width: 63%;
+  width: 67%;
 }
 .talents5 {
   width: 100%;
@@ -112,7 +130,7 @@
   display: inline-block;
   width: 400px;
   height: 60px;
-  font-size: xx-large;
+  font-size: x-large;
   border-radius: 20px;
   margin: 5px;
   border: 1px solid grey;
@@ -192,7 +210,7 @@
     margin-bottom: 0px !important;
   }
   .talentForm {
-    font-size: smaller;
+    font-size: smaller!important;
   }
   .span {
     margin-left: 0px;

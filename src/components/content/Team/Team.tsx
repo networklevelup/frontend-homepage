@@ -40,7 +40,7 @@ const Team: React.FC = () => {
         <h1>{t("team_hiringH1")}</h1>
         <h5>{t("team_hiringH5")}</h5>
         <h1>
-          <Link to="/job/offer">Oferta de trabajo</Link>
+          <Link to="/job/offer">{t("team_jobOffer")}</Link>
         </h1>
         <h5>
           {t("team_hiringH52")}
