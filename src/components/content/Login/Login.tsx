@@ -13,12 +13,12 @@ interface IPropsGlobal {
 }
 
 const NewLogin: React.FC<IPropsGlobal & RouteComponentProps> = props => {
-  const [userValue, userSetValue] = React.useState("");
+  const [emailValue, emailSetValue] = React.useState("");
   const [passValue, passSetValue] = React.useState("");
   const [errorValue, setErrorMessage] = React.useState("");
 
-  const updateUser = (event: React.ChangeEvent<HTMLInputElement>) =>
-    userSetValue(event.target.value);
+  const updateEmail = (event: React.ChangeEvent<HTMLInputElement>) =>
+    emailSetValue(event.target.value);
 
   const updatePass = (event: React.ChangeEvent<HTMLInputElement>) =>
     passSetValue(event.target.value);
@@ -29,7 +29,7 @@ const NewLogin: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({ u: userValue, p: passValue })
+      body: JSON.stringify({ e: emailValue, p: passValue })
     }).then(response => {
       if (response.ok) {
         response.text().then(token => {
@@ -56,15 +56,15 @@ const NewLogin: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             <span className="login100-form-title p-b-34 p-t-27">Log in</span>
             <div
               className="wrap-input100 validate-input"
-              data-validate="Enter username"
+              data-validate="Enter email"
             >
               <input
                 className="input100 borderNone"
                 type="text"
-                name="username"
-                placeholder="Username"
-                value={userValue}
-                onChange={updateUser}
+                name="email"
+                placeholder="email"
+                value={emailValue}
+                onChange={updateEmail}
               />
             </div>
 
