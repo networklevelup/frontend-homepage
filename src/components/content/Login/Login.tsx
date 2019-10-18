@@ -62,7 +62,7 @@ const NewLogin: React.FC<IPropsGlobal & RouteComponentProps> = props => {
                 className="input100 borderNone"
                 type="text"
                 name="email"
-                placeholder="email"
+                placeholder="Email"
                 value={emailValue}
                 onChange={updateEmail}
               />

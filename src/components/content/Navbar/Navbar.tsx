@@ -7,8 +7,10 @@ import { useTranslation } from "react-i18next";
 import logo from "../../../img/Logo_black.png";
 import Locked from "../../../img/Locked.png";
 import "./Navbar.css";
+import { IUser } from "../../../interfaces/interfaces";
 
 interface IPropsGlobal {
+  user: IUser;
   token: string;
   reset: () => void;
 }
@@ -75,7 +77,7 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               </li>
             )}
 
-            {props.token /*if token is valid */ && (
+            {props.token && props.user.isAdmin /*if token is valid */ && (
               <li className="dropdown">
                 <button
                   className="dropdown-toggle"
