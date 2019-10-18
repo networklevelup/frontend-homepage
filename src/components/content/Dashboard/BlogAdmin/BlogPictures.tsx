@@ -5,8 +5,6 @@ import { connect } from "react-redux";
 import { RouteComponentProps, Redirect } from "react-router";
 import { IGlobalState } from "../../../../reducers/reducers";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import task from "../../../../img/BlogPicture/task.png";
 import "./BlogPicture.css";
 

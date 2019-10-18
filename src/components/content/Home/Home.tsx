@@ -8,7 +8,6 @@ import { Link, RouteComponentProps } from "react-router-dom";
 import styles from "./home.module.css";
 import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
 import img1 from "../../../img/HomePage/NewGirl.png";
-import homePic from "../../../img/HomePage/PictureHome1.jpg";
 import "./home.css";
 
 const proPicture = "/img/profesions-"; //Use to can change picture to translate
