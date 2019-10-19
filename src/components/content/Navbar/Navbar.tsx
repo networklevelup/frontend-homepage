@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, RouteComponentProps } from "react-router-dom";
 import { IGlobalState } from "../../../reducers/reducers";
 import { connect } from "react-redux";
@@ -7,22 +7,33 @@ import { useTranslation } from "react-i18next";
 import logo from "../../../img/Logo_black.png";
 import Locked from "../../../img/Locked.png";
 import "./Navbar.css";
-import { IUser } from "../../../interfaces/interfaces";
+import jwt_decode from "jwt-decode";
 
 interface IPropsGlobal {
-  user: IUser;
   token: string;
   reset: () => void;
 }
 
 const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
   const { t, i18n } = useTranslation();
+  const [tokenValue, setTokenValue] = React.useState("");
 
   const logOut = () => {
     sessionStorage.removeItem("token");
     props.reset();
     props.history.push("/");
   };
+  let token = props.token;
+
+  useEffect(() => {
+    if (token) {
+      let resuelto: any = jwt_decode(token);
+      setTokenValue(resuelto);
+    }
+  }, [props.token]);
+
+  let text = JSON.stringify(tokenValue);
+  let stringAdmin = text.includes("true");
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -77,7 +88,7 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               </li>
             )}
 
-            {props.token && props.user.isAdmin /*if token is valid */ && (
+            {props.token && stringAdmin /*if token is valid */ && (
               <li className="dropdown">
                 <button
                   className="dropdown-toggle"
@@ -129,7 +140,7 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
 };
 
 const mapStateToProps = (state: IGlobalState) => ({
-  token: state.token  
+  token: state.token
 });
 const mapDispatchToProps = {
   reset: actions.reset
