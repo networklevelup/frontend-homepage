@@ -1,6 +1,7 @@
 import React from "react";
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
+import videoLevelUP from '../../../img/video/LevelUP-Video.mp4';
 import "./Video.css";
 
 const MyVideoPlayer: React.FC = () => {
@@ -20,7 +21,7 @@ const MyVideoPlayer: React.FC = () => {
         //   // Do stuff
         // }}
       >
-        <source src="/video/levelUP-Video.mp4" type="video/mp4" />
+        <source src={videoLevelUP} type="video/mp4" />
         <track
           label="Spanish"
           kind="subtitles"
