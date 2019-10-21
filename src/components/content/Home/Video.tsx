@@ -6,7 +6,7 @@ import "./Video.css";
 const MyVideoPlayer: React.FC = () => {
   return (
     <div className="container video">
-      <Video
+      <Video autoPlay
         controls={[
           "PlayPause",
           "Seek",
