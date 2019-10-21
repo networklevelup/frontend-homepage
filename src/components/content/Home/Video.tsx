@@ -20,7 +20,7 @@ const MyVideoPlayer: React.FC = () => {
         //   // Do stuff
         // }}
       >
-        <source src="./img/video/levelUP-Video.mp4" type="video/mp4" />
+        <source src="/img/video/levelUP-Video.mp4" type="video/mp4" />
         <track
           label="Spanish"
           kind="subtitles"
