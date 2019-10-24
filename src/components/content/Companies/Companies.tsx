@@ -41,7 +41,7 @@ const ForCompanies: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           <img className="pic1Comp" alt="" src={pic1Comp} />
         </div>
       </div>
-      <div className="companiesGroup">
+      <div className="container companiesGroup">
         <div className="container-fluid companies2">
           <h1>{t("companies_companies2H1")}</h1>
           <h5>{t("companies_companies2H5")}</h5>

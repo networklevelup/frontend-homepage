@@ -47,3 +47,8 @@ export interface ICompany {
 export interface IState {
   booleanState: boolean;
 }
+
+// export interface IChecked {
+//   selectCheks: Object[];
+// }
+

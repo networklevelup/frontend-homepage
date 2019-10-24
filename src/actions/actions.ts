@@ -138,3 +138,11 @@ export const changingState: ActionCreator<TAction> = (
   type: "CHANGE_STATE",
   booleanState
 });
+
+// export const setCheckBoxes: ActionCreator<TAction> = (
+//   selectCheks: IChecked,
+  
+// ) => ({
+//   type: "SET_CHECKED_BOXES",
+//   selectCheks
+// });

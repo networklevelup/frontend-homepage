@@ -18,16 +18,19 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
+    initImmediate: false,
+    fallbackLng: "es",
+    debug: true,
     resources: {
       en: { translation: english },
       es: { translation: spanish },
       ge: { translation: german }
-    },
-    fallbackLng: "es",
+    },    
     interpolation: {
       escapeValue: false
     }
   });
+  
 
 const store = createStore(
   reducers,

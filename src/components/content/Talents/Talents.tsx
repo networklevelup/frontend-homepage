@@ -171,8 +171,8 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             <div className="div">
               <img className="NoImg" alt="" src={No5} />
             </div>
-            <div className="col-4 hired">
-              <h3>{t("talents_talents2H32")}</h3>
+            <div className="col-6 hired"> 
+              <h3 className="adjustM">{t("talents_talents2H32")}</h3>
               <h6>{t("talents_talents2H62")}</h6>
             </div>
           </div>
@@ -180,8 +180,8 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             <div className="div">
               <img className="NoImg" alt="" src={No4} />
             </div>
-            <div className="col-6">
-              <h3>{t("talents_talents2H33")}</h3>
+            <div className="col-6 hired">
+              <h3 className="adjustM">{t("talents_talents2H33")}</h3>
               <h6>{t("talents_talents2H63")}</h6>
             </div>
           </div>
@@ -191,7 +191,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               <img className="NoImg" alt="" src={No3} />
             </div>
             <div className="col-6">
-              <h3>{t("talents_talents2H34")}</h3>
+              <h3 className="adjustM">{t("talents_talents2H34")}</h3>
               <h6>{t("talents_talenst2H64")}</h6>
             </div>
           </div>
@@ -201,7 +201,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               <img className="NoImg" alt="" src={No2} />
             </div>
             <div className="col-6">
-              <h3>{t("talents_talents2H35")}</h3>
+              <h3 className="adjustM">{t("talents_talents2H35")}</h3>
               <h6>{t("talents_talenst2H65")}</h6>
             </div>
           </div>
@@ -211,7 +211,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               <img className="NoImg" alt="" src={No1} />
             </div>
             <div className="col-6">
-              <h3>{t("talents_talents2H36")}</h3>
+              <h3 className="adjustM">{t("talents_talents2H36")}</h3>
               <h6>{t("talents_talents2H66")}</h6>
             </div>
           </div>
@@ -294,7 +294,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
         <button className="btnDoIt" onClick={newUser}>
           {t("talents_btnDoIt")}
         </button>
-        <p>{t("talents_talents6P")}</p>
+        <p  className="agree">{t("talents_talents6P")}</p>
       </div>
       <div>
         <ScrollUpButton

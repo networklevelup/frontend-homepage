@@ -27,12 +27,14 @@ import JobOffer from "./Team/JobOffer";
 import Companies from "./Companies/Companies";
 import TermsConditions from "./Terms of Conditions/TermsConditions";
 import Login from "./Login/Login";
+import TalentProfile from './Talent Profile/TalentProfile';
 
 const Content: React.FC = () => {
   return (
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/talents" exact component={Talents} />
+      <Route path="/talents/profile" exact component={TalentProfile}/>
       <Route path="/companies" exact component={Companies} />
       <Route path="/login" exact component={Login} />
       <Route path="/register" exact component={Register} />

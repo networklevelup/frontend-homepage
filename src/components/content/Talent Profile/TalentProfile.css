@@ -1,4 +1,31 @@
+.header{ /*Hay que aplicar estilos mas pequenos de letra para el responsive
+    con los mediaquery*/
+    color: white;
+    margin-left: 2%;
+    font-size: 50px;
+    padding-top: 2%;
+    font-weight: 600;
+}
+.CVButton {
+    background: none!important;
+    margin: 15px!important;
+    border-radius: 18px!important;
+    border-color: white!important;
+    font-size: 28px!important;
+    padding: 12px!important;
+   
+}
+.CVButton:hover, .CVButton:focus-within   {
+    color: black!important;
+    background: white!important;
+    border-color: white!important;
+    box-shadow: none!important;
+}
+
 .profileCV {
     background-image: url('../../../img/TalentProfile/bussinesman.jpg');
     width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 355px;
 }

@@ -24,6 +24,7 @@ export interface IGlobalState {
   blogsPicture: IBlogPicture[];
   companies: ICompany[];
   booleanState: boolean;
+  // selectCheks: IChecked[];
 }
 
 export const reducers = combineReducers({
@@ -35,4 +36,5 @@ export const reducers = combineReducers({
   blogsPicture: blogPictureReducer,
   companies: companiesReducer,
   booleanState: changeStateReducer
+  // selectCheks: checkBoxReducer
 });

@@ -20,7 +20,7 @@
     "bootstrap-material-design": "^4.1.2",
     "i18next": "^17.0.6",
     "i18next-browser-languagedetector": "^3.0.3",
-    "i18next-xhr-backend": "^3.1.2",
+    "i18next-xhr-backend": "^3.2.0",
     "jquery": "^3.4.1",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^2.2.0",

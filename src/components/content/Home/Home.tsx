@@ -5,10 +5,10 @@ import { IGlobalState } from "../../../reducers/reducers";
 import * as actions from "../../../actions/actions";
 import { connect } from "react-redux";
 import { Link, RouteComponentProps } from "react-router-dom";
-import styles from "./home.module.css";
 import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
 import img1 from "../../../img/HomePage/NewGirl.png";
 import "./home.css";
+import styles from "./home.module.css";
 
 const proPicture = "/img/profesions-"; //Use to can change picture to translate
 const videoPicture = "/img/videoPicture-";
@@ -21,8 +21,15 @@ interface IPropsGlobal {
 }
 
 const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
+  
+  useEffect(()=> {
+    i18n.changeLanguage(lng)  
+  },[]);
+     
   const { t, i18n } = useTranslation();
-
+  let language = i18n.language;
+  let lng = language.substr(0,2);
+  
   /*funcions to save a boolean state in redux */
   const goToTalents = () => props.changingState(false);
   const goToCompanies = () => props.changingState(true);
@@ -59,10 +66,8 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
 
       <div className="row center">
         <div className="prismBackground">
-          <h1>{t("home_homeH1")}</h1>
-          <div className="row allMatching">
-            
-                {/* <img className="picAllMatching" alt="" src={homePic}/> */}
+          <h1 className="h1Prism">{t("home_homeH1")}</h1>
+          <div className="row allMatching">               
                 <div className="col-6">
                 <Link to="/register">
                 <button
@@ -78,15 +83,12 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
                   className={styles.btnInPicture3}
                 >Hire a Spanish Top-Talent NOW</button>
               </Link>
-            </div>
-             
-            
-            
+            </div>           
             
           </div>
 
           <div className="profesionPicture">
-            <h1>{t("home_focusProfessionsH1")}</h1>
+            <h1 className="h1Profesion">{t("home_focusProfessionsH1")}</h1>
             <img
               className="proPic"
               alt=""
@@ -101,17 +103,18 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           <h1 className="levelUpTitle">{t("home_levelUPH1")}</h1>
         </div>
         <div className="levelUpPicture">
+        <Link to="/video">
+            <button className="btnInPicture2"></button>
+          </Link>
           <img
               className="videoPic"
               alt=""
               src={videoPicture + i18n.language + ".jpg"}
             />
-          <Link to="/video">
-            <button className="btnInPicture2"></button>
-          </Link>
+          
         </div>
         <div className="whatIs">
-          <h1>{t("home_joinH1")}</h1>
+          {/* <h1>{t("home_joinH1")}</h1> */}
           <h2 className="network">{t("home_networkH2")}</h2>
         </div>
       </div>
@@ -119,7 +122,7 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       <div className="container instagram">
         <div className="row">
           {props.instagram.slice(0, 6).map(insta => (
-            <div key={insta.id} className="col-4">
+            <div key={insta.id} className="col-4 instagramCol">
               <img
                 className="insta"
                 alt=""

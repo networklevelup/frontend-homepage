@@ -117,6 +117,11 @@ type TChangeState = {
   booleanState: boolean;
 };
 
+// type TCheckedBoxes = {
+//   type: "SET_CHECKED_BOXES";
+//   selectCheks: IChecked;
+// }
+
 export type TAction =
   | TGetToken
   | TSetUser
