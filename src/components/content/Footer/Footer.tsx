@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
         <a
           className="YT"
           target="_blank"
-          href="https://www.youtube.com/channel/UCdz_BfUo5LlKvh13s0wenhg"
+          href="https://www.youtube.com/channel/UC02i1gSEb4gAyBQ-ki6GcHQ/featured"
           rel="noopener noreferrer"
         >
           <li className="footList">
