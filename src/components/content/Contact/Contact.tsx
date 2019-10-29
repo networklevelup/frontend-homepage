@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="container contact">
-      <div className="container row">
+      <div className="row contactGroup">
         <div className="col-6 data">
           <h1>{t("contact_dataH1")}</h1>
           <div className="first">

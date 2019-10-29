@@ -70,8 +70,8 @@ const BlogDescription: React.FC<
           <li>HR Tips</li>
         </ul>
       </div>
-      <div className="row">
-        <div className="col-9">
+      <div className="row descriptionBlog">
+        <div className="col-9 firstBlog">
           <h1 className="blogTitle">{titleValue}</h1>
           <h5 className="blogSubtitle">{subtitleValue}</h5>
 

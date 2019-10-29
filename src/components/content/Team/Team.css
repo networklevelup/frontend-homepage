@@ -44,46 +44,15 @@ h5 {
   margin-bottom: 20px !important;
 }
 h1 a {
-  color: #e72862!important;
-  font-size: 50px!important;
+  color: #e72862 !important;
+  font-size: 50px !important;
 }
 
 /* IPhone 5 ----------- */
-@media (min-width: 320px) and (max-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-}
-
-
-/* ------ Samsung S4,S5 ----------- */
-@media (min-width: 360px) and (max-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-
-}
-
-/*--------- Samsung S6,S7,S7+ -------------*/
-@media (min-width: 360px) and (max-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 4){
-
-}
-/*--------- Samsung S8,S8+, NOTE 8 -------------*/
-@media (min-width: 360px) and (max-height: 740px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 4){
-
-}
-
-/* Iphone 6,7,8 --------*/
-@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
- 
-}
-  /*--------- Iphone X -------------*/
-@media (min-width: 375px) and (max-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-
-}
-
-/*--------- Iphone 6+,7+,8+ -------------*/
-@media (min-width: 414px) and (max-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 4){
-
-}
-
-@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+@media (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   .target {
     margin-top: 15px !important;
+    padding: 0px !important;
   }
   .target h1 {
     margin-bottom: 10px !important;
@@ -98,18 +67,296 @@ h1 a {
     margin-bottom: 5px !important;
   }
   .hands {
-    width: 115%;
+    width: 137%;
+    margin-left: -34px;
   }
   .meetTeam {
     margin-top: 0px;
+    padding: 0px !important;
   }
   .meetTeam h5 {
     margin-bottom: 20px !important;
   }
   .hiring {
     margin-top: 20px;
+    margin-bottom: 30px !important;
   }
   .hiring h5 {
-    margin-bottom: 15px !important;
+    margin-bottom: 6px !important;
+  }
+  .jobOffer {
+    font-size: 12px !important;
+  }
+}
+
+/* ------ Samsung S4,S5 ----------- */
+@media (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .target {
+    margin-top: 15px !important;
+    padding: 0px !important;
+  }
+  .target h1 {
+    margin-bottom: 10px !important;
+  }
+  .target strong {
+    font-size: 0.7rem !important;
+  }
+  .span1 {
+    font-size: 0.5rem !important;
+  }
+  .target h5 {
+    margin-bottom: 5px !important;
+  }
+  .hands {
+    width: 132%;
+    margin-left: -34px;
+  }
+  .meetTeam {
+    margin-top: 0px;
+    padding: 0px !important;
+  }
+  .meetTeam h5 {
+    margin-bottom: 20px !important;
+  }
+  .hiring {
+    margin-top: 20px;
+    margin-bottom: 30px !important;
+  }
+  .hiring h5 {
+    margin-bottom: 6px !important;
+  }
+  .jobOffer {
+    font-size: 12px !important;
+  }
+}
+
+/*--------- Samsung S6,S7,S7+ -------------*/
+@media (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
+  .target {
+    margin-top: 15px !important;
+    padding: 0px !important;
+  }
+  .target h1 {
+    margin-bottom: 10px !important;
+  }
+  .target strong {
+    font-size: 0.7rem !important;
+  }
+  .span1 {
+    font-size: 0.5rem !important;
+  }
+  .target h5 {
+    margin-bottom: 5px !important;
+  }
+  .hands {
+    width: 132%;
+    margin-left: -34px;
+  }
+  .meetTeam {
+    margin-top: 0px;
+    padding: 0px !important;
+  }
+  .meetTeam h5 {
+    margin-bottom: 20px !important;
+  }
+  .hiring {
+    margin-top: 20px;
+    margin-bottom: 30px !important;
+  }
+  .hiring h5 {
+    margin-bottom: 6px !important;
+  }
+  .jobOffer {
+    font-size: 12px !important;
+  }
+}
+/*--------- Samsung S8,S8+, NOTE 8 -------------*/
+@media (min-width: 360px) and (max-height: 740px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
+  .team {
+    height: 84vh;
+  }
+  .target {
+    margin-top: 15px !important;
+    padding: 0px !important;
+  }
+  .target h1 {
+    margin-bottom: 10px !important;
+  }
+  .target strong {
+    font-size: 0.7rem !important;
+  }
+  .span1 {
+    font-size: 0.5rem !important;
+  }
+  .target h5 {
+    margin-bottom: 5px !important;
+  }
+  .hands {
+    width: 132%;
+    margin-left: -34px;
+  }
+  .teamPicture {
+    margin-bottom: 10px;
+  }
+  .meetTeam {
+    margin-top: 0px;
+    padding: 0px !important;
+    margin-bottom: 10px;
+  }
+  .meetTeam h5 {
+    margin-bottom: 20px !important;
+  }
+  .hiring {
+    margin-top: 20px;
+    margin-bottom: 30px !important;
+  }
+  .hiring h5, .hiring h1 {
+    margin-bottom: 6px !important;
+  }
+  .jobOffer {
+    font-size: 12px !important;
+  }
+}
+
+/* Iphone 6,7,8 --------*/
+@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .team {
+    height: 84vh;
+  }
+  .target {
+    margin-top: 15px !important;
+    padding: 0px !important;
+  }
+  .target h1 {
+    margin-bottom: 10px !important;
+  }
+  .target strong {
+    font-size: 0.7rem !important;
+  }
+  .span1 {
+    font-size: 0.5rem !important;
+  }
+  .target h5 {
+    margin-bottom: 5px !important;
+  }
+  .hands {
+    width: 131%;
+    margin-left: -34px;
+  }
+  .teamPicture {
+    margin-bottom: 10px;
+  }
+  .meetTeam {
+    margin-top: 0px;
+    padding: 0px !important;
+    margin-bottom: 10px;
+  }
+  .meetTeam h5 {
+    margin-bottom: 20px !important;
+  }
+  .hiring {
+    margin-top: 20px;
+    margin-bottom: 30px !important;
+  }
+  .hiring h5, .hiring h1 {
+    margin-bottom: 6px !important;
+  }
+  .jobOffer {
+    font-size: 12px !important;
+  }
+}
+/*--------- Iphone X -------------*/
+@media (min-width: 375px) and (max-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .team {
+    height: 84vh;
+  }
+  .target {
+    margin-top: 15px !important;
+    padding: 0px !important;
+  }
+  .target h1 {
+    margin-bottom: 10px !important;
+  }
+  .target strong {
+    font-size: 0.7rem !important;
+  }
+  .span1 {
+    font-size: 0.5rem !important;
+  }
+  .target h5 {
+    margin-bottom: 5px !important;
+  }
+  .hands {
+    width: 131%;
+    margin-left: -34px;
+  }
+  .teamPicture {
+    margin-bottom: 10px;
+  }
+  .meetTeam {
+    margin-top: 0px;
+    padding: 0px !important;
+    margin-bottom: 10px;
+  }
+  .meetTeam h5 {
+    margin-bottom: 20px !important;
+  }
+  .hiring {
+    margin-top: 20px;
+    margin-bottom: 30px !important;
+  }
+  .hiring h5, .hiring h1 {
+    margin-bottom: 6px !important;
+  }
+  .jobOffer {
+    font-size: 12px !important;
+  }
+}
+
+/*--------- Iphone 6+,7+,8+ -------------*/
+@media (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .team {
+    height: 84vh;
+  }
+  .target {
+    margin-top: 15px !important;
+    padding: 0px !important;
+  }
+  .target h1 {
+    margin-bottom: 10px !important;
+  }
+  .target strong {
+    font-size: 0.7rem !important;
+  }
+  .span1 {
+    font-size: 0.5rem !important;
+  }
+  .target h5 {
+    margin-bottom: 5px !important;
+  }
+  .hands {
+    width: 131%;
+    margin-left: -34px;
+  }
+  .teamPicture {
+    margin-bottom: 10px;
+  }
+  .meetTeam {
+    margin-top: 0px;
+    padding: 0px !important;
+    margin-bottom: 10px;
+  }
+  .meetTeam h5 {
+    margin-bottom: 20px !important;
+  }
+  .hiring {
+    margin-top: 20px;
+    margin-bottom: 30px !important;
+  }
+  .hiring h5, .hiring h1 {
+    margin-bottom: 6px !important;
+  }
+  .jobOffer {
+    font-size: 12px !important;
   }
 }

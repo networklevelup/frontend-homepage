@@ -30,7 +30,7 @@ const Form: React.FC<IPropsGlobal & RouteComponentProps> = props => {
   return (
     /*I create two different containers, when the state changes, the 
     background image changes according to whether it is talent or company. */
-    <div className="container">
+    <div className="container registrationForms">
       {stateValue && (
         <div className="container talentRegistration">
           {stateValue && <h1>{t("talentRegister_formularyH1")}</h1>}

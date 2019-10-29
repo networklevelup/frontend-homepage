@@ -10,7 +10,7 @@ const Team: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="container">
+    <div className="container team">
       <div className="row">
         <div className="col-6 target">
           <h1>{t("team_targetH1")}</h1>
@@ -32,7 +32,7 @@ const Team: React.FC = () => {
 
         <h5>{t("team_meetTeamH52")}</h5>
       </div>
-      <div className="container">
+      <div className="container teamPicture">
         <img className="groupPictures" alt="" src={team} />
       </div>
 
@@ -40,7 +40,7 @@ const Team: React.FC = () => {
         <h1>{t("team_hiringH1")}</h1>
         <h5>{t("team_hiringH5")}</h5>
         <h1>
-          <Link to="/job/offer">{t("team_jobOffer")}</Link>
+          <Link  className="jobOffer" to="/job/offer">{t("team_jobOffer")}</Link>
         </h1>
         <h5>
           {t("team_hiringH52")}

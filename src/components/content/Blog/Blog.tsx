@@ -46,8 +46,8 @@ const BlogList: React.FC<IPropsGlobal & RouteComponentProps> = props => {
         </ul>
       </div>
       <div className="container blog1">
-        <div className="row">
-          <div className="col-5 update">
+        <div className="row blogTop">
+          <div className="col-6 update">
             <h1>{t("blog_allBlogH1")}</h1>
             <h5>{t("blog_allBlogH5")}</h5>
             <h5>{t("blog_allBlogH52")}</h5>
@@ -58,14 +58,14 @@ const BlogList: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             </Link>
           </div>
 
-          <div className="col-7 blog2">
+          <div className="col-5 blog2">
             <img className="mountain" alt="" src={mountain} />
           </div>
         </div>
       </div>
       <h1 className="latestBlog">{t("blog_latestBlogH1")}</h1>
 
-      <div className="container">
+      <div className="container bodyCardsBlog">
         <div className="row">
           {props.blogs.map(blog => (
             <div key={blog._id} className="container col-6 cards">
