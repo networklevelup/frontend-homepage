@@ -9,7 +9,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import english from "./languages/en.json";
 import spanish from "./languages/es.json";
-import german from "./languages/ge.json";
+import german from "./languages/de.json";
 import LanguageDetector from "i18next-browser-languagedetector";
 import "./App.css";
 import "./bootstrap.min.css";
@@ -24,7 +24,7 @@ i18n
     resources: {
       en: { translation: english },
       es: { translation: spanish },
-      ge: { translation: german }
+      de: { translation: german }
     },    
     interpolation: {
       escapeValue: false

@@ -130,7 +130,7 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             />
             <button
               className="buttonLanguage de"
-              onClick={() => i18n.changeLanguage("ge")}
+              onClick={() => i18n.changeLanguage("de")}
             />
           </ul>
         </div>
