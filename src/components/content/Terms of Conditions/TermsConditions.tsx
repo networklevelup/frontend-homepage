@@ -3,7 +3,7 @@ import { RouteComponentProps } from "react-router";
 
 const TermsConditions: React.FC<RouteComponentProps> = () => {
   return (
-    <div className="container text-sm-left text-center mt-5">
+    <div className="container text-sm-left text-center mt-5 mb-5">
       <h1>Allgemeine Geschäftsbedienungen der Internetplattform</h1>
       <br />
       <p>1.Allgemeines</p>

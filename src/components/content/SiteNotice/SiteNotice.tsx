@@ -8,7 +8,7 @@ import SiteNoticeGE from "./SiteNoticeGE";
 const SiteNotice: React.FC<RouteComponentProps> = () => {
   const { i18n } = useTranslation();
   return (
-    <div className="container text-sm-left text-center mt-5">
+    <div className="container text-sm-left text-center mt-5 mb-5">
       {i18n.language === "es" && <SiteNoticeES />}
       {i18n.language === "en" && <SiteNoticeEN />}
       {i18n.language === "ge" && <SiteNoticeGE />}

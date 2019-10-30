@@ -1101,153 +1101,18 @@
 
 /* ------------- Landscape position (Horizontal) ------------*/
 
-/*------------- IPhone 5 ----------- */
-@media (min-width: 320px) and (max-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  .talentText {
-    margin-top: 28px;
-    padding: 0px !important;
-  }
-  .talentText h1 {
-    margin-bottom: 6px !important;
-  }
-  .pic1Talents {
-    width: 161%;
-    margin-left: -25px;
-  }
-  .btnPink {
-    margin-top: 0px !important;
-    width: 93px;
-    font-size: 7px;
-    height: 22px;
-  }
-  .talents2 {
-    margin-top: 0px;
-    background-size: 332px;
-    padding-bottom: 115px;
-    background-position-y: 39px;
-    background-position-x: 5px;
-    padding: 0px!important;
-  }
-  .hired {
-    padding:0px!important;
-  }
-  .work {
-    margin-top: 14px;
-    margin-bottom: 30px !important;
-  }
-  .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
-    background-repeat: no-repeat;
-    background-size: 60px !important;
-    text-align: left;
-    background-position-y: 31px !important;
-    background-position-x: 220px;
-
-  }
-  .contract {
-    height: 68px !important;
-    margin-top: -13px !important;
-    margin-left: -41px !important;
-  }
-  .NoImg {
-    height: 95px !important;
-  }
-  .adjustM {
-    margin-bottom: 0px !important;
-  }
-  .moved {
-    margin-left: 4% !important;
-  }
-  .three,
-  .one {
-    margin-left: 8% !important;
-  }
-  .talents2 {
-    padding-bottom: 35px !important;
-  }
-  .talents3 {
-    margin-bottom: 20px;
-  }
-  .container {
-    margin-bottom: -15px;
-  }
-  .down1,
-  .down2 {
-    padding-top: 50px;
-  }
-  .down1 {
-    width: 93%;
-    margin-left: 0px;
-  }
-  .up {
-    margin-left: 9px;
-    margin-top: 5px;
-  }
-  .marginRight {
-    margin-right: 30px;
-  }
-  .talents4 {
-    margin-bottom: 0px !important;
-  }
-  .talentForm {
-    font-size: smaller !important;
-  }
-  .span {
-    margin-left: 0px;
-    display: block;
-  }
-  .spanRegistered {
-    font-size: 0.6rem !important;
-  }
-  .btnDoIt {
-    font-size: 1rem !important;
-    margin-top: 10px !important;
-    margin-bottom: 15px !important;
-    padding: 0px;
-  }
-  .NoImg {
-    height: 60px !important;
-  }
-  .contract {
-    height: 133px;
-    margin-top: -31px;
-    margin-left: -78px;
-  }
-  .GraphImg {
-    width: 114%;
-    margin: 0px;
-  }
-  .divMarginLeft {
-    margin-left: 0px;
-  }
-  .divImgUp {
-    margin: 0px;
-  }
-  .marginRight {
-    margin-right: 0px;
-  }
-  .span {
-    font-size: 0.6rem !important;
-    margin-bottom: 0px !important;
-  }
-  .agree {
-    font-size: 0.6rem !important;
-    margin-bottom: 20px !important;
-  }
-}
-
 /* ------ Samsung S4,S5 ----------- */
 @media (min-width: 360px) and (max-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
   .talentText {
-    margin-top: 28px;
+    margin-top: 85px!important;
     padding: 0px !important;
   }
   .talentText h1 {
     margin-bottom: 6px !important;
   }
   .pic1Talents {
-    width: 161%;
-    margin-left: -25px;
+    width: 153%!important;
+    margin-left: -25px!important;
   }
   .btnPink {
     margin-top: 0px !important;
@@ -1640,17 +1505,17 @@
   }
 }
 
-/* Iphone 6,7,8 --------*/
+/* ----------------- Iphone 6,7,8 --------*/
 @media (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   .talentText {
-    margin-top: 28px;
+    margin-top: 100px;
     padding: 0px !important;
   }
   .talentText h1 {
     margin-bottom: 6px !important;
   }
   .pic1Talents {
-    width: 164%;
+    width: 139%;
     margin-left: -48px;
   }
   .btnPink {
@@ -1677,10 +1542,10 @@
   .steps {
     background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
-    background-size: 66px !important;
+    background-size: 70px !important;
     text-align: left;
-    background-position-y: 29px !important;
-    background-position-x: 250px;
+    background-position-y: 9px !important;
+    background-position-x: 366px;
   }
   .contract {
     height: 68px !important;
@@ -1714,7 +1579,7 @@
     padding-top: 50px;
   }
   .down1 {
-    width: 93%;
+    width: 85%;
     margin-left: 0px;
   }
   .up {
@@ -1752,7 +1617,7 @@
     margin-left: -78px;
   }
   .GraphImg {
-    width: 114%;
+    width: 100%;
     margin: 0px;
   }
   .divMarginLeft {
@@ -1943,10 +1808,10 @@
   .steps {
     background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
-    background-size: 66px !important;
+    background-size: 72px !important;
     text-align: left;
     background-position-y: 29px !important;
-    background-position-x: 250px;
+    background-position-x: 342px;
   }
   .contract {
     height: 68px !important;
@@ -1980,7 +1845,7 @@
     padding-top: 50px;
   }
   .down1 {
-    width: 93%;
+    width: 75%;
     margin-left: 0px;
   }
   .up {
@@ -2018,7 +1883,7 @@
     margin-left: -78px;
   }
   .GraphImg {
-    width: 114%;
+    width: 85%;
     margin: 0px;
   }
   .divMarginLeft {
