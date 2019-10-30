@@ -20,6 +20,13 @@ const App: React.FC<IPropsGlobal> = () => {
     localStorage.setItem("cookies", "accepted");
     setIsCookiesAccepted(true);
   };
+  
+  useEffect(()=> {
+    i18n.changeLanguage(lng)  
+  },[]);  
+  let language = i18n.language;
+  let lng = language.substr(0,2);
+  
 
   useEffect(() => {
     const accepted = localStorage.getItem("cookies");

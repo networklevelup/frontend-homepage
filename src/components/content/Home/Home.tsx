@@ -21,14 +21,7 @@ interface IPropsGlobal {
 }
 
 const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
-  
-  useEffect(()=> {
-    i18n.changeLanguage(lng)  
-  },[]);
-     
   const { t, i18n } = useTranslation();
-  let language = i18n.language;
-  let lng = language.substr(0,2);
   
   /*funcions to save a boolean state in redux */
   const goToTalents = () => props.changingState(false);

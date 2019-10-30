@@ -60,7 +60,7 @@
   pointer-events: none;
 }
 
-/* IPhone 5 ----------- */
+/* ----------------- IPhone 5 ----------- */
 @media (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
   .bodyBlog {
     padding: 0px !important;
@@ -209,6 +209,180 @@
 
 /*--------- Iphone 6+,7+,8+ -------------*/
 @media (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .bodyBlog {
+    padding: 0px !important;
+  }
+  .descriptionBlog {
+    margin: 0px !important;
+  }
+  .firstBlog {
+    padding: 0px !important;
+  }
+  .blogTitle {
+    margin-top: 14px;
+  }
+  .miniBlog {
+    padding: 0px !important;
+  }
+  .picture {
+    margin-bottom: 10px !important;
+  }
+  .picture img {
+    width: 97%;
+  }
+}
+
+/* ------------------ Landscape positon (Horizontal) ----------------- */
+
+/* ----------------- IPhone 5 ----------- */
+@media (min-width: 320px) and (max-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  .bodyBlog {
+    padding: 0px !important;
+  }
+  .descriptionBlog {
+    margin: 0px !important;
+  }
+  .firstBlog {
+    padding: 0px !important;
+  }
+  .blogTitle {
+    margin-top: 14px;
+  }
+  .miniBlog {
+    padding: 0px !important;
+  }
+
+  .picture {
+    margin-bottom: 10px !important;
+  }
+}
+
+/* ------ Samsung S4,S5 ----------- */
+@media (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .bodyBlog {
+    padding: 0px !important;
+  }
+  .descriptionBlog {
+    margin: 0px !important;
+  }
+  .firstBlog {
+    padding: 0px !important;
+  }
+  .blogTitle {
+    margin-top: 14px;
+  }
+  .miniBlog {
+    padding: 0px !important;
+  }
+  .picture {
+    margin-bottom: 10px !important;
+  }
+  .picture img {
+    width: 98%;
+  }
+}
+
+/*--------- Samsung S6,S7,S7+ -------------*/
+@media (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4) {
+  .bodyBlog {
+    padding: 0px !important;
+  }
+  .descriptionBlog {
+    margin: 0px !important;
+  }
+  .firstBlog {
+    padding: 0px !important;
+  }
+  .blogTitle {
+    margin-top: 14px;
+  }
+  .miniBlog {
+    padding: 0px !important;
+  }
+  .picture {
+    margin-bottom: 10px !important;
+  }
+  .picture img {
+    width: 98%;
+  }
+}
+
+/*--------- Samsung S8,S8+, NOTE 8 -------------*/
+@media (min-width: 360px) and (max-height: 740px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4) {
+  .bodyBlog {
+    padding: 0px !important;
+  }
+  .descriptionBlog {
+    margin: 0px !important;
+  }
+  .firstBlog {
+    padding: 0px !important;
+  }
+  .blogTitle {
+    margin-top: 14px;
+  }
+  .miniBlog {
+    padding: 0px !important;
+  }
+  .picture {
+    margin-bottom: 10px !important;
+  }
+  .picture img {
+    width: 97%;
+  }
+}
+
+/* Iphone 6,7,8 --------*/
+@media (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  .bodyBlog {
+    padding: 0px !important;
+  }
+  .descriptionBlog {
+    margin: 0px !important;
+  }
+  .firstBlog {
+    padding: 0px !important;
+  }
+  .blogTitle {
+    margin-top: 14px;
+  }
+  .miniBlog {
+    padding: 0px !important;
+  }
+  .picture {
+    margin-bottom: 10px !important;
+  }
+  .picture img {
+    width: 97%;
+  }
+}
+/*--------- Iphone X -------------*/
+@media (min-width: 375px) and (max-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .bodyBlog {
+    padding: 0px !important;
+  }
+  .descriptionBlog {
+    margin: 0px !important;
+  }
+  .firstBlog {
+    padding: 0px !important;
+  }
+  .blogTitle {
+    margin-top: 14px;
+  }
+  .miniBlog {
+    padding: 0px !important;
+  }
+  .picture {
+    margin-bottom: 10px !important;
+  }
+  .picture img {
+    width: 97%;
+  }
+}
+
+/*--------- Iphone 6+,7+,8+ -------------*/
+@media (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
   .bodyBlog {
     padding: 0px !important;
   }
