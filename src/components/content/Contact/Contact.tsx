@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
         <div className="col-6 contactPicture">
-          <img className="picture" alt="" src={contactPicture} />
+          <img className="pictureContact" alt="" src={contactPicture} />
         </div>
       </div>
     </div>

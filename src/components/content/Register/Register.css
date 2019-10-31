@@ -530,21 +530,21 @@ button {
 @media (min-width: 360px) and (max-height: 740px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4) {
   .registrationForms {
     padding: 0px !important;
-    height: 77vh;
+    height: 136vh;
 
   }
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 642px;
-    background-position-x: -2px;
+    background-size: 711px;
+    background-position-x: 35px;
     background-position-y: 77px;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 595px;
-    background-position-x: -7px;
+    background-size: 606px;
+    background-position-x: 72px;
     background-position-y: 68px;
     margin-bottom: 12px;
   }
@@ -567,7 +567,7 @@ button {
     margin-bottom: 47px;
   }
   .spanError {
-    margin-left: 28%;
+    margin-left: 45%;
   }
 }
 
@@ -663,7 +663,7 @@ button {
 @media (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
   .registrationForms {
     padding: 0px !important;
-    height: 77vh;
+    height: 125vh;
   }
   .companyRegistration {
     margin-top: 20px;
@@ -676,7 +676,7 @@ button {
     margin-top: 20px;
     padding: 0px !important;
     background-size: 604px;
-    background-position-x: 30px;
+    background-position-x: 68px;
     background-position-y: 68px;
     margin-bottom: 12px;
   }
