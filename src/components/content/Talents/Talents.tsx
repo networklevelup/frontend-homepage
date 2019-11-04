@@ -161,8 +161,8 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
 
       <div className="container talents2">
         <div className="work">
-          <h1>{t("talents_talents2H1")}</h1>
-          <h5>{t("talents_talents2H5")}</h5>
+          <h3>{t("talents_talents2H1")}</h3>
+          <h6>{t("talents_talents2H5")}</h6>
         </div>
         <div className="steps">
           <div className="row five">

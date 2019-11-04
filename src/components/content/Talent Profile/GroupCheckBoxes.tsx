@@ -32,7 +32,15 @@ const GroupCheckBoxes: React.FC<IPropsGlobal> = props => {
 
     const [state, setstate] = React.useState({
        Animation: "",
-       ARVRDesign: ""
+       ARVRDesign: "",
+       AudioProduction: "",
+       BrandStrategy: "",
+       EventManagemet: "",
+       GraphicDesign: "",
+       IMGEditRetouch: "",
+       Photography: "",
+       VideoProduction: ""
+
     });
     
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -42,45 +50,26 @@ const GroupCheckBoxes: React.FC<IPropsGlobal> = props => {
             [event.target.name]: value
         });
     }
-    
 
-
-//   const [firstCheck, setFirstCheck] = React.useState(false);
-//   const [firstValue, setFirstValue] = React.useState("")
-
-//   const setingFirstCheck = (event: React.ChangeEvent<HTMLInputElement>) => {
-//     setFirstCheck(event.target.checked);   
-//     setFirstValue(event.target.name);
-//   };
-
-//   useEffect (() => {
-//     if (firstCheck) {
-//         setFirstValue("ANIMACION") 
-//   }
-//     }, [firstCheck])
-  
-  
-  
-//   console.log(firstCheck);
-  console.log(state);
-
+    console.log("Los estados:" + JSON.stringify(state)); 
+     
     return (
         <div className="container">
-             <Form>                               
+                                            
                     <Form.Row>
-                    <ButtonGroup toggle>
-                    <ToggleButton type="radio" name="radio" defaultChecked value="1" onClick={setValue1}>Creative & Design</ToggleButton>
-                    <ToggleButton type="radio" name="radio" value="2" onClick={setValue2}>Development</ToggleButton>
-                    <ToggleButton type="radio" name="radio" value="3" onClick={setValue3}>IT & Network</ToggleButton>
-                    <ToggleButton type="radio" name="radio" value="4" onClick={setValue4}>Marketing</ToggleButton>
-                    </ButtonGroup>
-                </Form.Row>
+                        <ButtonGroup toggle>
+                            <ToggleButton type="radio" name="radio" defaultChecked value="1" onClick={setValue1}>Creative & Design</ToggleButton>
+                            <ToggleButton type="radio" name="radio" value="2" onClick={setValue2}>Development</ToggleButton>
+                            <ToggleButton type="radio" name="radio" value="3" onClick={setValue3}>IT & Network</ToggleButton>
+                            <ToggleButton type="radio" name="radio" value="4" onClick={setValue4}>Marketing</ToggleButton>
+                        </ButtonGroup>
+                    </Form.Row>
                 <Form.Row>
-                <ButtonGroup toggle>
-                    <ToggleButton type="radio" name="radio" value="5" onClick={setValue5}>Product & Project</ToggleButton>
-                    <ToggleButton type="radio" name="radio" value="6" onClick={setValue6}>Sales</ToggleButton>
-                    <ToggleButton type="radio" name="radio" value="7" onClick={setValue7}>Transaltions & Writing</ToggleButton>
-                    <ToggleButton type="radio" name="radio" value="8" onClick={setValue8}>Virtual Assistant</ToggleButton>
+                    <ButtonGroup toggle>
+                        <ToggleButton type="radio" name="radio" value="5" onClick={setValue5}>Product & Project</ToggleButton>
+                        <ToggleButton type="radio" name="radio" value="6" onClick={setValue6}>Sales</ToggleButton>
+                        <ToggleButton type="radio" name="radio" value="7" onClick={setValue7}>Transaltions & Writing</ToggleButton>
+                        <ToggleButton type="radio" name="radio" value="8" onClick={setValue8}>Virtual Assistant</ToggleButton>
                     </ButtonGroup>
                 </Form.Row>
                 
@@ -91,17 +80,17 @@ const GroupCheckBoxes: React.FC<IPropsGlobal> = props => {
             <Form.Row>
               <Form.Check type="checkbox" id="creative-checkbox1" name="Animation"  onChange={handleChange} label="Animation / Motion Graphics"/>
               <Form.Check type="checkbox" id="creative-checkbox2" name="ARVRDesign"  onChange={handleChange} label="AR / VR Design"/>
-              <Form.Check type="checkbox" id="creative-checkbox3" label="Audio Production"/>
-              <Form.Check type="checkbox" id="creative-checkbox4" label="Brand Strategy"/>
+              <Form.Check type="checkbox" id="creative-checkbox3" name="AudioProduction" onChange={handleChange} label="Audio Production"/>
+              <Form.Check type="checkbox" id="creative-checkbox4" name="BrandStrategy" onChange={handleChange} label="Brand Strategy"/>
           </Form.Row>
           <Form.Row>
-              <Form.Check type="checkbox" id="creative-checkbox5" label="Event Management"/>
-              <Form.Check type="checkbox" id="creative-checkbox6" label="Graphic Design"/>
-              <Form.Check type="checkbox" id="creative-checkbox7" label="Image Editing / Retouching"/>
+              <Form.Check type="checkbox" id="creative-checkbox5" name="EventManagemet" onChange={handleChange} label="Event Management"/>
+              <Form.Check type="checkbox" id="creative-checkbox6" name="GraphicDesign" onChange={handleChange} label="Graphic Design"/>
+              <Form.Check type="checkbox" id="creative-checkbox7" name="IMGEditRetouch" onChange={handleChange} label="Image Editing / Retouching"/>
             </Form.Row>
           <Form.Row>
-              <Form.Check type="checkbox" id="creative-checkbox8" label="Photography"/>
-              <Form.Check type="checkbox" id="creative-checkbox9" label="Video Production"/>
+              <Form.Check type="checkbox" id="creative-checkbox8" name="Photography" onChange={handleChange} label="Photography"/>
+              <Form.Check type="checkbox" id="creative-checkbox9" name="VideoProduction" onChange={handleChange} label="Video Production"/>
             </Form.Row>
         </div>}
             {/* {checkValue === "1" && <CreativeChecks />} */}
@@ -117,10 +106,17 @@ const GroupCheckBoxes: React.FC<IPropsGlobal> = props => {
         <div className="selectedBoxes">
           {state.Animation && <span>Animation & Motion graphics</span>}
           {state.ARVRDesign && <span>AR / VR Design</span>}
+          {state.AudioProduction && <span>Audio Production</span>}
+          {state.BrandStrategy && <span>Brand Strategy</span>}
+          {state.EventManagemet && <span>Event Management</span>}
+          {state.GraphicDesign && <span>Graphic Design</span>}
+          {state.IMGEditRetouch && <span>Image Edit / Retocuh</span>}
+          {state.Photography && <span>Photography</span>}
+          {state.VideoProduction && <span>Video Production</span>}
                    {/*Aqui una lista de las selecciones hechas, de 3-10, con la opcion de poder eliminarlas
                 si se desea, mirar si algun pluging hace esto */}
         </div>
-        </Form>
+       
         </div>
     )
 }

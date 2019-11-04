@@ -113,11 +113,13 @@
    padding: 0px!important;
  }
   .companies1 {
-    margin-bottom: 0px;
+    margin: 0px!important;
+
   }
   .firstText {
     margin-top: 31px;
     padding-right: 0px!important;
+    padding-left: 10px!important;
   }
   .firstText h1 {
     margin-bottom: 12px !important;
@@ -147,7 +149,7 @@
   }
   .comparability {
     padding: 0px !important;
-    padding-top: 0px !important;
+    padding-top: 21px !important;
   }
   .comparability h5 {
     margin-bottom: 3px !important;
@@ -179,6 +181,7 @@
   }
   .secondText {
     margin-top: 10px;
+    padding-left: 10px!important;
   }
   .picture3,
   .picture4 {
@@ -212,6 +215,7 @@
    .firstText {
      margin-top: 31px;
      padding: 0px!important;
+     padding-left: 10px!important;
    }
    .firstText h1 {
      margin-bottom: 12px !important;
@@ -241,7 +245,7 @@
    }
    .comparability {
      padding: 0px !important;
-     padding-top: 0px !important;
+     padding-top: 27px !important;
    }
    .comparability h5 {
      margin-bottom: 3px !important;
@@ -273,6 +277,7 @@
    }
    .secondText {
      margin-top: 10px;
+     padding-left: 10px!important;
    }
    .picture3,
    .picture4 {
@@ -305,6 +310,7 @@
    .firstText {
      margin-top: 31px;
      padding: 0px!important;
+     padding-left: 10px!important;
    }
    .firstText h1 {
      margin-bottom: 12px !important;
@@ -366,6 +372,7 @@
    }
    .secondText {
      margin-top: 10px;
+     padding-left: 10px!important;
    }
    .picture3,
    .picture4 {
@@ -397,6 +404,7 @@
    .firstText {
      margin-top: 31px;
      padding: 0px!important;
+     padding-left: 10px!important;
    }
    .firstText h1 {
      margin-bottom: 12px !important;
@@ -426,7 +434,7 @@
    }
    .comparability {
      padding: 0px !important;
-     padding-top: 0px !important;
+     padding-top: 30px !important;
    }
    .comparability h5 {
      margin-bottom: 3px !important;
@@ -458,6 +466,7 @@
    }
    .secondText {
      margin-top: 10px;
+     padding-left: 10px!important;
    }
    .picture3,
    .picture4 {
@@ -490,6 +499,7 @@
    .firstText {
      margin-top: 31px;
      padding: 0px!important;
+     padding-left: 10px!important;
    }
    .firstText h1 {
      margin-bottom: 12px !important;
@@ -551,6 +561,7 @@
    }
    .secondText {
      margin-top: 10px;
+     padding-left: 10px!important;
    }
    .picture3,
    .picture4 {
@@ -583,6 +594,7 @@
    .firstText {
      margin-top: 31px;
      padding: 0px!important;
+     padding-left: 10px!important;
    }
    .firstText h1 {
      margin-bottom: 12px !important;
@@ -612,7 +624,7 @@
    }
    .comparability {
      padding: 0px !important;
-     padding-top: 0px !important;
+     padding-top: 30px !important;
    }
    .comparability h5 {
      margin-bottom: 3px !important;
@@ -644,6 +656,7 @@
    }
    .secondText {
      margin-top: 10px;
+     padding-left: 10px!important;
    }
    .picture3,
    .picture4 {
@@ -676,6 +689,7 @@
    .firstText {
      margin-top: 31px;
      padding: 0px!important;
+     padding-left: 10px!important;
    }
    .firstText h1 {
      margin-bottom: 12px !important;
@@ -705,7 +719,7 @@
    }
    .comparability {
      padding: 0px !important;
-     padding-top: 0px !important;
+     padding-top: 35px !important;
    }
    .comparability h5 {
      margin-bottom: 3px !important;
@@ -737,6 +751,7 @@
    }
    .secondText {
      margin-top: 10px;
+     padding-left: 10px!important;
    }
    .picture3,
    .picture4 {

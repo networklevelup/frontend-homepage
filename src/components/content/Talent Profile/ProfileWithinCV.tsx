@@ -7,7 +7,6 @@ import Row from 'react-bootstrap/Row';
 import GroupCheckBoxes from "./GroupCheckBoxes";
 import * as actions from "../../../actions/actions";
 
-
 import "./TalentProfile.css";
 
 import { IGlobalState } from "../../../reducers/reducers";
@@ -31,14 +30,8 @@ const ProfileWithinCV: React.FC = () => {
   por otros motivos y tengo que ver si me hará falta o no
   */
   
-
-
-  
- 
   return (
-    <div className="container">
-        
-    
+    <div className="container">    
         <h1>Please enter your data and upload your CV.</h1>
         <h1>We will contact you afterwards with the next steps</h1>
         <h5>IN WICH AREA YOU WOULD LIKE TO WORK?</h5>
