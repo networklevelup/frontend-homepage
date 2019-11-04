@@ -11,7 +11,7 @@ const SiteNotice: React.FC<RouteComponentProps> = () => {
     <div className="container text-sm-left text-center mt-5 mb-5">
       {i18n.language === "es" && <SiteNoticeES />}
       {i18n.language === "en" && <SiteNoticeEN />}
-      {i18n.language === "ge" && <SiteNoticeGE />}
+      {i18n.language === "de" && <SiteNoticeGE />}
     </div>
   );
 };

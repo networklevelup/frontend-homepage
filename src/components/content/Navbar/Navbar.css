@@ -86,6 +86,7 @@
 }
 .logo{
   pointer-events: none;
+  padding-left: 10px;
 }
 .buttonLanguage {
   width: 30px;

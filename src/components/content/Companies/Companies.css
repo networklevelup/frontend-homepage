@@ -26,7 +26,7 @@
   padding: 36px;
   text-align: center;
 }
-.companies2 h1 {
+.companies2 h1, .comparability h6 {
   margin-bottom: 0px !important;
 }
 .moreMargin {

@@ -51,7 +51,7 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       <div className="row home1">
         <div className="col-6 generation">
           <h1>{t("home_generationH1")}</h1>
-          <h5>{t("home_generationH5")}</h5>
+          <h6>{t("home_generationH5")}</h6>
           <Link to="/talents">
             <button className={styles.btnPurple}>{t("home_btnPurple")}</button>
           </Link>
@@ -94,7 +94,7 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               src={proPicture + i18n.language + ".png"}
             />
             {/*how to change picture for diferents languages*/}
-            <h5 className="mb-5">{t("home_focusEndH5")}</h5>
+            <h6 className="mb-5">{t("home_focusEndh5")}</h6>
           </div>
         </div>
 

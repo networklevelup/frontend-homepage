@@ -8,9 +8,9 @@
 body {
   font-family: "MyriadPro" !important; /*necesary important*/
 }
-h1 {
+/* h1 {
   font-style: bolder !important;
-}
+} */
 .cookies {
   position: fixed;
   background-color: #545454;
@@ -40,7 +40,7 @@ h1 {
   h1,
   h3,
   h4 {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     margin-bottom: 10px !important;
   }
   input {
@@ -48,13 +48,14 @@ h1 {
     width: 200px !important;
   }
   h2 {
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
   }
   h5,
   h6,
   p,
   span {
-    font-size: 0.5rem !important;
+    font-size: 0.4rem !important;
+   
   }
   .cookies {
     height: 64px;
@@ -65,10 +66,10 @@ h1 {
   .btnCookie {
     padding: 4px !important;
     margin: 5px !important;
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
   }
   a {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 
@@ -114,7 +115,7 @@ h1 {
   h1,
   h3,
   h4 {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
     margin-bottom: 10px !important;
   }
   input {
@@ -122,13 +123,13 @@ h1 {
     width: 200px !important;
   }
   h2 {
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
   }
   h5,
   h6,
   p,
   span {
-    font-size: 0.5rem !important;
+    font-size: 0.4rem !important;
   }
   .cookies {
     height: 64px;
@@ -139,10 +140,10 @@ h1 {
   .btnCookie {
     padding: 4px !important;
     margin: 5px !important;
-    font-size: 0.7rem !important;
+    font-size: 0.6rem !important;
   }
   a {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 /*--------- Samsung S8,S8+, NOTE 8 -------------*/

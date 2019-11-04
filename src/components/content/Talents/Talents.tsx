@@ -146,7 +146,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       <div className="row  talents1">
         <div className="col-6 talentText">
           <h1>{t("talents_talents1H1")}</h1>
-          <h5>{t("talents_talents1H5")}</h5>
+          <h6>{t("talents_talents1H5")}</h6>
           <Link to="/register">
             <button onClick={change} className="btnPink">
               {t("talents_btnReserve")}

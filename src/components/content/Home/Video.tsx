@@ -8,6 +8,7 @@ const MyVideoPlayer: React.FC = () => {
   return (
     <div className="container video">
       <Video
+        autoPlay
         controls={[
           "PlayPause",
           "Seek",

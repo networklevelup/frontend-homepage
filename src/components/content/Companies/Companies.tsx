@@ -29,7 +29,7 @@ const ForCompanies: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       <div className="row companies1">
         <div className="col-6 firstText">
           <h1>{t("companies_companies1H1")}</h1>
-          <h5>{t("companies_companies1H5")}</h5>
+          <h6>{t("companies_companies1H5")}</h6>
           <Link to="/register">
             <button onClick={change} className="btn btn-success btnGreen">
               {t("companies_companiesButton")}
@@ -44,7 +44,7 @@ const ForCompanies: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       <div className="container companiesGroup">
         <div className="container-fluid companies2">
           <h1>{t("companies_companies2H1")}</h1>
-          <h5>{t("companies_companies2H5")}</h5>
+          <h6>{t("companies_companies2H5")}</h6>
           <div className="row picture2">
             <div className="col-6 ">
               <img className="pic2Comp" alt="" src={pic2Comp} />
@@ -53,17 +53,17 @@ const ForCompanies: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             <div className="col-6 comparability">
               <div>
                 <h2>{t("companies_comparabilityH2")}</h2>
-                <h5 className="moreMargin">{t("companies_comparabilityH5")}</h5>
+                <h6 className="moreMargin">{t("companies_comparabilityH5")}</h6>
 
-                <h5 className="moreMargin">
+                <h6 className="moreMargin">
                   {t("companies_comparabilityH5-2")}
-                </h5>
+                </h6>
               </div>
               <div>
                 <h4>
                   <strong>{t("companies_comparabilityH4Strong")}</strong>
                 </h4>
-                <h5>{t("companies_comparabilityH52")}</h5>
+                <h6>{t("companies_comparabilityH52")}</h6>
               </div>
               <img src={telegram} className="signUp" alt="" />
               <Link to="/register">
@@ -79,8 +79,8 @@ const ForCompanies: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           <div className="row">
             <div className="col-6 comparability secondText">
               <h2>{t("companies_companies3H2")}</h2>
-              <h5 className="moreMargin">{t("companies_companies3H5")}</h5>
-              <h5>{t("companies_companies3H52")}</h5>
+              <h6 className="moreMargin">{t("companies_companies3H5")}</h6>
+              <h6>{t("companies_companies3H52")}</h6>
               <img src={telegram} className="signUp" alt="" />
               <Link to="/register">
                 <button onClick={change} className="btnSignUp">
@@ -104,8 +104,8 @@ const ForCompanies: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           </div>
           <div className="col-6 comparability hereForYou">
             <h2>{t("companies_companies4H2")}</h2>
-            <h5 className="moreMargin">{t("companies_companies4H5")}</h5>
-            <h5>{t("companies_companies4H52")}</h5>
+            <h6 className="moreMargin">{t("companies_companies4H5")}</h6>
+            <h6>{t("companies_companies4H52")}</h6>
             <img src={telegram} className="signUp" alt="" />
             <Link to="/register">
               <button onClick={change} className="btnSignUp">

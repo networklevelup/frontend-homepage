@@ -5,7 +5,7 @@ const SiteNoticeEN: React.FC = () => {
     <div className="container">
       <p>Sandra Thomas & Marcel Rödiger GbR</p>
       <p>
-        Accionistas autorizados para representar a la empresa: Sandra Thomas and
+      Shareholders authorized to represent the company: Sandra Thomas and
         Marcel Rödiger
       </p>
       <p>Graf-Zeppelin-Str. 32</p>
