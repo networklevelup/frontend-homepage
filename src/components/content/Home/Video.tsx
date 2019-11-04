@@ -21,26 +21,26 @@ const MyVideoPlayer: React.FC = () => {
           // Do stuff
         }}
       >
-        <source src="./video/levelUP-Video.mp4" type="video/mp4" />
+        <source src="/video/LevelUP-Video.mp4" type="video/mp4" />
         <track
           label="Spanish"
           kind="subtitles"
           srcLang="es"
-          src="./video/videoSubtitles_es.vtt"
+          src="/video/videoSubtitles_es.vtt"
           default
         />
         <track
           label="English"
           kind="subtitles"
           srcLang="en"
-          src="./video/videoSubtitles_en.vtt"
+          src="/video/videoSubtitles_en.vtt"
           default
         />
         <track
           label="German"
           kind="subtitles"
           srcLang="ge"
-          src="./video/videoSubtitles_ge.vtt"
+          src="/video/videoSubtitles_ge.vtt"
           default
         />
       </Video>
