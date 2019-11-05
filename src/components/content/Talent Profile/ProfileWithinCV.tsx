@@ -4,14 +4,8 @@ import Button from 'react-bootstrap/Button';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Row from 'react-bootstrap/Row';
-import GroupCheckBoxes from "./GroupCheckBoxes";
-import * as actions from "../../../actions/actions";
 
 import "./TalentProfile.css";
-
-import { IGlobalState } from "../../../reducers/reducers";
-import { connect } from "react-redux";
-
 
 
 const ProfileWithinCV: React.FC = () => {
