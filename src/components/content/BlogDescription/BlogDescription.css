@@ -22,15 +22,16 @@
   margin-bottom: 50px;
 }
 .picture {
-  width: 80%;
+  width: 103%;
   margin-bottom: 50px;
 }
 .picture img {
-  width: 100%;
+  width: 99%;
   height: 100%;
 }
 .blogDescription {
   font-size: larger;
+  white-space: pre;
 }
 .miniPicture {
   width: 100%;

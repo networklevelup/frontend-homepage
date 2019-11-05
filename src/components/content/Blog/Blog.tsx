@@ -74,9 +74,9 @@ const BlogList: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               </div>
 
               <div className="cardBody">
-                <h4 className="title">{blog.title}</h4>
+                <h5 className="title">{blog.title}</h5>
                 <p className={styles.subtitle}>{blog.subtitle}</p>
-                <p className="description">{blog.description}</p>
+                <p className="description">{blog.secondSubtitle}</p>
                 <Link to={"/blog/description/" + blog._id}>
                   <button className="btn btn-outline-success readMore">
                     {t("blog_btn")}

@@ -21,8 +21,7 @@ const App: React.FC<IPropsGlobal> = () => {
   },[]);  
   let language = i18n.language;
   let lng = language.substr(0,2);
-  console.log(language);
-  console.log("lng: " + lng)
+  
 
   const acceptCookies = () => {
     localStorage.setItem("cookies", "accepted");

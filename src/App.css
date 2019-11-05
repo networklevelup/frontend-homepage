@@ -143,7 +143,7 @@ body {
     font-size: 0.6rem !important;
   }
   a {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 /*--------- Samsung S8,S8+, NOTE 8 -------------*/
@@ -179,7 +179,7 @@ body {
     font-size: 0.7rem !important;
   }
   a {
-    font-size: 7px;
+    font-size: 15px;
   }
 }
 
@@ -216,7 +216,7 @@ body {
     font-size: 0.7rem !important;
   }
   a {
-    font-size: 7px;
+    font-size: 15px;
   }
 }
 /*--------- Iphone X -------------*/
@@ -252,7 +252,7 @@ body {
     font-size: 0.7rem !important;
   }
   a {
-    font-size: 7px;
+    font-size: 15px;
   }
 }
 /*--------- Iphone 6+,7+,8+ -------------*/
@@ -288,7 +288,7 @@ body {
     font-size: 0.7rem !important;
   }
   a {
-    font-size: 7px;
+    font-size: 15px;
   }
 }
 
@@ -404,7 +404,7 @@ body {
   }
 }
 
-/* Iphone 6,7,8 --------*/
+/* ---------- Iphone 6,7,8 --------*/
 @media (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   h1,
   h3,

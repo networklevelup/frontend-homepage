@@ -89,6 +89,9 @@ p {
   height: 100%;
   pointer-events: none;
 }
+.cardBody h5 {
+  margin-bottom: 1px!important;
+}
 
 
 /* ------------------- IPhone 5 ----------- */
@@ -117,6 +120,7 @@ p {
     margin-top: 15px!important;
     padding: 0px!important;
     margin-left: 0px!important;
+    padding-left: 13px!important;
   }
   .update h1 {
     margin-bottom: 5px !important;
@@ -183,6 +187,7 @@ p {
     margin-top: 15px!important;
     padding: 0px!important;
     margin-left: 0px!important;
+    padding-left: 13px!important;
   }
   .update h1 {
     margin-bottom: 5px !important;
@@ -250,6 +255,7 @@ p {
     margin-top: 15px!important;
     padding: 0px!important;
     margin-left: 0px!important;
+    padding-left: 13px!important;
   }
   .update h1 {
     margin-bottom: 5px !important;
@@ -315,6 +321,7 @@ p {
     margin-top: 15px!important;
     padding: 0px!important;
     margin-left: 0px!important;
+    padding-left: 13px!important;
   }
   .update h1 {
     margin-bottom: 5px !important;
@@ -381,6 +388,7 @@ p {
     margin-top: 15px!important;
     padding: 0px!important;
     margin-left: 0px!important;
+    padding-left: 13px!important;
   }
   .update h1 {
     margin-bottom: 5px !important;
@@ -448,6 +456,7 @@ p {
     margin-top: 15px!important;
     padding: 0px!important;
     margin-left: 0px!important;
+    padding-left: 13px!important;
   }
   .update h1 {
     margin-bottom: 5px !important;
@@ -515,6 +524,7 @@ p {
     margin-top: 15px!important;
     padding: 0px!important;
     margin-left: 0px!important;
+    padding-left: 13px!important;
   }
   .update h1 {
     margin-bottom: 5px !important;
@@ -916,6 +926,7 @@ p {
     margin-top: 80px!important;
     padding: 0px!important;
     margin-left: 0px!important;
+    
   }
   .update h1 {
     margin-bottom: 5px !important;

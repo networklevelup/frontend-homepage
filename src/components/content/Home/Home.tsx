@@ -22,12 +22,6 @@ interface IPropsGlobal {
 
 const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
   const { t, i18n } = useTranslation();
-
-  // useEffect(()=> {
-  //   let language = i18n.language;
-  //   console.log("lenguage: " + language)
-  // }, []);
- 
   
   /*funcions to save a boolean state in redux */
   const goToTalents = () => props.changingState(false);
@@ -94,7 +88,7 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               src={proPicture + i18n.language + ".png"}
             />
             {/*how to change picture for diferents languages*/}
-            <h6 className="mb-5">{t("home_focusEndh5")}</h6>
+            <h6 className="mb-5">{t("home_focusEndH5")}</h6>
           </div>
         </div>
 
