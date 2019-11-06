@@ -74,11 +74,11 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
                 {t("navBar_companies")}
               </Link>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <Link to="/blog" className="nav-link js-scroll-trigger">
                 {t("navBar_blog")}
               </Link>
-            </li> */}
+            </li>
 
             {!props.token && (
               <li className="nav-item">

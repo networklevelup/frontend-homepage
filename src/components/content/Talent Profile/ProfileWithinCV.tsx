@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, createElement } from "react";
+import React, { ChangeEventHandler, createElement, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from 'react-bootstrap/Button';
 import ToggleButton from 'react-bootstrap/ToggleButton';
@@ -6,7 +6,8 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Row from 'react-bootstrap/Row';
 
 import "./TalentProfile.css";
-
+import { statement } from "@babel/template";
+import { FormControlProps } from "react-bootstrap/FormControl";
 
 const ProfileWithinCV: React.FC = () => {
   /* 
@@ -34,71 +35,91 @@ const ProfileWithinCV: React.FC = () => {
     const setValue7= () => setCheckValue("7");
     const setValue8= () => setCheckValue("8");
 
+    
    const [checkedState, setstate] = React.useState({
-      Animation: "",
-      ARVRDesign: "",
-      AudioProduction: "",
-      BrandStrategy: "",
-      EventManagemet: "",
-      GraphicDesign: "",
-      IMGEditRetouch: "",
-      Photography: "",
-      VideoProduction: "",
-      ARVRDevelopment: "",
-      BackDevelopment: "",
-      DevepCoach: "",
-      FrontDev: "",
-      FullStackDev: "",
-      MobileAppDev: "",
-      SoftwareDev: "",
-      UXUIDesign: "",
-      WebDev: "",
-      CRM: "",
-      ITAdmin: "",
-      ITConsulting: "",
-      QM: "",
-      ITSecurity: "",
-      AffiliateMarketing:"",
-      DigitalMarketing: "",
-      EmailMarketing: "",
-      MarketResearch: "",
-      MarketingStrategy: "",
-      SEOManagement: "",
-      SMM: "",
-      ProductManagement:"",
-      ProjectManagement:"",
-      BusinessDev: "",
-      CSSupport: "",
-      KAManagement: "",
-      TelephoneSales: "",
-      SalesRepresentative: "",
-      WritingResearch: "",
-      MarketingManagent: "",
-      CreativeWriting: "",
-      PublicRelations: "",
-      TechnicalWriting: "",
-      Translation: "",
-      Copywriting: "",
-      CRMMaintenance:"",
-      Documentation: "",
-      Presentations: "",
-      Research: "",
-      Sheduling: "",
-      TravelPlanning: "",
-      WebMaintenance: ""
+      Animation: false,
+      ARVRDesign: false,
+      AudioProduction: false,
+      BrandStrategy: false,
+      EventManagemet: false,
+      GraphicDesign: false,
+      IMGEditRetouch: false,
+      Photography: false,
+      VideoProduction: false,
+      ARVRDevelopment: false,
+      BackDevelopment: false,
+      DevepCoach: false,
+      FrontDev: false,
+      FullStackDev: false,
+      MobileAppDev: false,
+      SoftwareDev: false,
+      UXUIDesign: false,
+      WebDev: false,
+      CRM: false,
+      ITAdmin: false,
+      ITConsulting: false,
+      QM: false,
+      ITSecurity: false,
+      AffiliateMarketing:false,
+      DigitalMarketing: false,
+      EmailMarketing: false,
+      MarketResearch: false,
+      MarketingStrategy: false,
+      SEOManagement: false,
+      SMM: false,
+      ProductManagement:false,
+      ProjectManagement:false,
+      BusinessDev: false,
+      CSSupport: false,
+      KAManagement: false,
+      TelephoneSales: false,
+      SalesRepresentative: false,
+      WritingResearch: false,
+      MarketingManagent: false,
+      CreativeWriting: false,
+      PublicRelations: false,
+      TechnicalWriting: false,
+      Translation: false,
+      Copywriting: false,
+      CRMMaintenance:false,
+      Documentation: false,
+      Presentations: false,
+      Research: false,
+      Sheduling: false,
+      TravelPlanning: false,
+      WebMaintenance: false,
+      levelExp: "",
+      locations: "",
+      spanishSkills: "nativeSpeaker",
+      englishSkills: "nativeSpeaker",
+      germanSkills: "nativeSpeaker",
+      furtherLangageSkills: "nativeSpeaker"
 
    });
-   
-   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+   const FinalcheckedState: {[key:string]:boolean | string} = checkedState;
+   const handleChange = (event: React.ChangeEvent<FormControlProps & HTMLInputElement>) => {
        const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
        setstate({
            ...checkedState,
            [event.target.name]: value
        });
    }
+    
+    // const keyNames = Object.values(checkedState);
+    // console.log("keynames: " + keyNames);
 
-   console.log("Los estados:" + JSON.stringify(checkedState)); 
-  
+  useEffect(() => {  {/*este useefect no es valido, cuando recoja todos los datos del form en un fetch
+  he de utilizar esta formula para seleccionar unicamente las opciones que esten checked */}
+    let worksAreas = [];       
+    for(let key in FinalcheckedState) {
+      if(FinalcheckedState[key]  === true) {
+        worksAreas.push(key)
+      }      
+    }
+    console.log("WorkAreas: " + worksAreas);   
+  }, [FinalcheckedState]);  
+
+ console.log("TODOS LOS ESTADOS" + JSON.stringify(checkedState))
   return (
     <div className="container">    
         <h1>Please enter your data and upload your CV.</h1>
@@ -126,7 +147,7 @@ const ProfileWithinCV: React.FC = () => {
             <div className="checkBoxes">             
             {checkValue === "1" && <div className="container Creative">
               <Form.Row>
-                    <Form.Check type="checkbox" id="creative-checkbox1" name="Animation"  onChange={handleChange} label="Animation / Motion Graphics"/>
+                    <Form.Check type="checkbox" id="creative-checkbox1" name="Animation" onChange={handleChange} label="Animation / Motion Graphics"/>
                     <Form.Check type="checkbox" id="creative-checkbox2" name="ARVRDesign"  onChange={handleChange} label="AR / VR Design"/>
                     <Form.Check type="checkbox" id="creative-checkbox3" name="AudioProduction" onChange={handleChange} label="Audio Production"/>
                     <Form.Check type="checkbox" id="creative-checkbox4" name="BrandStrategy" onChange={handleChange} label="Brand Strategy"/>
@@ -227,11 +248,8 @@ const ProfileWithinCV: React.FC = () => {
                   <Form.Check type="checkbox" id="creative-checkbox52" name="WebMaintenance" onChange={handleChange} label="Website maintenance"/>
               </Form.Row>
             </div>}
-           
           </div>
           <div className="selectedBoxes">
-            
-
             {checkedState.Animation && <span>Animation & Motion graphics</span>}
             {checkedState.ARVRDesign && <span>AR / VR Design</span>}
             {checkedState.AudioProduction && <span>Audio Production</span>}
@@ -262,104 +280,99 @@ const ProfileWithinCV: React.FC = () => {
             {checkedState.DigitalMarketing && <span>Digital Marketing</span>}
             {checkedState.EmailMarketing && <span>E-Mail Marketing</span>}
             {checkedState.MarketResearch && <span>Market Research</span>}
-            {checkedState && <span>Marketing Strategy</span>}
-            {checkedState && <span>SEA / SEO Management</span>}
-            {checkedState && <span>Social Media Marketing</span>}
+            {checkedState.MarketingStrategy && <span>Marketing Strategy</span>}
+            {checkedState.SEOManagement && <span>SEA / SEO Management</span>}
+            {checkedState.SMM && <span>Social Media Marketing</span>}
 
-            {checkedState && <span>Product Management</span>}
-            {checkedState && <span>Project Management</span>}
+            {checkedState.ProductManagement && <span>Product Management</span>}
+            {checkedState.ProjectManagement && <span>Project Management</span>}
 
-            {checkedState && <span>Business Development</span>}
-            {checkedState && <span>Customer Service Support</span>}
-            {checkedState && <span>Key Account Management</span>}
-            {checkedState && <span>Telephone Sales</span>}
-            {checkedState && <span>Sales Representative</span>}
+            {checkedState.BusinessDev && <span>Business Development</span>}
+            {checkedState.CSSupport && <span>Customer Service Support</span>}
+            {checkedState.KAManagement && <span>Key Account Management</span>}
+            {checkedState.TelephoneSales && <span>Telephone Sales</span>}
+            {checkedState.SalesRepresentative && <span>Sales Representative</span>}
 
-            {checkedState && <span>Academic Writing & Research</span>}
-            {checkedState && <span>Content Marketing Manager</span>}
-            {checkedState && <span>Creative Writing</span>}
-            {checkedState && <span>Public Relations</span>}
-            {checkedState && <span>Technical Writing</span>}
-            {checkedState && <span>Translation</span>}
+            {checkedState.WritingResearch && <span>Academic Writing & Research</span>}
+            {checkedState.MarketingManagent && <span>Content Marketing Manager</span>}
+            {checkedState.CreativeWriting && <span>Creative Writing</span>}
+            {checkedState.PublicRelations && <span>Public Relations</span>}
+            {checkedState.TechnicalWriting && <span>Technical Writing</span>}
+            {checkedState.Translation && <span>Translation</span>}
 
-            {checkedState && <span>Copywriting</span>}
-            {checkedState && <span>CRM maintenance</span>}
-            {checkedState && <span>Documentation</span>}
-            {checkedState && <span>Presentations</span>}
-            {checkedState && <span>Research</span>}
-            {checkedState && <span>Scheduling & Meeting Organization</span>}
-            {checkedState && <span>Travel Planning</span>}
-            {checkedState && <span>Website maintenance</span>}
+            {checkedState.Copywriting && <span>Copywriting</span>}
+            {checkedState.CRMMaintenance && <span>CRM maintenance</span>}
+            {checkedState.Documentation && <span>Documentation</span>}
+            {checkedState.Presentations && <span>Presentations</span>}
+            {checkedState.Research && <span>Research</span>}
+            {checkedState.Sheduling && <span>Scheduling & Meeting Organization</span>}
+            {checkedState.TravelPlanning && <span>Travel Planning</span>}
+            {checkedState.WebMaintenance && <span>Website maintenance</span>}
          </div>
           
                 <h5>WHAT IS YOUR EXPERIENCE LEVEL IN THIS AREA?</h5>
-        <div className="levelExp">
-          {/**Son boxes de seleccion no p */}
-          <Form.Row>
-                <ButtonGroup toggle>
-                    <ToggleButton type="radio" name="radio" defaultChecked value="9">Beguinner Level - Just started to work in this field</ToggleButton>
-                    <ToggleButton type="radio" name="radio" value="10">Intermediate - Finalized first projects in this field</ToggleButton>
-                    <ToggleButton type="radio" name="radio" value="11">Expert Level - I have deep expertise in this field</ToggleButton>
-                </ButtonGroup>
-           </Form.Row>
-        </div>
-        <h5>PREFERRED LOCATIONS</h5>
-        <div className="locations">
-          
-          <Form.Group as={Row}>
-                <Form.Check type="radio" name="checkLocation" id="default-checkbox1" label="I am only available for remote work"/>
-                <Form.Check type="radio" name="checkLocation" id="default-checkbox2" label="I am open to move to Germany"/>
-                <Form.Check type="radio" name="checkLocation" id="default-checkbox3" label="I wish to move to Germany"/>
-            </Form.Group>
-          
-            
-       
-            </div>
+          <div className="levelExp">          
+            <Form.Row>
+                  <ButtonGroup toggle>
+                      <ToggleButton type="radio" name="levelExp" value="Beguinner" checked={checkedState.levelExp === "Beguinner"}  onClick={handleChange}>Beguinner Level - Just started to work in this field</ToggleButton>
+                      <ToggleButton type="radio" name="levelExp" value="Intermediate" checked={checkedState.levelExp === "Intermediate"}  onClick={handleChange}>Intermediate - Finalized first projects in this field</ToggleButton>
+                      <ToggleButton type="radio" name="levelExp" value="Expert" checked={checkedState.levelExp === "Expert"}  onClick={handleChange}>Expert Level - I have deep expertise in this field</ToggleButton>
+                  </ButtonGroup>
+            </Form.Row>
+          </div>
+          <h5>PREFERRED LOCATIONS</h5>
+          <div className="locations">            
+            <Form.Group as={Row}>
+                  <Form.Check type="radio" name="locations" value="OnlyRemote" checked={checkedState.locations === "OnlyRemote"} onChange={handleChange}  label="I am only available for remote work"/>
+                  <Form.Check type="radio" name="locations" value="OpenMove" checked={checkedState.locations === "OpenMove"} onChange={handleChange}  label="I am open to move to Germany"/>
+                  <Form.Check type="radio" name="locations" value="WishMove" checked={checkedState.locations === "WishMove"}  onChange={handleChange}  label="I wish to move to Germany"/>
+              </Form.Group>
+          </div>
             <div className="languageskills">
             <h5>LANGUAGE SKILLS</h5>
             {/**Dropdown selectors 3 fijos y un cuarto que de la opcion de escribir el lenguaje */}
             <Form.Row>
             <Form.Group>
               <Form.Label>SPANISH</Form.Label>
-              <Form.Control as="select">
-                <option>native speaker</option>
-                <option>business fluent</option>
-                <option>very good knowledge (fluently)</option>
-                <option>good knowledge</option>
-                <option>basic knowledge</option>
+              <Form.Control as="select" name="spanishSkills" onChange={handleChange} value={checkedState.spanishSkills} >
+                <option value="nativeSpeaker">native speaker</option>
+                <option value="businessFluent">business fluent</option> 
+                <option value="veryGoodKnowledge">very good knowledge (fluently)</option>
+                <option value="goodKnowledge">good knowledge</option>
+                <option value="basicKnowledge">basic knowledge</option>
               </Form.Control>
               </Form.Group>
               <Form.Group>
               <Form.Label>ENGLISH</Form.Label>
-              <Form.Control as="select">
-                <option>native speaker</option>
-                <option>business fluent</option>
-                <option>very good knowledge (fluently)</option>
-                <option>good knowledge</option>
-                <option>basic knowledge</option>
+              <Form.Control as="select" name="englishSkills" onChange={handleChange} value={checkedState.englishSkills} >
+                <option value="nativeSpeaker">native speaker</option>
+                <option value="businessFluent">business fluent</option> 
+                <option value="veryGoodKnowledge">very good knowledge (fluently)</option>
+                <option value="goodKnowledge">good knowledge</option>
+                <option value="basicKnowledge">basic knowledge</option>
               </Form.Control>
               </Form.Group>
               <Form.Group>
                 <Form.Label>GERMAN</Form.Label>
-                <Form.Control as="select">
-                  <option>native speaker</option>
-                  <option>business fluent</option>
-                  <option>very good knowledge (fluently)</option>
-                  <option>good knowledge</option>
-                  <option>basic knowledge</option>
-                </Form.Control>      
+                <Form.Control as="select" name="germanSkills" onChange={handleChange} value={checkedState.germanSkills} >
+                <option value="nativeSpeaker">native speaker</option>
+                <option value="businessFluent">business fluent</option> 
+                <option value="veryGoodKnowledge">very good knowledge (fluently)</option>
+                <option value="goodKnowledge">good knowledge</option>
+                <option value="basicKnowledge">basic knowledge</option>
+              </Form.Control>  
             </Form.Group>
             </Form.Row>
             <Form.Row>
               <Form.Group>
               <Form.Control type="text" placeholder="FURTHER LANGUAGE"></Form.Control>
-                <Form.Control as="select">
-                  <option>native speaker</option>
-                  <option>business fluent</option>
-                  <option>very good knowledge (fluently)</option>
-                  <option>good knowledge</option>
-                  <option>basic knowledge</option>
-                </Form.Control>      
+              <Form.Control as="select" name="furtherLangageSkills" onChange={handleChange} value={checkedState.furtherLangageSkills} >
+                <option value="nativeSpeaker">native speaker</option>
+                <option value="businessFluent">business fluent</option> 
+                <option value="veryGoodKnowledge">very good knowledge (fluently)</option>
+                <option value="goodKnowledge">good knowledge</option>
+                <option value="basicKnowledge">basic knowledge</option>
+              </Form.Control>
               </Form.Group>
             </Form.Row>
             </div>
