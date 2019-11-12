@@ -52,7 +52,7 @@ p {
 }
 .title {
   display: inline-block;
-  max-height: 50px !important;
+  max-height: 68px !important;
   overflow: hidden !important;
 }
 .description {

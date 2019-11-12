@@ -41,6 +41,9 @@
   padding-right: 6px;
   margin-top: 6px;
 }
+.navbar-nav {
+  margin-left: 50px;
+}
 
 @media (min-width: 992px) {
   #mainNav {

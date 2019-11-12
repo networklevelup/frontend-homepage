@@ -80,7 +80,7 @@ const BlogDescription: React.FC<
           </div>
           <h6 className="secondSubtitle">{secondSubtitleValue}</h6>
           <div className="blogDescription">
-            <h4>{descriptionValue}</h4>
+            <p>{descriptionValue}</p>
           </div>
         </div>
         <div className="col-3 bordering">

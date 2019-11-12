@@ -31,7 +31,8 @@
 }
 .blogDescription {
   font-size: larger;
-  white-space: pre;
+  white-space: pre-wrap;
+  max-width: fit-content;
 }
 .miniPicture {
   width: 100%;
