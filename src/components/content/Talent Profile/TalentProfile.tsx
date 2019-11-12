@@ -10,15 +10,13 @@ import "./TalentProfile.css";
 import { connect } from "react-redux";
 import { IGlobalState } from "../../../reducers/reducers";
 import { IUser } from "../../../interfaces/interfaces";
-import { RouteComponentProps } from "react-router";
+import { RouteComponentProps, Route } from "react-router";
 
 
 interface IPropsGlobal {
   token: string;
   users: IUser[];
 }
-
-
 
 const TalentProfile: React.FC<IPropsGlobal & RouteComponentProps<{ userId: string }>> = props => {
   const [stateValue, setState] = React.useState(true);
@@ -56,7 +54,7 @@ const TalentProfile: React.FC<IPropsGlobal & RouteComponentProps<{ userId: strin
         </ButtonGroup>
       </div>
       <div className="container">
-        {stateValue && <ProfileWithinCV />}
+        {stateValue && <Route component={ProfileWithinCV} />}
         {!stateValue && <ProfileWithoutCV />}
       </div>
     </div>

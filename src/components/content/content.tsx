@@ -33,7 +33,7 @@ const Content: React.FC = () => {
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/talents" exact component={Talents} />
-      <Route path="/talents/profile" exact component={TalentProfile}/>
+      <Route path="/talents/profile/:userId?" exact component={TalentProfile}/>
       <Route path="/companies" exact component={Companies} />
       <Route path="/login" exact component={Login} />
       <Route path="/register" exact component={Register} />

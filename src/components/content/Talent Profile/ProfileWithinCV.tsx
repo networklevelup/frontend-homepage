@@ -4,12 +4,22 @@ import Button from 'react-bootstrap/Button';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Row from 'react-bootstrap/Row';
-
 import "./TalentProfile.css";
-
 import { FormControlProps } from "react-bootstrap/FormControl";
+import { IUser } from "../../../interfaces/interfaces";
+import { connect } from "react-redux";
+import { IGlobalState } from "../../../reducers/reducers";
+import { RouteComponentProps } from "react-router";
 
-const ProfileWithinCV: React.FC = () => {
+
+
+interface IPropsGlobal {
+  token: string;
+  users: IUser[];
+}
+
+const ProfileWithinCV: React.FC<IPropsGlobal & RouteComponentProps<{ userId: string }>
+> = props => {
   /* 
   const [validated, setValidated] = React.useState(false);
 
@@ -24,6 +34,11 @@ const ProfileWithinCV: React.FC = () => {
   Esto de aqui es para validar el formulario, lo agregué al principio
   por otros motivos y tengo que ver si me hará falta o no
   */
+ 
+ const user = React.useMemo(
+  () => props.users.find(u => u._id === props.match.params.userId),// eslint-disable-next-line react-hooks/exhaustive-deps
+  [props.match.params.userId]
+);
 
     const [checkValue, setCheckValue] = React.useState("1");
     const setValue1= () => setCheckValue("1");
@@ -106,6 +121,8 @@ const ProfileWithinCV: React.FC = () => {
            [event.target.name]: value
        });
    }
+
+   
    
   useEffect(() => {  {/*este useefect no es valido, cuando recoja todos los datos del form en un fetch
   he de utilizar esta formula para seleccionar unicamente las opciones que esten checked */}
@@ -261,7 +278,7 @@ const ProfileWithinCV: React.FC = () => {
               </Form.Row>
               <Form.Row>
                   <Form.Check type="checkbox" id="creative-checkbox42" name="PublicRelations" onChange={handleChange} label="Public Relations"/>
-                  <Form.Check type="checkbox" id="creative-checkbox43" name="TechnicalWritingTechnicalWriting" onChange={handleChange} label="Technical Writing"/>
+                  <Form.Check type="checkbox" id="creative-checkbox43" name="TechnicalWriting" onChange={handleChange} label="Technical Writing"/>
                   <Form.Check type="checkbox" id="creative-checkbox44" name="Translation" onChange={handleChange} label="Translation"/>
               </Form.Row>              
             </div>}
@@ -289,7 +306,7 @@ const ProfileWithinCV: React.FC = () => {
             {checkedState.BrandStrategy && <span>Brand Strategy</span>}
             {checkedState.EventManagemet && <span>Event Management</span>}
             {checkedState.GraphicDesign && <span>Graphic Design</span>}
-            {checkedState.IMGEditRetouch && <span>Image Edit / Retocuh</span>}
+            {checkedState.IMGEditRetouch && <span>Image Editing / Retouching</span>}
             {checkedState.Photography && <span>Photography</span>}
             {checkedState.VideoProduction && <span>Video Production</span>}
             
@@ -413,16 +430,15 @@ const ProfileWithinCV: React.FC = () => {
             <Button onClick={ProfileWithinCV}>Save & Continues</Button>
       </Form>
     </div>
+   
   );
 };
 
-// const mapsStateToProps = (state: IGlobalState) => ({
-//   selectCheks: state.selectCheks
-// });
-// const mapDispatchToProps = {
-//   selectChecks: actions.setCheckBoxes
-// }
 
+const mapStateToProps = (state: IGlobalState) => ({
+  users: state.users,
+  token: state.token
+});
 
-export default ProfileWithinCV;
+export default connect(mapStateToProps)(ProfileWithinCV);
 
