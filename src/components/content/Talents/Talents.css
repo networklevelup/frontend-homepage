@@ -43,7 +43,6 @@
   padding-bottom: 115px;
 }
 .steps {
-  background-image: url("../../../img/TalentsPage/Graphic2.png");
   background-repeat: no-repeat;
   background-size: contain;
   text-align: left;
@@ -55,17 +54,19 @@
   pointer-events: none;
 }
 .five {
-  margin-left: 6% !important;
+  margin-left: 28% !important;
 }
 .three,
 .one {
   margin-left: 28% !important;
+}.hired {
+  margin: 43px;
 }
 .moved {
   margin-left: 38% !important;
 }
 .NoImg {
-  height: 100px;
+  height: 175px;
   pointer-events: none;
 }
 .talents3 {
@@ -106,7 +107,7 @@
   width: 60%;
 }
 .down1 {
-  width: 67%;
+  width: 53%;
 }
 .talents5 {
   width: 100%;
@@ -182,7 +183,7 @@
   }
   .talents2 {
     margin-top: 0px;
-    background-size: 332px;
+    background-size: 304px;
     padding-bottom: 115px;
     background-position-y: 39px;
     background-position-x: 5px;
@@ -190,6 +191,7 @@
   }
   .hired {
     padding:0px!important;
+    margin: 10px;
   }
   .work {
     margin-top: 14px;
@@ -199,7 +201,6 @@
     margin-bottom:0px!important;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 60px !important;
     text-align: left;
@@ -219,11 +220,11 @@
     margin-bottom: 0px !important;
   }
   .moved {
-    margin-left: 4% !important;
+    margin-left: 25% !important;
   }
   .three,
-  .one {
-    margin-left: 8% !important;
+  .one, .five {
+    margin-left: 15% !important;
   }
   .talents2 {
     padding-bottom: 35px !important;
@@ -329,16 +330,16 @@
   }
   .hired {
     padding:0px!important;
+    margin: 12px;
   }
   .work {
     margin-top: 14px;
-    margin-bottom: 30px !important;
+    margin-bottom: 10px !important;
   }  
   .work h3 {
     margin-bottom:0px!important;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 60px !important;
     text-align: left;
@@ -358,11 +359,11 @@
     margin-bottom: 0px !important;
   }
   .moved {
-    margin-left: 4% !important;
+    margin-left: 30% !important;
   }
   .three,
-  .one {
-    margin-left: 8% !important;
+  .one, .five {
+    margin-left: 15% !important;
   }
   .talents2 {
     padding-bottom: 35px !important;
@@ -467,6 +468,7 @@
   }
   .hired {
     padding:0px!important;
+    margin: 12px;
   }
   .work {
     margin-top: 14px;
@@ -476,7 +478,6 @@
     margin-bottom:0px!important;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 60px !important;
     text-align: left;
@@ -496,11 +497,7 @@
     margin-bottom: 0px !important;
   }
   .moved {
-    margin-left: 4% !important;
-  }
-  .three,
-  .one {
-    margin-left: 8% !important;
+    margin-left: 6% !important;
   }
   .talents2 {
     padding-bottom: 35px !important;
@@ -605,16 +602,16 @@
   }
   .hired {
     padding:0px!important;
+    margin: 12px;
   }
   .work {
     margin-top: 14px;
-    margin-bottom: 30px !important;
+    margin-bottom: 15px !important;
   }
   .work h3 {
     margin-bottom:0px!important;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 60px !important;
     text-align: left;
@@ -634,11 +631,11 @@
     margin-bottom: 0px !important;
   }
   .moved {
-    margin-left: 4% !important;
+    margin-left: 18% !important;
   }
   .three,
-  .one {
-    margin-left: 8% !important;
+  .one, .five {
+    margin-left: 9% !important;
   }
   .talents2 {
     padding-bottom: 35px !important;
@@ -744,16 +741,16 @@
   }
   .hired {
     padding:0px!important;
+    margin: 12px;
   }
   .work {
     margin-top: 14px;
-    margin-bottom: 30px !important;
+    margin-bottom: 15px !important;
   }
   .work h3 {
     margin-bottom:0px!important;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 66px !important;
     text-align: left;
@@ -772,11 +769,11 @@
     margin-bottom: 0px !important;
   }
   .moved {
-    margin-left: 4% !important;
+    margin-left: 20% !important;
   }
   .three,
-  .one {
-    margin-left: 8% !important;
+  .one, .five {
+    margin-left: 10% !important;
   }
   .talents2 {
     padding-bottom: 35px !important;
@@ -881,16 +878,17 @@
   }
   .hired {
     padding:0px!important;
+    margin: 12px;
   }
   .work {
     margin-top: 14px;
-    margin-bottom: 30px !important;
+    margin-bottom: 15px !important;
   }
   .work h3 {
     margin-bottom:0px!important;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
+   
     background-repeat: no-repeat;
     background-size: 66px !important;
     text-align: left;
@@ -910,11 +908,11 @@
     margin-bottom: 0px !important;
   }
   .moved {
-    margin-left: 4% !important;
+    margin-left: 16% !important;
   }
   .three,
-  .one {
-    margin-left: 8% !important;
+  .one,.five {
+    margin-left: 5% !important;
   }
   .talents2 {
     padding-bottom: 35px !important;
@@ -1011,7 +1009,7 @@
   }
   .talents2 {
     margin-top: 0px;
-    background-size: 332px;
+    background-size: 405px;
     padding-bottom: 115px;
     background-position-y: 39px;
     background-position-x: 5px;
@@ -1019,6 +1017,7 @@
   }
   .hired {
     padding:0px!important;
+    margin: 12px;
   }
   .work {
     margin-top: 14px;
@@ -1028,7 +1027,6 @@
     margin-bottom:0px!important;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 66px !important;
     text-align: left;
@@ -1042,17 +1040,17 @@
     margin-left: -41px !important;
   }
   .NoImg {
-    height: 95px !important;
+    height: 80px !important;
   }
   .adjustM {
     margin-bottom: 0px !important;
   }
   .moved {
-    margin-left: 4% !important;
+    margin-left: 30% !important;
   }
   .three,
-  .one {
-    margin-left: 8% !important;
+  .one, .five {
+    margin-left: 15% !important;
   }
   .talents2 {
     padding-bottom: 35px !important;
@@ -1068,7 +1066,7 @@
     padding-top: 50px;
   }
   .down1 {
-    width: 93%;
+    width: 78%;
     margin-left: 0px;
   }
   .up {
@@ -1096,9 +1094,6 @@
     margin-top: 10px !important;
     margin-bottom: 15px !important;
     padding: 0px;
-  }
-  .NoImg {
-    height: 60px !important;
   }
   .contract {
     height: 133px;
@@ -1151,21 +1146,21 @@
   }
   .talents2 {
     margin-top: 0px;
-    background-size: 332px;
+    background-size: 352px;
     padding-bottom: 115px;
     background-position-y: 39px;
-    background-position-x: 5px;
+    background-position-x: 104px;
     padding: 0px!important;
   }
   .hired {
     padding:0px!important;
+    margin: 10px;
   }
   .work {
     margin-top: 14px;
     margin-bottom: 30px !important;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 60px !important;
     text-align: left;
@@ -1185,11 +1180,11 @@
     margin-bottom: 0px !important;
   }
   .moved {
-    margin-left: 4% !important;
+    margin-left: 40% !important;
   }
   .three,
-  .one {
-    margin-left: 8% !important;
+  .one, .five {
+    margin-left: 32% !important;
   }
   .talents2 {
     padding-bottom: 35px !important;
@@ -1294,13 +1289,13 @@
   }
   .hired {
     padding:0px!important;
+    margin: 9px;
   }
   .work {
     margin-top: 14px;
     margin-bottom: 30px !important;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 70px !important;
     text-align: left;
@@ -1320,11 +1315,11 @@
     margin-bottom: 0px !important;
   }
   .moved {
-    margin-left: 4% !important;
+    margin-left: 40% !important;
   }
   .three,
-  .one {
-    margin-left: 8% !important;
+  .one, .five {
+    margin-left: 28% !important;
   }
   .talents2 {
     padding-bottom: 35px !important;
@@ -1423,7 +1418,7 @@
     background-size: 332px;
     padding-bottom: 115px;
     background-position-y: 39px;
-    background-position-x: 5px;
+    background-position-x: 127px;
     padding: 0px;
   }
   .hired {
@@ -1434,7 +1429,6 @@
     margin-bottom: 30px ;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 60px ;
     text-align: left;
@@ -1558,18 +1552,18 @@
     background-size: 332px;
     padding-bottom: 115px;
     background-position-y: 39px;
-    background-position-x: 5px;
+    background-position-x: 75px;
     padding: 0px;
   }
   .hired {
     padding:0px!important;
+    margin: 10px;
   }
   .work {
     margin-top: 14px;
     margin-bottom: 30px ;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 70px ;
     text-align: left;
@@ -1587,15 +1581,13 @@
   .adjustM {
     margin-bottom: 0px!important;
   }
-  .five {
-    margin-left: 0px!important;
-  }
+  
   .moved {
-    margin-left: 13%!important;
+    margin-left: 42%!important;
   }
   .three,
-  .one {
-    margin-left: 17%!important;
+  .one, .five {
+    margin-left: 31%!important;
   }
   .talents2 {
     padding-bottom: 35px ;
@@ -1709,7 +1701,6 @@
     margin-bottom: 30px ;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 66px ;
     text-align: left;
@@ -1828,10 +1819,10 @@
   }
   .talents2 {
     margin-top: 0px;
-    background-size: 332px;
+    background-size: 352px;
     padding-bottom: 115px;
     background-position-y: 39px;
-    background-position-x: 5px;
+    background-position-x: 104px;
     padding: 0px;
   }
   .hired {
@@ -1842,7 +1833,6 @@
     margin-bottom: 30px ;
   }
   .steps {
-    background-image: url("../../../img/TalentsPage/Graphic2.png");
     background-repeat: no-repeat;
     background-size: 72px ;
     text-align: left;

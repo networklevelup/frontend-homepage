@@ -7,8 +7,12 @@ import { connect } from "react-redux";
 import { Link, RouteComponentProps } from "react-router-dom";
 import { VerticleButton as ScrollUpButton } from "react-scroll-up-button";
 import img1 from "../../../img/HomePage/NewGirl.png";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
 import "./home.css";
+import "./Video.css";
 import styles from "./home.module.css";
+
 
 const proPicture = "/img/profesions-"; //Use to can change picture to translate
 const videoPicture = "/img/videoPicture-";
@@ -96,18 +100,46 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           <h1 className="levelUpTitle">{t("home_levelUPH1")}</h1>
         </div>
         <div className="levelUpPicture">
-        <Link to="/video">
-            <button className="btnInPicture2"></button>
-          </Link>
-          <img
-              className="videoPic"
-              alt=""
-              src={videoPicture + i18n.language + ".jpg"}
-            />
-          
+        <Video
+        controls={[
+          "PlayPause",
+          "Seek",
+          "Time",
+          "Volume",
+          "Fullscreen",
+          "Captions"
+        ]}
+        poster={videoPicture + i18n.language + ".jpg"}
+        onCanPlayThrough={() => {
+          // Do stuff
+        }}
+      >
+        <source src="/video/LevelUP-Video.mp4" type="video/mp4" />
+        <track
+          label="Spanish"
+          kind="subtitles"
+          srcLang="es"
+          src="/video/videoSubtitles_es.vtt"
+          default
+        />
+        <track
+          label="English"
+          kind="subtitles"
+          srcLang="en"
+          src="/video/videoSubtitles_en.vtt"
+          default
+        />
+        <track
+          label="German"
+          kind="subtitles"
+          srcLang="ge"
+          src="/video/videoSubtitles_ge.vtt"
+          default
+        />
+      </Video>
+      
         </div>
         <div className="whatIs">
-          {/* <h1>{t("home_joinH1")}</h1> */}
           <h2 className="network">{t("home_networkH2")}</h2>
         </div>
       </div>

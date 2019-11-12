@@ -20,7 +20,6 @@ import Privacy from "./Privacy Terms/Privacy";
 import RegisterUserVerification from "./Verification/RegisterUserVerification";
 import RegisterCompanyVerification from "./Verification/RegisterCompanyVerification";
 import NoFound from "./NoFound/NoFound";
-import Video from "./Home/Video";
 import SiteNotice from "./SiteNotice/SiteNotice";
 import Team from "./Team/Team";
 import JobOffer from "./Team/JobOffer";
@@ -79,7 +78,6 @@ const Content: React.FC = () => {
       <Route path="/site/notice" exact component={SiteNotice} />
       <Route path="/team" exact component={Team} />
       <Route path="/job/offer" exact component={JobOffer} />
-      <Route path="/video" exact component={Video} />
       <Route path="*" component={NoFound} /> {/*Component 404*/}
     </Switch>
   );

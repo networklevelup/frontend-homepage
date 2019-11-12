@@ -58,7 +58,7 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav mr-auto">
             <li className="nav-item">
               <Link to="/" className="nav-link js-scroll-trigger">
                 {t("navBar_home")}
@@ -74,6 +74,8 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
                 {t("navBar_companies")}
               </Link>
             </li>
+            </ul>
+            <ul className="navbar-nav mr-auto">
             <li className="nav-item">
               <Link to="/blog" className="nav-link js-scroll-trigger">
                 {t("navBar_blog")}

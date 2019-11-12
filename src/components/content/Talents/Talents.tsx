@@ -13,7 +13,6 @@ import No4 from "../../../img/TalentsPage/No4.png";
 import No3 from "../../../img/TalentsPage/No3.png";
 import No2 from "../../../img/TalentsPage/No2.png";
 import No1 from "../../../img/TalentsPage/No1.png";
-import contract from "../../../img/TalentsPage/Graphic1.png";
 import graph1 from "../../../img/TalentsPage/Graphic4.png";
 import graph2 from "../../../img/TalentsPage/Graphic3.png";
 import graph3 from "../../../img/TalentsPage/Graphic5.png";
@@ -162,18 +161,34 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       <div className="container talents2">
         <div className="work">
           <h3>{t("talents_talents2H1")}</h3>
-          <h6>{t("talents_talents2H5")}</h6>
+          <h5>{t("talents_talents2H5")}</h5>
         </div>
         <div className="steps">
-          <div className="row five">
-            <img className="contract" alt="" src={contract} />
-
+        <div className="row one">
             <div className="div">
-              <img className="NoImg" alt="" src={No5} />
+              <img className="NoImg" alt="" src={No1} />
             </div>
-            <div className="col-6 hired"> 
-              <h3 className="adjustM">{t("talents_talents2H32")}</h3>
-              <h6>{t("talents_talents2H62")}</h6>
+            <div className="col-6 hired">
+              <h3 className="adjustM">{t("talents_talents2H36")}</h3>
+              <h5>{t("talents_talents2H66")}</h5>
+            </div>
+          </div>
+          <div className="row moved">
+            <div className="div">
+              <img className="NoImg" alt="" src={No2} />
+            </div>
+            <div className="col-6 hired">
+              <h3 className="adjustM">{t("talents_talents2H35")}</h3>
+              <h5>{t("talents_talenst2H65")}</h5>
+            </div>
+          </div>
+          <div className="row three">
+            <div className="div">
+              <img className="NoImg" alt="" src={No3} />
+            </div>
+            <div className="col-6 hired">
+              <h3 className="adjustM">{t("talents_talents2H34")}</h3>
+              <h5>{t("talents_talenst2H64")}</h5>
             </div>
           </div>
           <div className="row moved">
@@ -182,39 +197,27 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             </div>
             <div className="col-6 hired">
               <h3 className="adjustM">{t("talents_talents2H33")}</h3>
-              <h6>{t("talents_talents2H63")}</h6>
+              <h5>{t("talents_talents2H63")}</h5>
             </div>
           </div>
+          <div className="row five">
+            {/* <img className="contract" alt="" src={contract} /> */}
 
-          <div className="row three">
             <div className="div">
-              <img className="NoImg" alt="" src={No3} />
+              <img className="NoImg" alt="" src={No5} />
             </div>
-            <div className="col-6 hired">
-              <h3 className="adjustM">{t("talents_talents2H34")}</h3>
-              <h6>{t("talents_talenst2H64")}</h6>
+            <div className="col-6 hired"> 
+              <h3 className="adjustM">{t("talents_talents2H32")}</h3>
+              <h5>{t("talents_talents2H62")}</h5>
             </div>
           </div>
+          
 
-          <div className="row moved">
-            <div className="div">
-              <img className="NoImg" alt="" src={No2} />
-            </div>
-            <div className="col-6 hired">
-              <h3 className="adjustM">{t("talents_talents2H35")}</h3>
-              <h6>{t("talents_talenst2H65")}</h6>
-            </div>
-          </div>
+          
 
-          <div className="row one">
-            <div className="div">
-              <img className="NoImg" alt="" src={No1} />
-            </div>
-            <div className="col-6 hired">
-              <h3 className="adjustM">{t("talents_talents2H36")}</h3>
-              <h6>{t("talents_talents2H66")}</h6>
-            </div>
-          </div>
+          
+
+          
         </div>
       </div>
 

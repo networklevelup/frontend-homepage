@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
         )}
 
         {i18n.language === "de" && (
-          <a href="/PrivacyPolicyGE.pdf" download>
+          <a href="/PrivacyPolicyDE.pdf" download>
             <li className="footList">{t("footer_Privacy")}</li>
           </a>
         )}

@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "react-bootstrap/Form";
+
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
 import ProfileWithinCV from "./ProfileWithinCV";
@@ -7,8 +7,20 @@ import ProfileWithoutCV from "./ProfileWithoutCV";
 
 
 import "./TalentProfile.css";
+import { connect } from "react-redux";
+import { IGlobalState } from "../../../reducers/reducers";
+import { IUser } from "../../../interfaces/interfaces";
+import { RouteComponentProps } from "react-router";
 
-const TalentProfile: React.FC = () => {
+
+interface IPropsGlobal {
+  token: string;
+  users: IUser[];
+}
+
+
+
+const TalentProfile: React.FC<IPropsGlobal & RouteComponentProps<{ userId: string }>> = props => {
   const [stateValue, setState] = React.useState(true);
 
   const showWithinCV = () => setState(true);
@@ -50,5 +62,9 @@ const TalentProfile: React.FC = () => {
     </div>
   );
 };
+const mapStateToProps = (state: IGlobalState) => ({
+  users: state.users,
+  token: state.token
+});
 
-export default TalentProfile;
+export default connect(mapStateToProps)(TalentProfile);

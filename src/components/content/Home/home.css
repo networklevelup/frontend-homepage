@@ -113,7 +113,7 @@ span {
   text-align: center;
   margin-left: 46%;
   margin-top: 70px; /*at beguining none*/
-  height: 200px!important;
+  height: 46px!important;
 }
 .levelUpPicture {
   background-repeat: no-repeat;
@@ -203,12 +203,12 @@ span {
   .levelUp{
     text-align: center;
     margin-left: 34%;
-    margin-top: 8px;
+    margin-top: -29px;
     height: 29px!important;
   }
   .levelUpPicture {
     height: 140px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
   }
   .btnInPicture2 {
     margin-top: 13%;
@@ -306,12 +306,12 @@ span {
   .levelUp{
     text-align: center;
     margin-left: 34%;
-    margin-top: 8px;
+    margin-top: -15px;
     height: 29px!important;
   }
   .levelUpPicture {
     height: 140px;
-    margin-bottom: 0px;
+    margin-bottom: 65px;
   }
   .btnInPicture2 {
     margin-top: 13%;
@@ -409,12 +409,12 @@ span {
   .levelUp{
     text-align: center;
     margin-left: 34%;
-    margin-top: 8px;
+    margin-top: -15px;
     height: 29px!important;
   }
   .levelUpPicture {
     height: 140px;
-    margin-bottom: 0px;
+    margin-bottom: 60px;
   }
   .btnInPicture2 {
     margin-top: 13%;
@@ -511,12 +511,12 @@ span {
   .levelUp{
     text-align: center;
     margin-left: 34%;
-    margin-top: 8px;
+    margin-top: -15px;
     height: 29px!important;
   }
   .levelUpPicture {
     height: 140px;
-    margin-bottom: 0px;
+    margin-bottom: 70px;
   }
   .btnInPicture2 {
     margin-top: 13%;
@@ -614,12 +614,12 @@ span {
   .levelUp{
     text-align: center;
     margin-left: 34%;
-    margin-top: 8px;
+    margin-top: -6px;
     height: 29px!important;
   }
   .levelUpPicture {
     height: 140px;
-    margin-bottom: 0px;
+    margin-bottom: 80px;
   }
   .btnInPicture2 {
     margin-top: 11%!important;
@@ -717,12 +717,12 @@ span {
   .levelUp{
     text-align: center;
     margin-left: 34%;
-    margin-top: 8px;
+    margin-top: 0px;
     height: 29px!important;
   }
   .levelUpPicture {
     height: 140px;
-    margin-bottom: 0px;
+    margin-bottom: 78px;
   }
   .btnInPicture2 {
     margin-top: 11%!important;
@@ -826,7 +826,7 @@ span {
   }
   .levelUpPicture {
     height: 140px;
-    margin-bottom: 0px;
+    margin-bottom: 100px;
   }
   .btnInPicture2 {
     margin-top: 11%!important;
@@ -930,7 +930,7 @@ span {
     height: 29px!important;
   }
   .levelUpPicture {
-    height: 175px!important;
+    height: 315px!important;
     margin-bottom: 0px;
   }
   .btnInPicture2 {
@@ -1033,7 +1033,7 @@ span {
     height: 40px!important;
   }
   .levelUpPicture {
-    height: 175px!important;
+    height: 320px!important;
     margin-bottom: 0px;
   }
   .btnInPicture2 {
@@ -1135,7 +1135,7 @@ span {
     height: 29px;
   }
   .levelUpPicture {
-    height: 175px;
+    height: 320px!;
     margin-bottom: 0px;
   }
   .btnInPicture2 {
@@ -1238,7 +1238,7 @@ span {
     height: 60px!important;
   }
   .levelUpPicture {
-    height: 175px;
+    height: 320px!;
     margin-bottom: 0px;
   }
   .btnInPicture2 {
@@ -1267,7 +1267,7 @@ span {
     background: white;
     margin-left: -13%;
     border-radius: 11px;
-    margin-top: 139px ;
+    margin-top: 139px!important;
     font-size: 6px;
     padding: 0px;
     font-weight: bolder;
@@ -1341,7 +1341,7 @@ span {
     height: 29px;
   }
   .levelUpPicture {
-    height: 175px;
+    height: 423px;
     margin-bottom: 0px;
   }
   .btnInPicture2 {
@@ -1441,11 +1441,11 @@ span {
     text-align: center;
     margin-left: 34%;
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     height: 29px;
   }
   .levelUpPicture {
-    height: 175px;
+    height: 320px;
     margin-bottom: 0px;
   }
   .btnInPicture2 {

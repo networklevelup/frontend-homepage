@@ -6,7 +6,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Row from 'react-bootstrap/Row';
 
 import "./TalentProfile.css";
-import { statement } from "@babel/template";
+
 import { FormControlProps } from "react-bootstrap/FormControl";
 
 const ProfileWithinCV: React.FC = () => {
@@ -93,24 +93,23 @@ const ProfileWithinCV: React.FC = () => {
       spanishSkills: "nativeSpeaker",
       englishSkills: "nativeSpeaker",
       germanSkills: "nativeSpeaker",
-      furtherLangageSkills: "nativeSpeaker"
+      furtherLanguageSkills: "nativeSpeaker",
+      furtherLanguage: ""
 
    });
-   const FinalcheckedState: {[key:string]:boolean | string} = checkedState;
-   const handleChange = (event: React.ChangeEvent<FormControlProps & HTMLInputElement>) => {
+
+  const FinalcheckedState: {[key:string]:boolean | string} = checkedState;
+   const handleChange = (event: React.ChangeEvent<HTMLInputElement & FormControlProps>) => {
        const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
        setstate({
            ...checkedState,
            [event.target.name]: value
        });
    }
-    
-    // const keyNames = Object.values(checkedState);
-    // console.log("keynames: " + keyNames);
-
+   
   useEffect(() => {  {/*este useefect no es valido, cuando recoja todos los datos del form en un fetch
   he de utilizar esta formula para seleccionar unicamente las opciones que esten checked */}
-    let worksAreas = [];       
+     let worksAreas = []; 
     for(let key in FinalcheckedState) {
       if(FinalcheckedState[key]  === true) {
         worksAreas.push(key)
@@ -119,7 +118,41 @@ const ProfileWithinCV: React.FC = () => {
     console.log("WorkAreas: " + worksAreas);   
   }, [FinalcheckedState]);  
 
- console.log("TODOS LOS ESTADOS" + JSON.stringify(checkedState))
+ console.log("TODOS LOS ESTADOS: " + JSON.stringify(checkedState))
+
+ const ProfileWithinCV = () => {
+   let worksAreas = [];
+   for (let key in FinalcheckedState) {
+     if (FinalcheckedState[key] === true) {
+       worksAreas.push(key);
+     }
+   }
+   fetch("http://localhost:8080/api/talents/profile", {
+     method: "POST",
+     headers: {
+       "Content-Type": "application/json",
+       mode: "cors"
+     },
+     body: JSON.stringify({            
+       worksAreas: worksAreas,
+       levelExp: checkedState.levelExp,
+       locations: checkedState.locations,
+       spanishSkills: checkedState.spanishSkills,
+       englishSkills: checkedState.englishSkills,
+       germanSkills: checkedState.germanSkills,
+       futherLanguageSkills: checkedState.furtherLanguageSkills,
+       furtherLanguage: checkedState.furtherLanguage
+     })
+   }).then(response => {
+     if(response.ok) {
+       response.json().then(result => {
+         console.log(result)
+       })
+     }
+   })
+ };
+
+ 
   return (
     <div className="container">    
         <h1>Please enter your data and upload your CV.</h1>
@@ -365,8 +398,8 @@ const ProfileWithinCV: React.FC = () => {
             </Form.Row>
             <Form.Row>
               <Form.Group>
-              <Form.Control type="text" placeholder="FURTHER LANGUAGE"></Form.Control>
-              <Form.Control as="select" name="furtherLangageSkills" onChange={handleChange} value={checkedState.furtherLangageSkills} >
+              <Form.Control type="text" name="furtherLanguage" placeholder="FURTHER LANGUAGE" value={checkedState.furtherLanguage} onChange={handleChange as any}/>
+              <Form.Control as="select" name="furtherLanguageSkills" onChange={handleChange} value={checkedState.furtherLanguageSkills} >
                 <option value="nativeSpeaker">native speaker</option>
                 <option value="businessFluent">business fluent</option> 
                 <option value="veryGoodKnowledge">very good knowledge (fluently)</option>
@@ -377,7 +410,7 @@ const ProfileWithinCV: React.FC = () => {
             </Form.Row>
             </div>
           
-            <Button type="submit">Save & Continues</Button>
+            <Button onClick={ProfileWithinCV}>Save & Continues</Button>
       </Form>
     </div>
   );
