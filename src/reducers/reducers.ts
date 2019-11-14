@@ -7,13 +7,15 @@ import {
   IBlog,
   IInsta,
   IBlogPicture,
-  ICompany
+  ICompany,
+  ISkills
 } from "../interfaces/interfaces";
 import { blogReducer } from "./blogReducer";
 import { instaReducer } from "./instaReducer";
 import { blogPictureReducer } from "./blogPictureReducer";
 import { companiesReducer } from "./companiesReducer";
 import { changeStateReducer } from "./changeStateReducer";
+import { skillsReducer } from "./skillsReducer";
 
 export interface IGlobalState {
   token: string;
@@ -24,7 +26,7 @@ export interface IGlobalState {
   blogsPicture: IBlogPicture[];
   companies: ICompany[];
   booleanState: boolean;
-  // selectCheks: IChecked[];
+  skills: ISkills[];
 }
 
 export const reducers = combineReducers({
@@ -35,6 +37,6 @@ export const reducers = combineReducers({
   instagram: instaReducer,
   blogsPicture: blogPictureReducer,
   companies: companiesReducer,
-  booleanState: changeStateReducer
-  // selectCheks: checkBoxReducer
+  booleanState: changeStateReducer,
+  skills: skillsReducer
 });

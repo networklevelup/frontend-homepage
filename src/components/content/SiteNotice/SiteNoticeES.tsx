@@ -8,8 +8,8 @@ const SiteNoticeES: React.FC = () => {
         Accionistas autorizados para representar a la empresa: Sandra Thomas and
         Marcel Rödiger
       </p>
-      <p>Graf-Zeppelin-Str. 32</p>
-      <p>31157 Sarstedt</p>
+      <p>Apenrader Straße 37</p>
+      <p>30165 Hannover</p>
       <p>Alemania</p>
       <br />
       <p>Teléfono: +49 (0)151 / 2230 1610</p>

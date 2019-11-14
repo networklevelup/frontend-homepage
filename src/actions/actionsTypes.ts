@@ -3,7 +3,8 @@ import {
   IBlog,
   IInsta,
   IBlogPicture,
-  ICompany
+  ICompany,
+  ISkills
 } from "../interfaces/interfaces";
 
 type TGetToken = {
@@ -117,10 +118,10 @@ type TChangeState = {
   booleanState: boolean;
 };
 
-// type TCheckedBoxes = {
-//   type: "SET_CHECKED_BOXES";
-//   selectCheks: IChecked;
-// }
+type TSetSkills = {
+  type: "SET_SKILLS";
+  skills: ISkills[];
+}
 
 export type TAction =
   | TGetToken
@@ -144,4 +145,5 @@ export type TAction =
   | TDeleteCompany
   | TPutCompany
   | TCreateCompany
-  | TChangeState;
+  | TChangeState
+  | TSetSkills;

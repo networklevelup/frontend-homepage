@@ -48,7 +48,15 @@ export interface IState {
   booleanState: boolean;
 }
 
-// export interface IChecked {
-//   selectCheks: Object[];
-// }
+export interface ISkills {
+  talentId: string,
+    worksAreas: Array<Text>,
+    levelExperience: string,
+    locations: string,
+    spanishSkills: string,
+    englishSkills: string,
+    germanSkills: string,
+    futherLanguageSkills: string,
+    furtherLanguage: string
+}
 

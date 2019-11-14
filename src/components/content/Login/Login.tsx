@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { RouteComponentProps } from "react-router";
 import { Link } from "react-router-dom";
 import { IGlobalState } from "../../../reducers/reducers";
@@ -6,10 +6,15 @@ import { connect } from "react-redux";
 import * as actions from "../../../actions/actions";
 import logo from "../../../img/Logo.png";
 import "./Util.css";
- import "./NewLogin.css";
+import "./NewLogin.css";
+import { IUser } from "../../../interfaces/interfaces";
+import jwt from "jsonwebtoken";
+
 
 interface IPropsGlobal {
   getToken: (token: string) => void;
+  users: IUser[];
+  token: string;
 }
 
 const NewLogin: React.FC<IPropsGlobal & RouteComponentProps> = props => {

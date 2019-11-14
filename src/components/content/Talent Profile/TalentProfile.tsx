@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import ToggleButton from "react-bootstrap/ToggleButton";
 import ProfileWithinCV from "./ProfileWithinCV";
 import ProfileWithoutCV from "./ProfileWithoutCV";
-
 
 import "./TalentProfile.css";
 import { connect } from "react-redux";
@@ -27,8 +26,8 @@ const TalentProfile: React.FC<IPropsGlobal & RouteComponentProps<{ userId: strin
   return (
     <div className="container">
       <div className="profileCV">
-          <div className="header">
-          <p className="header">Apply as talent</p>
+          <div className="apply">
+          <p className="apply">Apply as talent</p>
           </div>
        
         <ButtonGroup toggle>

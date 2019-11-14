@@ -1,0 +1,15 @@
+.headers {
+    text-align: center;
+}
+
+
+
+
+
+
+.CVButton:hover, .CVButton:focus-within   {
+    color: black!important;
+    background: white!important;
+    border-color: white!important;
+    box-shadow: none!important;
+}

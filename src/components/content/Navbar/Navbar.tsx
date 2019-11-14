@@ -8,6 +8,8 @@ import logo from "../../../img/Logo_black.png";
 import Locked from "../../../img/Locked.png";
 import "./Navbar.css";
 import jwt_decode from "jwt-decode";
+import jwt from "jsonwebtoken";
+
 
 interface IPropsGlobal {
   token: string;
@@ -17,23 +19,32 @@ interface IPropsGlobal {
 const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
   const { t, i18n } = useTranslation();
   const [tokenValue, setTokenValue] = React.useState("");
+  const [userId, setUserId] = React.useState("");
 
   const logOut = () => {
     sessionStorage.removeItem("token");
     props.reset();
     props.history.push("/");
   };
-  let token = props.token;
 
+  let token = props.token;    
   useEffect(() => {
-    if (token) {
-      let resuelto: any = jwt_decode(token);
-      setTokenValue(resuelto);
-    }
-  }, [props.token]);
+    if (props.token) {
+      let decode = jwt.decode(props.token);
+      if (decode !== null && typeof decode !== "string"){
+        setUserId(decode.id)
+        setTokenValue(decode.isAdmin)
+      }   
+  }}, [props.token])  
+  // useEffect(() => {
+  //   if (token) {
+  //     let resuelto: any = jwt_decode(token);
+  //     setTokenValue(resuelto);
+  //   }
+  // }, [props.token]);
 
-  let text = JSON.stringify(tokenValue);
-  let stringAdmin = text.includes("true");
+  // let text = JSON.stringify(tokenValue);
+  // let stringAdmin = text.includes("true");
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -76,12 +87,18 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             </li>
             </ul>
             <ul className="navbar-nav mr-auto">
-            {stringAdmin && <li className="nav-item">
+            {tokenValue && <li className="nav-item">
               <Link to="/blog" className="nav-link js-scroll-trigger">
                 {t("navBar_blog")}
               </Link>
             </li>}
-
+            {props.token && (
+              <li className="nav-item">
+                <Link to={"/talents/profile/" + userId} className="nav-link color">
+                  Profile
+                </Link>
+              </li>
+            )}
             {!props.token && (
               <li className="nav-item">
                 <Link to="/login" className="nav-link color">
@@ -90,7 +107,7 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               </li>
             )}
 
-            {props.token && stringAdmin /*if token is valid */ && (
+            {props.token && tokenValue /*if token is valid */ && (
               <li className="dropdown">
                 <button
                   className="dropdown-toggle"

@@ -8,8 +8,8 @@ const SiteNoticeEN: React.FC = () => {
       Shareholders authorized to represent the company: Sandra Thomas and
         Marcel Rödiger
       </p>
-      <p>Graf-Zeppelin-Str. 32</p>
-      <p>31157 Sarstedt</p>
+      <p>Apenrader Straße 37</p>
+      <p>30165 Hannover</p>
       <p>Germany</p>
       <br />
       <p>Telephone: +49 (0)151 / 2230 1610</p>

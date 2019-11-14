@@ -6,39 +6,28 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Row from 'react-bootstrap/Row';
 import "./TalentProfile.css";
 import { FormControlProps } from "react-bootstrap/FormControl";
-import { IUser } from "../../../interfaces/interfaces";
+import { IUser, ISkills } from "../../../interfaces/interfaces";
 import { connect } from "react-redux";
 import { IGlobalState } from "../../../reducers/reducers";
 import { RouteComponentProps } from "react-router";
+import * as actions from "../../../actions/actions";
 
+
+import "./ProfileWithinCV.css";
 
 
 interface IPropsGlobal {
   token: string;
   users: IUser[];
+  setSkills: (skills: ISkills[]) => void;
 }
-
 const ProfileWithinCV: React.FC<IPropsGlobal & RouteComponentProps<{ userId: string }>
 > = props => {
-  /* 
-  const [validated, setValidated] = React.useState(false);
+  
+const userId = props.match.params.userId;
+console.log("user: " + props.match.params.userId);
+console.log("user: " + userId);
 
-  const handleSubmit = (event: any) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    setValidated(true);
-  };
-  Esto de aqui es para validar el formulario, lo agregué al principio
-  por otros motivos y tengo que ver si me hará falta o no
-  */
- 
- const user = React.useMemo(
-  () => props.users.find(u => u._id === props.match.params.userId),// eslint-disable-next-line react-hooks/exhaustive-deps
-  [props.match.params.userId]
-);
 
     const [checkValue, setCheckValue] = React.useState("1");
     const setValue1= () => setCheckValue("1");
@@ -120,9 +109,7 @@ const ProfileWithinCV: React.FC<IPropsGlobal & RouteComponentProps<{ userId: str
            ...checkedState,
            [event.target.name]: value
        });
-   }
-
-   
+  }  
    
   useEffect(() => {  {/*este useefect no es valido, cuando recoja todos los datos del form en un fetch
   he de utilizar esta formula para seleccionar unicamente las opciones que esten checked */}
@@ -144,13 +131,13 @@ const ProfileWithinCV: React.FC<IPropsGlobal & RouteComponentProps<{ userId: str
        worksAreas.push(key);
      }
    }
-   fetch("http://localhost:8080/api/talents/profile", {
+   fetch("http://localhost:8080/api/talents/profile/" + userId, {
      method: "POST",
      headers: {
        "Content-Type": "application/json",
        mode: "cors"
      },
-     body: JSON.stringify({            
+     body: JSON.stringify({   
        worksAreas: worksAreas,
        levelExp: checkedState.levelExp,
        locations: checkedState.locations,
@@ -162,16 +149,17 @@ const ProfileWithinCV: React.FC<IPropsGlobal & RouteComponentProps<{ userId: str
      })
    }).then(response => {
      if(response.ok) {
-       response.json().then(result => {
-         console.log(result)
+       response.json().then(skills => {
+        props.setSkills(skills);
+         console.log("SKILLS: ", skills)
        })
      }
+     
    })
- };
-
- 
+  };
+  
   return (
-    <div className="container">    
+    <div className="container headers">    
         <h1>Please enter your data and upload your CV.</h1>
         <h1>We will contact you afterwards with the next steps</h1>
         <h5>IN WICH AREA YOU WOULD LIKE TO WORK?</h5>
@@ -440,5 +428,9 @@ const mapStateToProps = (state: IGlobalState) => ({
   token: state.token
 });
 
-export default connect(mapStateToProps)(ProfileWithinCV);
+const mapDispatchToProps = {
+  setSkills: actions.setSkills
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(ProfileWithinCV);
 

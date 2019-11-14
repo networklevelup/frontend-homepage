@@ -7,8 +7,8 @@ const SiteNoticeEN: React.FC = () => {
       <p>
         vertretungsberechtigte Gesellschafter: Sandra Thomas und Marcel Rödiger
       </p>
-      <p>Graf-Zeppelin-Str. 32</p>
-      <p>31157 Sarstedt</p>
+      <p>Apenrader Straße 37</p>
+      <p>30165 Hannover</p>
       <p>Deutschland</p>
       <br />
       <p>Telefon: +49 (0)151 / 2230 1610</p>

@@ -35,16 +35,16 @@ const BlogList: React.FC<IPropsGlobal & RouteComponentProps> = props => {
     }); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const path = "https://backendlevelup.herokuapp.com/uploads/";
+  const path = "https://backendlevelup.herokuapp.com/public/uploads/";
   return (
     <div className="container allBlog">      
-      <div className="menuTop">
+      {/* <div className="menuTop">
         <ul className="listTop">
           <li>All Posts</li>
           <li>Career Tips</li>
           <li>HR Tips</li>
         </ul>
-      </div>
+      </div> */}
       <div className="container blog1">
         <div className="row blogTop">
           <div className="col-6 update">
