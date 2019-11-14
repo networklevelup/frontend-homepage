@@ -1,15 +1,41 @@
 .headers {
     text-align: center;
 }
-
-
-
-
-
-
-.CVButton:hover, .CVButton:focus-within   {
-    color: black!important;
-    background: white!important;
-    border-color: white!important;
+.headers h2 {
+    text-align: left;
+}
+.workAreaButton {
+    color: white!important;
+    background: #67397d!important;
+    margin: 15px!important;
+    border-radius: 18px!important;
+    border-color: #67397d!important;
+    font-size: 21px!important;
+    padding: 14px!important;
+    width: 240px;  
+}
+.workAreaButton:hover, .workAreaButton:focus-within   {
+    border-color: black!important;
+    border: 2px solid;
     box-shadow: none!important;
+}
+.custom-control-label::before {
+    top: .6rem!important;   
+    width: 1.3rem!important;
+    height: 1.3rem!important;   
+    border: black solid 1px!important;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #67397d!important;
+    background-color: #67397d!important;
+}
+.custom-control-label::after {
+    top: .7rem!important;
+    left: -1.4rem!important;
+}
+.selectedBoxes {
+    width: 100%;
+    display: -webkit-inline-box;
+    border: 1px solid #67397d;
 }

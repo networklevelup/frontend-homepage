@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
         <a
           className="XG"
           target="_blank"
-          href="https://www.xing.com/profile/Sandra_Thomas32"
+          href="https://www.xing.com/companies/network-levelup"
           rel="noopener noreferrer"
         >
           <li className="footList">
