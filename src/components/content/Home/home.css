@@ -28,7 +28,8 @@
 .btnInPicture1 {
   width: 300px;
   height: 41px;
-  background: white;
+  background-color: #67397d;
+  color: white;
   margin-left: 4%;
   border-radius: 11px;
   margin-top: 385px !important;
@@ -37,7 +38,7 @@
   font-weight: bolder;
 }
 .profesionPicture {
-  margin-top: 15px; /*at beguining 15px*/
+  margin-top: 50px; /*at beguining 15px*/
 }
 .proPic {
   background-repeat: no-repeat;
@@ -112,7 +113,7 @@ span {
 .levelUp {
   text-align: center;
   margin-left: 46%;
-  margin-top: 70px; /*at beguining none*/
+  margin-top: 175px; /*at beguining none*/
   height: 46px!important;
 }
 .levelUpPicture {
@@ -233,7 +234,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px !important;
@@ -336,7 +336,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px !important;
@@ -439,7 +438,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px !important;
@@ -541,7 +539,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px !important;
@@ -603,7 +600,7 @@ span {
     margin-left: -13% !important;
   }
   .profesionPicture {
-    margin-top: 0px !important;
+    margin-top: 25px !important;
   }
   .h1Profesion {
     margin-top: 10px;
@@ -615,7 +612,7 @@ span {
     text-align: center;
     margin-left: 34%;
     margin-top: -6px;
-    height: 29px!important;
+    height: 22px!important;
   }
   .levelUpPicture {
     height: 140px;
@@ -644,7 +641,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px !important;
@@ -747,7 +743,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px !important;
@@ -821,7 +816,7 @@ span {
     text-align: center;
     margin-left: 34%;
     margin-top: 8px;
-    margin-bottom: 20px!important;
+    margin-bottom: 0px!important;
     height: 29px!important;
   }
   .levelUpPicture {
@@ -851,7 +846,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px !important;
@@ -956,7 +950,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px !important;
@@ -1059,7 +1052,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px !important;
@@ -1161,7 +1153,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px ;
@@ -1235,7 +1226,7 @@ span {
     text-align: center;
     margin-left: 34%;
     margin-top: 8px;
-    height: 60px!important;
+    height: 30px!important;
   }
   .levelUpPicture {
     height: 320px!;
@@ -1264,7 +1255,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px!important;
@@ -1367,7 +1357,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px ;
@@ -1432,7 +1421,7 @@ span {
     margin-top: 0px ;
   }
   .h1Profesion {
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .profesionPicture h5 {
     margin-bottom: 7px ;
@@ -1471,7 +1460,6 @@ span {
   .btnInPicture1 {
     width: 105px;
     height: 16px;
-    background: white;
     margin-left: -13%;
     border-radius: 11px;
     margin-top: 139px ;

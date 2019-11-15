@@ -70,7 +70,7 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
                 <button
                   onClick={goToTalents}
                   className="btnInPicture1"
-                >Find an international remote job NOW</button>
+  >{t("home_btnTalents")}</button>
               </Link>
                 </div>
             <div className="col-6">
@@ -78,7 +78,7 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
                 <button
                   onClick={goToCompanies}
                   className={styles.btnInPicture3}
-                >Hire a Spanish Top-Talent NOW</button>
+                >{t("home_btnCompanies")}</button>
               </Link>
             </div>           
             

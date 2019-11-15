@@ -21,7 +21,7 @@ const SiteNoticeES: React.FC = () => {
       </p>
       <p>
         Responsable de todos los contenidos (obligado por ley § 55 RStV): Sandra
-        Thomas y Marcel Rödiger
+        Thomas y Marcel Rödiger, Apenrader Straße 37, 30165 Hannover.
       </p>
       <p>Tribunal de Distrito Hannover</p>
       <br />

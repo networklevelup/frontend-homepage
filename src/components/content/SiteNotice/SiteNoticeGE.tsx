@@ -23,7 +23,7 @@ const SiteNoticeEN: React.FC = () => {
       </p>
       <p>
         Verantwortliche i.S.d. § 55 Abs. 2 RStV: Sandra Thomas und Marcel
-        Rödiger, Graf-Zeppelin-Str. 32, 31157 Sarstedt
+        Rödiger, Apenrader Straße 37, 30165 Hannover
       </p>
       <p>Amtsgericht Hannover</p>
       <br />
