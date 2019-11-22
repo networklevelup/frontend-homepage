@@ -86,24 +86,26 @@ const NavBar: React.FC<IPropsGlobal & RouteComponentProps> = props => {
               </Link>
             </li>
             </ul>
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav mr-0">
             {tokenValue && <li className="nav-item">
               <Link to="/blog" className="nav-link js-scroll-trigger">
                 {t("navBar_blog")}
               </Link>
             </li>}
-            {props.token && (
+            {/* {props.token && (
               <li className="nav-item">
                 <Link to={"/talents/profile/" + userId} className="nav-link color">
                   Profile
                 </Link>
               </li>
-            )}
+            )} */}
             {!props.token && (
               <li className="nav-item">
+                <button className="btnLogin">
                 <Link to="/login" className="nav-link color">
                   {t("navBar_login")}
                 </Link>
+                </button>
               </li>
             )}
 

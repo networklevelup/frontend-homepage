@@ -27,6 +27,7 @@ import Companies from "./Companies/Companies";
 import TermsConditions from "./Terms of Conditions/TermsConditions";
 import Login from "./Login/Login";
 import TalentProfile from './Talent Profile/TalentProfile';
+import Unsubscribe from './Unsubscribe/Unsubscribe';
 
 const Content: React.FC = () => {
   return (
@@ -56,13 +57,14 @@ const Content: React.FC = () => {
         component={BlogDescription}
       />
       <Route path="/contact" exact component={Contact} />
-      <Route path="/verify/:userId?" exact component={Verification} />{" "}
+      <Route path="/verify/:userId?" exact component={Verification} />
       {/* Verification emails */}
       <Route
         path="/verify/companies/:companyId?"
         exact
         component={VerificationCompanies}
       />
+      <Route path="/unsubscribe/:userId?" exact component={Unsubscribe}/>
       <Route
         path="/register/user/verification"
         exact

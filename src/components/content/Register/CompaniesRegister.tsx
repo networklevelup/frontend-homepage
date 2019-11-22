@@ -144,7 +144,7 @@ const CompaniesRegister: React.FC<
   };
 
   return (
-    <div className="container formulary">
+    <div className="container formulary company">
       <input
         type="text"
         className="companyReg"

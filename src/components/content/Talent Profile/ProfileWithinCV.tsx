@@ -14,6 +14,7 @@ import * as actions from "../../../actions/actions";
 
 
 import "./ProfileWithinCV.css";
+import { whileStatement } from "@babel/types";
 
 
 interface IPropsGlobal {
@@ -21,6 +22,7 @@ interface IPropsGlobal {
   users: IUser[];
   setSkills: (skills: ISkills[]) => void;
 }
+
 const ProfileWithinCV: React.FC<IPropsGlobal & RouteComponentProps<{ userId: string }>
 > = props => {
   
@@ -99,6 +101,7 @@ console.log("user: " + userId);
       germanSkills: "nativeSpeaker",
       furtherLanguageSkills: "nativeSpeaker",
       furtherLanguage: ""
+      
 
    });
 
@@ -156,10 +159,9 @@ console.log("user: " + userId);
         props.setSkills(skills);
          console.log("SKILLS: ", skills)
        })
-     }
-     
+     }     
    })
-  };
+  }; 
   
   return (
     <div className="container headers">    
@@ -170,7 +172,7 @@ console.log("user: " + userId);
           <div className="selectionButtons">
             <Form.Row>
               <ButtonGroup toggle>
-                <ToggleButton className="workAreaButton" type="radio" name="radio" defaultChecked value="1" onClick={setValue1}>Creative & Design</ToggleButton>
+                <ToggleButton className="workAreaButton" type="radio" name="radio" checked value="1" onClick={setValue1}>Creative & Design</ToggleButton>
                 <ToggleButton className="workAreaButton" type="radio" name="radio" value="2" onClick={setValue2}>Development</ToggleButton>
                 <ToggleButton className="workAreaButton" type="radio" name="radio" value="3" onClick={setValue3}>IT & Network</ToggleButton>
                 <ToggleButton className="workAreaButton" type="radio" name="radio" value="4" onClick={setValue4}>Marketing</ToggleButton>
@@ -290,74 +292,74 @@ console.log("user: " + userId);
               </Form.Row>
             </div>}
           </div>
-          <div className="selectedBoxes">
-            {checkedState.Animation && <span>Animation & Motion graphics<button className="close">x</button></span>}
-            {checkedState.ARVRDesign && <span>AR / VR Design</span>}
-            {checkedState.AudioProduction && <span>Audio Production</span>}
-            {checkedState.BrandStrategy && <span>Brand Strategy</span>}
-            {checkedState.EventManagemet && <span>Event Management</span>}
-            {checkedState.GraphicDesign && <span>Graphic Design</span>}
-            {checkedState.IMGEditRetouch && <span>Image Editing / Retouching</span>}
-            {checkedState.Photography && <span>Photography</span>}
-            {checkedState.VideoProduction && <span>Video Production</span>}
+          <div className=" container selectedBoxes">
+            {checkedState.Animation && <span className="spanBox">Animation & Motion graphics<button className="close">x</button></span>}
+            {checkedState.ARVRDesign && <span className="spanBox">AR / VR Design</span>}
+            {checkedState.AudioProduction && <span className="spanBox">Audio Production</span>}
+            {checkedState.BrandStrategy && <span className="spanBox">Brand Strategy</span>}
+            {checkedState.EventManagemet && <span className="spanBox">Event Management</span>}
+            {checkedState.GraphicDesign && <span className="spanBox">Graphic Design</span>}
+            {checkedState.IMGEditRetouch && <span className="spanBox">Image Editing / Retouching</span>}
+            {checkedState.Photography && <span className="spanBox">Photography</span>}
+            {checkedState.VideoProduction && <span className="spanBox">Video Production</span>}
             
-            {checkedState.ARVRDevelopment && <span>AR / VR Development</span>}
-            {checkedState.BackDevelopment && <span>Back-End Development</span>}
-            {checkedState.DevepCoach && <span>Development Coach</span>}
-            {checkedState.FrontDev && <span>Front-End Development</span>}
-            {checkedState.FullStackDev && <span>Full Stack Development</span>}
-            {checkedState.MobileAppDev && <span>Mobile App Development</span>}
-            {checkedState.SoftwareDev && <span>Software Development</span>}
-            {checkedState.UXUIDesign && <span>UX / UI Design</span>}
-            {checkedState.WebDev && <span>Web Development</span>}
+            {checkedState.ARVRDevelopment && <span className="spanBox">AR / VR Development</span>}
+            {checkedState.BackDevelopment && <span className="spanBox">Back-End Development</span>}
+            {checkedState.DevepCoach && <span className="spanBox">Development Coach</span>}
+            {checkedState.FrontDev && <span className="spanBox">Front-End Development</span>}
+            {checkedState.FullStackDev && <span className="spanBox">Full Stack Development</span>}
+            {checkedState.MobileAppDev && <span className="spanBox">Mobile App Development</span>}
+            {checkedState.SoftwareDev && <span className="spanBox">Software Development</span>}
+            {checkedState.UXUIDesign && <span className="spanBox">UX / UI Design</span>}
+            {checkedState.WebDev && <span className="spanBox">Web Development</span>}
 
-            {checkedState.CRM && <span>CRM / ERP-Process Management</span>}
-            {checkedState.ITAdmin && <span>IT Administration</span>}
-            {checkedState.ITConsulting && <span>IT Consulting</span>}
-            {checkedState.QM && <span>Quality Management</span>}
-            {checkedState.ITSecurity && <span>IT Security</span>}
+            {checkedState.CRM && <span className="spanBox">CRM / ERP-Process Management</span>}
+            {checkedState.ITAdmin && <span className="spanBox">IT Administration</span>}
+            {checkedState.ITConsulting && <span className="spanBox">IT Consulting</span>}
+            {checkedState.QM && <span className="spanBox">Quality Management</span>}
+            {checkedState.ITSecurity && <span className="spanBox">IT Security</span>}
 
-            {checkedState.AffiliateMarketing && <span>Affiliate Marketing</span>}
-            {checkedState.DigitalMarketing && <span>Digital Marketing</span>}
-            {checkedState.EmailMarketing && <span>E-Mail Marketing</span>}
-            {checkedState.MarketResearch && <span>Market Research</span>}
-            {checkedState.MarketingStrategy && <span>Marketing Strategy</span>}
-            {checkedState.SEOManagement && <span>SEA / SEO Management</span>}
-            {checkedState.SMM && <span>Social Media Marketing</span>}
+            {checkedState.AffiliateMarketing && <span className="spanBox">Affiliate Marketing</span>}
+            {checkedState.DigitalMarketing && <span className="spanBox">Digital Marketing</span>}
+            {checkedState.EmailMarketing && <span className="spanBox">E-Mail Marketing</span>}
+            {checkedState.MarketResearch && <span className="spanBox">Market Research</span>}
+            {checkedState.MarketingStrategy && <span className="spanBox">Marketing Strategy</span>}
+            {checkedState.SEOManagement && <span className="spanBox">SEA / SEO Management</span>}
+            {checkedState.SMM && <span className="spanBox">Social Media Marketing</span>}
 
-            {checkedState.ProductManagement && <span>Product Management</span>}
-            {checkedState.ProjectManagement && <span>Project Management</span>}
+            {checkedState.ProductManagement && <span className="spanBox">Product Management</span>}
+            {checkedState.ProjectManagement && <span className="spanBox">Project Management</span>}
 
-            {checkedState.BusinessDev && <span>Business Development</span>}
-            {checkedState.CSSupport && <span>Customer Service Support</span>}
-            {checkedState.KAManagement && <span>Key Account Management</span>}
-            {checkedState.TelephoneSales && <span>Telephone Sales</span>}
-            {checkedState.SalesRepresentative && <span>Sales Representative</span>}
+            {checkedState.BusinessDev && <span className="spanBox">Business Development</span>}
+            {checkedState.CSSupport && <span className="spanBox">Customer Service Support</span>}
+            {checkedState.KAManagement && <span className="spanBox">Key Account Management</span>}
+            {checkedState.TelephoneSales && <span className="spanBox">Telephone Sales</span>}
+            {checkedState.SalesRepresentative && <span className="spanBox">Sales Representative</span>}
 
-            {checkedState.WritingResearch && <span>Academic Writing & Research</span>}
-            {checkedState.MarketingManagent && <span>Content Marketing Manager</span>}
-            {checkedState.CreativeWriting && <span>Creative Writing</span>}
-            {checkedState.PublicRelations && <span>Public Relations</span>}
-            {checkedState.TechnicalWriting && <span>Technical Writing</span>}
-            {checkedState.Translation && <span>Translation</span>}
+            {checkedState.WritingResearch && <span className="spanBox">Academic Writing & Research</span>}
+            {checkedState.MarketingManagent && <span className="spanBox">Content Marketing Manager</span>}
+            {checkedState.CreativeWriting && <span className="spanBox">Creative Writing</span>}
+            {checkedState.PublicRelations && <span className="spanBox">Public Relations</span>}
+            {checkedState.TechnicalWriting && <span className="spanBox">Technical Writing</span>}
+            {checkedState.Translation && <span className="spanBox">Translation</span>}
 
-            {checkedState.Copywriting && <span>Copywriting</span>}
-            {checkedState.CRMMaintenance && <span>CRM maintenance</span>}
-            {checkedState.Documentation && <span>Documentation</span>}
-            {checkedState.Presentations && <span>Presentations</span>}
-            {checkedState.Research && <span>Research</span>}
-            {checkedState.Sheduling && <span>Scheduling & Meeting Organization</span>}
-            {checkedState.TravelPlanning && <span>Travel Planning</span>}
-            {checkedState.WebMaintenance && <span>Website maintenance</span>}
+            {checkedState.Copywriting && <span className="spanBox">Copywriting</span>}
+            {checkedState.CRMMaintenance && <span className="spanBox">CRM maintenance</span>}
+            {checkedState.Documentation && <span className="spanBox">Documentation</span>}
+            {checkedState.Presentations && <span className="spanBox">Presentations</span>}
+            {checkedState.Research && <span className="spanBox">Research</span>}
+            {checkedState.Sheduling && <span className="spanBox">Scheduling & Meeting Organization</span>}
+            {checkedState.TravelPlanning && <span className="spanBox">Travel Planning</span>}
+            {checkedState.WebMaintenance && <span className="spanBox">Website maintenance</span>}
          </div>
           
-                <h5>WHAT IS YOUR EXPERIENCE LEVEL IN THIS AREA?</h5>
+                <h2 className="expArea">WHAT IS YOUR EXPERIENCE LEVEL IN THIS AREA?</h2>
           <div className="levelExp">          
             <Form.Row>
                   <ButtonGroup toggle>
-                      <ToggleButton  type="radio" name="levelExp" value="Beguinner" checked={checkedState.levelExp === "Beguinner"}  onClick={handleChange}>Beguinner Level - Just started to work in this field</ToggleButton>
-                      <ToggleButton  type="radio" name="levelExp" value="Intermediate" checked={checkedState.levelExp === "Intermediate"}  onClick={handleChange}>Intermediate - Finalized first projects in this field</ToggleButton>
-                      <ToggleButton  type="radio" name="levelExp" value="Expert" checked={checkedState.levelExp === "Expert"}  onClick={handleChange}>Expert Level - I have deep expertise in this field</ToggleButton>
+                      <ToggleButton className="btnExpLevel"  type="radio" name="levelExp" value="Beguinner" checked={checkedState.levelExp === "Beguinner"}  onClick={handleChange}><p className="level">Beguinner Level</p><p>Just started to work in this field</p></ToggleButton>
+                      <ToggleButton className="btnExpLevel"  type="radio" name="levelExp" value="Intermediate" checked={checkedState.levelExp === "Intermediate"}  onClick={handleChange}><p className="level">Intermediate</p><p>Finalized first projects in this field</p></ToggleButton>
+                      <ToggleButton className="btnExpLevel"  type="radio" name="levelExp" value="Expert" checked={checkedState.levelExp === "Expert"}  onClick={handleChange}><p className="level">Expert Level</p><p>I have deep expertise in this field</p></ToggleButton>
                   </ButtonGroup>
             </Form.Row>
           </div>
@@ -376,11 +378,12 @@ console.log("user: " + userId);
             <Form.Group>
               <Form.Label>SPANISH</Form.Label>
               <Form.Control as="select" name="spanishSkills" onChange={handleChange} value={checkedState.spanishSkills} >
-                <option value="nativeSpeaker">native speaker</option>
-                <option value="businessFluent">business fluent</option> 
-                <option value="veryGoodKnowledge">very good knowledge (fluently)</option>
-                <option value="goodKnowledge">good knowledge</option>
-                <option value="basicKnowledge">basic knowledge</option>
+                <option className="languageValues" value="nativeSpeaker">native speaker</option>
+                <option className="languageValues" value="businessFluent">business fluent</option> 
+                <option className="languageValues" value="veryGoodKnowledge">very good knowledge (fluently)</option>
+                <option className="languageValues" value="goodKnowledge">good knowledge</option>
+                <option className="languageValues" value="basicKnowledge">basic knowledge</option>
+                <option className="languageValues" value="none">------------</option>
               </Form.Control>
               </Form.Group>
               <Form.Group>
@@ -391,6 +394,7 @@ console.log("user: " + userId);
                 <option value="veryGoodKnowledge">very good knowledge (fluently)</option>
                 <option value="goodKnowledge">good knowledge</option>
                 <option value="basicKnowledge">basic knowledge</option>
+                <option value="none">------------</option>
               </Form.Control>
               </Form.Group>
               <Form.Group>
@@ -401,6 +405,7 @@ console.log("user: " + userId);
                 <option value="veryGoodKnowledge">very good knowledge (fluently)</option>
                 <option value="goodKnowledge">good knowledge</option>
                 <option value="basicKnowledge">basic knowledge</option>
+                <option value="none">------------</option>
               </Form.Control>  
             </Form.Group>
             </Form.Row>
@@ -413,6 +418,7 @@ console.log("user: " + userId);
                 <option value="veryGoodKnowledge">very good knowledge (fluently)</option>
                 <option value="goodKnowledge">good knowledge</option>
                 <option value="basicKnowledge">basic knowledge</option>
+                <option value="none">------------</option>
               </Form.Control>
               </Form.Group>
             </Form.Row>

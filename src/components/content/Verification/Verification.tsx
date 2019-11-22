@@ -3,8 +3,12 @@ import { IUser } from "../../../interfaces/interfaces";
 import { IGlobalState } from "../../../reducers/reducers";
 import { connect } from "react-redux";
 import { RouteComponentProps } from "react-router";
-import thankYou from "../../../img/Verification/thankYou.png";
+import { DefaultPlayer as Video } from "react-html5video";
+import "react-html5video/dist/styles.css";
+import "../Home/Video.css";
 import "./Verification.css";
+import { Link } from "react-router-dom";
+
 
 interface IPropsGlobal {
   users: IUser[];
@@ -24,17 +28,37 @@ const Verification: React.FC<
       }
     ).then(response => {
       if (response.ok) {
-        setTimeout(() => props.history.push("/"), 5000);
+        // setTimeout(() => props.history.push("/"), 20000);
+        console.log(response)
+        
       }
     }); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="container verification">
-      <h1>Dirección verificada. Gracias</h1>
-      <h4>En un momento te redireccionaremos a la pagina principal</h4>
+    <div className="container  verificationUser">
+      <h1>Welcome to LevelUP!</h1>
+      <Video
+        autoPlay
+        controls={[
+          "PlayPause",
+          "Seek",
+          "Time",
+          "Volume",
+          "Fullscreen",
+          "Captions"
+        ]}        
+        onCanPlayThrough={() => {
+          // Do stuff
+        }}
+      >
+        <source src="/video/Welcome-Talents-Video.mp4" type="video/mp4" />
+        </Video>
 
-      <img className="thankYou" alt="" src={thankYou} />
+        <Link to="/">
+            <button className="btnHome">Back to Home</button>
+        </Link>
+      
     </div>
   );
 };

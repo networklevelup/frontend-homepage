@@ -15,12 +15,13 @@ span {
 .rh5v-DefaultPlayer_component {
 /*video player background*/
   background: none;
+}.rh5v-Time_component {
+  display: inline-flex;
 }
+
 .rh5v-Time_duration {
   /*Timer*/
   color: #fff;
-  margin-top: -70px;
-  margin-left: 64px;
 }
 .rh5v-Seek_input {
   /*time bar*/

@@ -3,8 +3,8 @@ import { IUser } from "../../../interfaces/interfaces";
 import { IGlobalState } from "../../../reducers/reducers";
 import { connect } from "react-redux";
 import { RouteComponentProps } from "react-router";
-import thankYou from "../../../img/Verification/thankYou.png";
 import "./Verification.css";
+
 
 interface IPropsGlobal {
   users: IUser[];
@@ -15,17 +15,17 @@ const RegisterUserVerification: React.FC<
 > = props => {
 
   useEffect(() => { 
-    setTimeout(() => props.history.push("/"), 5000); // eslint-disable-next-line react-hooks/exhaustive-deps
+    setTimeout(() => props.history.push("/"), 20000); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <div className="container verification">
       <div>
-        <h1>Gracias por unirte a la comunidad LevelUP</h1>
-        <h4>Hemos mandado un correo para confirmar el registro</h4>
-        <h4>En un momento te redireccionaremos a la pagina principal</h4>
+        <h1>Thank you for joining LevelUP!</h1>
+        <h4>We sent you an email. Please check your mailbox!.</h4>
+        <h4>Within 20 seconds you will be forwarded to our landing-page.</h4>
       </div>
-      <img className="thankYou" alt="" src={thankYou} />
+     
     </div>
   );
 };

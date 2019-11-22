@@ -129,6 +129,17 @@
 .dropdown-toggle {
   padding: 0px;
 }
+.btnLogin {
+  padding: 0px;
+  background: #57b368;
+  border-radius: 30px; 
+  width: 82px;
+    margin-top: 10px; 
+}
+.btnLogin a {
+  color: white!important;
+  padding:0px;  
+}
 
 
 /* --------------- IPhone 5 ----------- */

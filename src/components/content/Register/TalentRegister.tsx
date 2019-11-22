@@ -128,6 +128,7 @@ const TalentRegister: React.FC<IPropsGlobal & RouteComponentProps> = props => {
 
   return (
     <div className="container formulary talent">
+            
       <input
         type="text"
         className="talentReg"
@@ -179,6 +180,7 @@ const TalentRegister: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           {t("talentRegister_btn")}
         </button>
       </span>
+      
     </div>
   );
 };

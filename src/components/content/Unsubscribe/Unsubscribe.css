@@ -1,0 +1,24 @@
+.unsubscribePage {
+    padding-top:30px;
+    text-align: center;
+}
+.unsubscribe {
+    background-image: url("../../../img/Unsubscribe/Unsubscribe-Picture.jpg");
+    background-size: cover;
+    height: 72vh;
+    padding-top: 100px;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.recreateAcc {
+    border-radius: 30px;
+    background-color: #57b368;
+    color: white;
+    padding: 0px;
+    width: 160px;
+    margin-top: 4px;
+}
+.marginLeft {
+    margin-left: 13px;
+}

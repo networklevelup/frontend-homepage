@@ -31,7 +31,8 @@
   background-color: #67397d;
   color: white;
   margin-left: 4%;
-  border-radius: 11px;
+  border-radius: 30px;
+  border: 1px solid white;
   margin-top: 385px !important;
   font-size: 17px;
   padding: 0px;
@@ -112,7 +113,7 @@ span {
 }
 .levelUp {
   text-align: center;
-  margin-left: 46%;
+  margin-left: 37%;
   margin-top: 175px; /*at beguining none*/
   height: 46px!important;
 }
@@ -203,7 +204,7 @@ span {
   }
   .levelUp{
     text-align: center;
-    margin-left: 34%;
+    margin-left: 38%;
     margin-top: -29px;
     height: 29px!important;
   }
@@ -305,7 +306,7 @@ span {
   }
   .levelUp{
     text-align: center;
-    margin-left: 34%;
+    margin-left: 38%;
     margin-top: -15px;
     height: 29px!important;
   }
@@ -407,7 +408,7 @@ span {
   }
   .levelUp{
     text-align: center;
-    margin-left: 34%;
+    margin-left: 38%;
     margin-top: -15px;
     height: 29px!important;
   }
@@ -508,7 +509,7 @@ span {
   }
   .levelUp{
     text-align: center;
-    margin-left: 34%;
+    margin-left: 38%;
     margin-top: -15px;
     height: 29px!important;
   }
@@ -610,7 +611,7 @@ span {
   }
   .levelUp{
     text-align: center;
-    margin-left: 34%;
+    margin-left: 38%;
     margin-top: -6px;
     height: 22px!important;
   }
@@ -712,7 +713,7 @@ span {
   }
   .levelUp{
     text-align: center;
-    margin-left: 34%;
+    margin-left: 38%;
     margin-top: 0px;
     height: 29px!important;
   }
@@ -814,7 +815,7 @@ span {
   }
   .levelUp{
     text-align: center;
-    margin-left: 34%;
+    margin-left: 38%;
     margin-top: 8px;
     margin-bottom: 0px!important;
     height: 29px!important;

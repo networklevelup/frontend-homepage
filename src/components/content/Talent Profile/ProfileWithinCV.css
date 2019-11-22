@@ -4,20 +4,29 @@
 .headers h2 {
     text-align: left;
 }
+
 .workAreaButton {
     color: white!important;
-    background: #67397d!important;
+    background: #b2b2b2!important;
     margin: 15px!important;
     border-radius: 18px!important;
-    border-color: #67397d!important;
+    border-color: #b2b2b2!important;
     font-size: 21px!important;
     padding: 14px!important;
     width: 240px;  
 }
 .workAreaButton:hover, .workAreaButton:focus-within   {
-    border-color: black!important;
+    background-color: #67397d!important;
     border: 2px solid;
     box-shadow: none!important;
+    border-color: #67397d!important;
+}
+
+.workAreaButton:checked, .workAreaButton:active {
+    background-color: #67397d!important;
+    border: 2px solid;
+    box-shadow: none!important;
+    border-color: #67397d!important;
 }
 .custom-control-label::before {
     top: .6rem!important;   
@@ -33,9 +42,55 @@
 .custom-control-label::after {
     top: .7rem!important;
     left: -1.4rem!important;
+   
 }
 .selectedBoxes {
-    width: 100%;
-    display: -webkit-inline-box;
     border: 1px solid #67397d;
+    
+}
+.spanBox {
+    background: #b2b2b2!important;
+    border-radius: 10px;
+    height: 35px;
+    padding: 5px!important;
+    margin: 1px;
+    display: inline-flex;
+}
+.expArea {
+    text-align: left;
+    margin-top: 50px;
+}
+.levelExp {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.btnExpLevel {
+    background: none!important;
+    border: 1px solid #b2b2b2!important;
+    padding: 27px!important;
+    margin: 57px;
+}
+
+.btnExpLevel:hover, .btnExpLevel:focus-within, .btnExpLevel:checked   {
+    border: 3px solid #67397d!important;
+    box-shadow: none!important;
+    border-color: #67397d!important;
+}
+.level {
+    color:black;
+    font-weight: bold;
+    font-size: larger;
+}
+p {
+    color: black;
+}
+input[type=radio] {
+    -webkit-appearance: checkbox;
+    margin-top: 5px;
+    margin-left: -22px;
+    height: 1.9rem;
+    width: 1.6rem;
+}
+.form-check {
+    font-size: large!important;
 }
