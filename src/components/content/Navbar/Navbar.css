@@ -140,6 +140,12 @@
   color: white!important;
   padding:0px;  
 }
+.mr-auto {
+  margin-top: 15px;
+}
+.navbarItems {
+  font-size: 18px;
+}
 
 
 /* --------------- IPhone 5 ----------- */

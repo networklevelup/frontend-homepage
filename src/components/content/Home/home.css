@@ -17,6 +17,7 @@
   background-size: contain;
   width: 100%;
   pointer-events: none;
+  margin-top: -2px;
 }
 .center {
   text-align: center;

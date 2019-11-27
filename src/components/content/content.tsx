@@ -28,6 +28,8 @@ import TermsConditions from "./Terms of Conditions/TermsConditions";
 import Login from "./Login/Login";
 import TalentProfile from './Talent Profile/TalentProfile';
 import Unsubscribe from './Unsubscribe/Unsubscribe';
+import ForgotPassword from "./ForgotPassword/ForgotPassword";
+import ResetPassword from "./ForgotPassword/ResetPassword";
 
 const Content: React.FC = () => {
   return (
@@ -80,6 +82,8 @@ const Content: React.FC = () => {
       <Route path="/site/notice" exact component={SiteNotice} />
       <Route path="/team" exact component={Team} />
       <Route path="/job/offer" exact component={JobOffer} />
+      <Route path="/forgotPassword" exact component={ForgotPassword}/>
+      <Route path="/resetPassword/:userId?" exact component={ResetPassword}/>
       <Route path="*" component={NoFound} /> {/*Component 404*/}
     </Switch>
   );
