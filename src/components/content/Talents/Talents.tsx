@@ -297,26 +297,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
         <button className="btnDoIt" onClick={newUser}>
           {t("talents_btnDoIt")}
         </button>
-        <p  className="agree">{t("talents_talents6P")}
-        {i18n.language === "es" && (
-          <a href="/PrivacyPolicyES.pdf" download>
-            política de privacidad. 
-          </a>
-        )}
-        {i18n.language === "en" && (
-          <a href="/PrivacyPolicyEN.pdf" download>
-            privacy policy
-          </a>
-        )}
-
-        {i18n.language === "de" && (
-          <a href="/PrivacyPolicyDE.pdf" download>
-            Datenschutzerklärung
-          </a>
-        )}
-        {t("talents_talents6P1")}</p>
-      
-      
+        <p  className="agree">{t("talents_talents6P")}</p>
       </div>
       <div>
         <ScrollUpButton

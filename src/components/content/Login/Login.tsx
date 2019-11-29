@@ -55,10 +55,10 @@ const NewLogin: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       <div className="container-login100">
         <div className="wrap-login100">
           <div className="login100-form validate-form">
-            {/* <span className="login100-form-logo">
+            <span className="login100-form-logo">
               <img src={logo} className="logo" alt="" />
-            </span> */}
-            <span className="login100-form-title p-b-34 p-t-27">Login</span>
+            </span>
+            <span className="login100-form-title p-b-34 p-t-27">Log in</span>
             <div
               className="wrap-input100 validate-input"
               data-validate="Enter email"
@@ -94,17 +94,9 @@ const NewLogin: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             </div>
             <span className="spanErrorLogin">{errorValue}</span>
             <div className="text-center p-t-90">
-              <ul>
-              <li><Link to="/register" className="txt1">
+              <Link to="/register" className="txt1">
                 Not Registered? Sign up
-              </Link></li>
-              <li>
-              <Link to="/forgotPassword" className="txt1">
-                Forgot your password?
               </Link>
-              </li>
-              </ul>
-              
             </div>
           </div>
         </div>

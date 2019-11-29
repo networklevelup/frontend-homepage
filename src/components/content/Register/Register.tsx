@@ -33,7 +33,7 @@ const Form: React.FC<IPropsGlobal & RouteComponentProps> = props => {
     <div className="container registrationForms">
       {stateValue && (
         <div className="container talentRegistration">
-          {stateValue && <h1>{t("talentRegister_formularyH1")}</h1>}
+          {stateValue && <h1 className="registerH1">{t("talentRegister_formularyH1")}</h1>}
           {stateValue && (
             <h5 className="subtitle">{t("talentRegister_formularyH5")}</h5>
           )}

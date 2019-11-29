@@ -69,6 +69,23 @@ const Footer: React.FC = () => {
         </a>
       </ul>
       <ul className="d-inline-block footList">
+
+      {i18n.language === "de" &&
+            <Link to="/faqDE">
+            <li className="footList">FAQ</li>
+          </Link>}
+
+          {i18n.language === "es" &&
+            <Link to="/faqEN">
+            <li className="footList">FAQ</li>
+          </Link>}
+          
+          {i18n.language === "en" &&
+            <Link to="/faqEN">
+            <li className="footList">FAQ</li>
+          </Link>}
+
+
         <Link to="/conditions/terms">
           <li className="footList">{t("footer_Terms")}</li>
         </Link>
@@ -94,12 +111,15 @@ const Footer: React.FC = () => {
         <Link to="/site/notice">
           <li className="footList">{t("footer_Imprint")}</li>
         </Link>
+
         <Link to="/team">
           <li className="footList">{t("footer_Team")}</li>
         </Link>
         <Link to="/contact">
           <li className="footList">{t("footer_Contact")}</li>
         </Link>
+        
+        
       </ul>
     </div>
   );

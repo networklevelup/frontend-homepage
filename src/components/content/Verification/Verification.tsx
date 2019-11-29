@@ -38,8 +38,7 @@ const Verification: React.FC<
   return (
     <div className="container  verificationUser">
       <h1>Welcome to LevelUP!</h1>
-      <Video
-        autoPlay
+      <Video        
         controls={[
           "PlayPause",
           "Seek",
@@ -51,14 +50,14 @@ const Verification: React.FC<
         onCanPlayThrough={() => {
           // Do stuff
         }}
+        /*poster="/video/img2.jpg" starting picture */
       >
         <source src="/video/Welcome-Talents-Video.mp4" type="video/mp4" />
         </Video>
-
-        <Link to="/">
+        {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/lgEvm-UzqzI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+               <Link to="/">
             <button className="btnHome">Back to Home</button>
-        </Link>
-      
+        </Link>      
     </div>
   );
 };

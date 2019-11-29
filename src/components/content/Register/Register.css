@@ -6,11 +6,11 @@
   display: block;
   margin-top: 50px;
   text-align: center;
-  background-image: url("../../../img/Registration/TalentsGroup.png");
+  background-image: url("../../../img/Registration/Background-Reg-Talent.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 60px;
- 
+  background-size: 1144px;
+  background-position-y: 142px;
+  background-position-x: center;
 }
 .talentRegistration h1 {
   margin-bottom: 0px !important;
@@ -19,11 +19,11 @@
   display: block;
   margin-top: 50px;
   text-align: center;
-  background-image: url("../../../img/Registration/CompaniesGroup.png");
+  background-image: url("../../../img/Registration/Background-Reg-Company.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: -40px;
-  
+  background-position-y: 120px;
 }
 .companyRegistration h1 {
   margin-bottom: 0px !important;
@@ -97,22 +97,34 @@ button {
 
 /* --------------------- IPhone 5 ----------- */
 @media (min-width: 320px) and (max-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .registerH1 {
+    font-size: 13px !important;
+  }
+  .subtitle {
+    font-size: 10px !important;
+  }
+
+  .companyRegistration h1 {
+    font-size: 13px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 10px !important;
+  }
   .registrationForms {
     padding: 0px !important;
   }
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 700px; 
+    background-size: 727px;
     background-position-x: -12px;
-    background-position-y: 100px;
-    
+    background-position-y: 71px;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 622px;
-    background-position-x: -3px;
+    background-size: 680px;
+    background-position-x: -10px;
     background-position-y: 62px;
     margin-bottom: 12px;
   }
@@ -133,7 +145,7 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
-    font-size: 10px!important;
+    font-size: 10px !important;
   }
   .spanError {
     margin-left: 25%;
@@ -141,23 +153,39 @@ button {
 }
 /* ------ Samsung S4,S5 ----------- */
 @media (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .registerH1 {
+    font-size: 13px !important;
+  }
+  .subtitle {
+    font-size: 10px !important;
+  }
+
+  .companyRegistration h1 {
+    font-size: 13px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 10px !important;
+  }
+
   .registrationForms {
     padding: 0px !important;
   }
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 642px;
-    background-position-x: -2px;
-    background-position-y: 77px;
+    background-size: 783px;
+    background-position-x: -17px;
+    background-position-y: 66px;
+    height: 79vh;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 595px;
+    background-size: 677px;
     background-position-x: -7px;
     background-position-y: 68px;
     margin-bottom: 12px;
+    height: 78vh;
   }
   .btnTalent,
   .btnCompany {
@@ -176,6 +204,7 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
+    font-size: 13px !important;
   }
   .spanError {
     margin-left: 28%;
@@ -184,8 +213,22 @@ button {
 
 /*--------- Samsung S6,S7,S7+ -------------*/
 @media (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
+  .registerH1 {
+    font-size: 13px !important;
+  }
+  .subtitle {
+    font-size: 10px !important;
+  }
+
+  .companyRegistration h1 {
+    font-size: 13px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 10px !important;
+  }
   .registrationForms {
     padding: 0px !important;
+    height: 84vh !important;
   }
   .companyRegistration {
     margin-top: 20px;
@@ -197,7 +240,7 @@ button {
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 595px;
+    background-size: 675px;
     background-position-x: -7px;
     background-position-y: 68px;
     margin-bottom: 12px;
@@ -219,6 +262,7 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
+    font-size: 14px !important;
   }
   .spanError {
     margin-left: 28%;
@@ -226,24 +270,36 @@ button {
 }
 /*--------- Samsung S8,S8+, NOTE 8 -------------*/
 @media (min-width: 360px) and (max-height: 740px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
+  .registerH1 {
+    font-size: 13px !important;
+  }
+  .subtitle {
+    font-size: 10px !important;
+  }
+
+  .companyRegistration h1 {
+    font-size: 13px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 10px !important;
+  }
   .registrationForms {
     padding: 0px !important;
     height: 77vh;
-
   }
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 642px;
+    background-size: 835px;
     background-position-x: -2px;
     background-position-y: 77px;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 595px;
+    background-size: 675px;
     background-position-x: -7px;
-    background-position-y: 68px;
+    background-position-y: 86px;
     margin-bottom: 12px;
   }
   .btnTalent,
@@ -251,7 +307,7 @@ button {
     margin: 15px;
   }
   .formulary {
-    margin-top: 0px;
+    margin-top: 30px;
   }
   .companyReg,
   .talentReg {
@@ -263,30 +319,44 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
+    margin-top: 26px;
+    font-size: 13px !important;
   }
   .spanError {
     margin-left: 28%;
   }
 }
 
-/* Iphone 6,7,8 --------*/
+/* ------------ Iphone 6,7,8 --------*/
 @media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .registerH1 {
+    font-size: 13px !important;
+  }
+  .subtitle {
+    font-size: 10px !important;
+  }
+
+  .companyRegistration h1 {
+    font-size: 13px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 10px !important;
+  }
   .registrationForms {
     padding: 0px !important;
     height: 77vh;
-
   }
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 642px;
+    background-size: 740px;
     background-position-x: -2px;
     background-position-y: 77px;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 595px;
+    background-size: 665px;
     background-position-x: -7px;
     background-position-y: 68px;
     margin-bottom: 12px;
@@ -308,6 +378,7 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
+    font-size: 13px !important;
   }
   .spanError {
     margin-left: 28%;
@@ -315,24 +386,37 @@ button {
 }
 /*--------- Iphone X -------------*/
 @media (min-width: 375px) and (max-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .registerH1 {
+    font-size: 13px !important;
+  }
+  .subtitle {
+    font-size: 10px !important;
+  }
+
+  .companyRegistration h1 {
+    font-size: 13px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 10px !important;
+    margin-bottom: 35px !important;
+  }
   .registrationForms {
     padding: 0px !important;
-    height: 77vh;
-
+    height: 83vh;
   }
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 642px;
+    background-size: 747px;
     background-position-x: -2px;
-    background-position-y: 77px;
+    background-position-y: 117px;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 595px;
+    background-size: 635px;
     background-position-x: -7px;
-    background-position-y: 68px;
+    background-position-y: 90px;
     margin-bottom: 12px;
   }
   .btnTalent,
@@ -341,6 +425,7 @@ button {
   }
   .formulary {
     margin-top: 0px;
+    padding-top: 15px;
   }
   .companyReg,
   .talentReg {
@@ -352,6 +437,7 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
+    font-size: 13px !important;
   }
   .spanError {
     margin-left: 28%;
@@ -360,6 +446,20 @@ button {
 
 /*--------- Iphone 6+,7+,8+ -------------*/
 @media (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .registerH1 {
+    font-size: 15px !important;
+  }
+  .subtitle {
+    font-size: 12px !important;
+  }
+
+  .companyRegistration h1 {
+    font-size: 15px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 12px !important;
+    margin-bottom: 25px !important;
+  }
   .registrationForms {
     padding: 0px !important;
     height: 77vh;
@@ -367,15 +467,15 @@ button {
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 726px!important;
+    background-size: 825px !important;
     background-position-x: -2px;
     background-position-y: 77px;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 708px;
-    background-position-x: 17px;
+    background-size: 735px;
+    background-position-x: -6px;
     background-position-y: 68px;
     margin-bottom: 12px;
   }
@@ -396,10 +496,10 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
-    font-size: 10px!important;
+    font-size: 10px !important;
   }
   .spanError {
-    margin-left: 32%!important;
+    margin-left: 32% !important;
   }
 }
 
@@ -492,24 +592,39 @@ button {
 }
 /*--------- Samsung S8,S8+, NOTE 8 -------------*/
 @media (min-width: 360px) and (max-height: 740px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4) {
+  .companyRegistration h1 {
+    font-size: 20px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 15px !important;
+    margin-bottom: -2px !important;
+  }
+
+  .registerH1 {
+    font-size: 20px !important;
+  }
+  .subtitle {
+    font-size: 15px !important;
+    margin-bottom: -2px !important;
+  }
+
   .registrationForms {
     padding: 0px !important;
     height: 136vh;
-
   }
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 711px;
-    background-position-x: 35px;
+    background-size: 748px;
+    background-position-x: 5px;
     background-position-y: 77px;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 606px;
-    background-position-x: 72px;
-    background-position-y: 68px;
+    background-size: 674px;
+    background-position-x: 0px;
+    background-position-y: 76px;
     margin-bottom: 12px;
   }
   .btnTalent,
@@ -529,6 +644,7 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
+    font-size: 13px !important;
   }
   .spanError {
     margin-left: 45%;
@@ -537,6 +653,22 @@ button {
 
 /* --------------- Iphone 6,7,8 --------*/
 @media (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  .companyRegistration h1 {
+    font-size: 20px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 15px !important;
+    margin-bottom: -2px !important;
+  }
+
+  .registerH1 {
+    font-size: 20px !important;
+  }
+  .subtitle {
+    font-size: 15px !important;
+    margin-bottom: -2px !important;
+  }
+
   .registrationForms {
     padding: 0px !important;
     height: 133vh;
@@ -545,15 +677,16 @@ button {
     margin-top: 20px;
     padding: 0px !important;
     background-size: 730px;
-    background-position-x: 38px;
+    background-position-x: -3px;
     background-position-y: 77px;
+    height: 150vh !important;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 596px;
-    background-position-x: 76px;
-    background-position-y: 69px;
+    background-size: 634px;
+    background-position-x: 0px;
+    background-position-y: 91px;
     margin-bottom: 12px;
   }
   .btnTalent,
@@ -573,6 +706,7 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
+    font-size: 13px !important;
   }
   .spanError {
     margin-left: 46%;
@@ -580,24 +714,40 @@ button {
 }
 /*--------- Iphone X -------------*/
 @media (min-width: 375px) and (max-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .companyRegistration h1 {
+    font-size: 20px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 15px !important;
+    margin-bottom: -2px !important;
+  }
+
+  .registerH1 {
+    font-size: 20px !important;
+  }
+  .subtitle {
+    font-size: 15px !important;
+    margin-bottom: -2px !important;
+  }
+
   .registrationForms {
     padding: 0px !important;
-    height: 77vh;
-
+    height: 133vh;
   }
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 642px;
-    background-position-x: -2px;
+    background-size: 730px;
+    background-position-x: -3px;
     background-position-y: 77px;
+    height: 150vh !important;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 595px;
-    background-position-x: -7px;
-    background-position-y: 68px;
+    background-size: 634px;
+    background-position-x: 0px;
+    background-position-y: 91px;
     margin-bottom: 12px;
   }
   .btnTalent,
@@ -617,31 +767,49 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
+    font-size: 13px !important;
   }
   .spanError {
-    margin-left: 28%;
+    margin-left: 46%;
   }
 }
 
 /*--------- Iphone 6+,7+,8+ -------------*/
 @media (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .companyRegistration h1 {
+    font-size: 20px !important;
+  }
+  .companyRegistration h5 {
+    font-size: 15px !important;
+    margin-bottom: -2px !important;
+  }
+
+  .registerH1 {
+    font-size: 20px !important;
+  }
+  .subtitle {
+    font-size: 15px !important;
+    margin-bottom: -2px !important;
+  }
+
   .registrationForms {
     padding: 0px !important;
-    height: 125vh;
+    height: 133vh;
   }
   .companyRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 726px!important;
-    background-position-x: -2px;
+    background-size: 755px;
+    background-position-x: -3px;
     background-position-y: 77px;
+    height: 150vh !important;
   }
   .talentRegistration {
     margin-top: 20px;
     padding: 0px !important;
-    background-size: 604px;
-    background-position-x: 68px;
-    background-position-y: 68px;
+    background-size: 692px;
+    background-position-x: 9px;
+    background-position-y: 91px;
     margin-bottom: 12px;
   }
   .btnTalent,
@@ -661,8 +829,9 @@ button {
     width: 113px;
     height: 30px;
     margin-bottom: 47px;
+    font-size: 13px !important;
   }
   .spanError {
-    margin-left: 32%!important;
+    margin-left: 46%;
   }
 }

@@ -46,11 +46,11 @@ label {
   margin: auto;
 }
 a:link {
-  color: #007bff;
+  color: #589167;
 }
 a:hover {
-  color: #007bff !important;
+  color: #207561 !important;
 }
 a:visited {
-  color: #007bff;
+  color: #207561;
 }

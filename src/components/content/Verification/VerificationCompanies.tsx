@@ -27,20 +27,16 @@ const VerificationCompany: React.FC<
       }
     ).then(response => {
       if (response.ok) {
-        setTimeout(() => props.history.push("/"), 20000);
+        // setTimeout(() => props.history.push("/"), 20000);
       }
     }); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="container verification">
-     
-        <h1>Vielen Dank für Ihre Anmeldung bei LevelUP!.</h1>
-        
+    <div className="container verification">     
+        <h1>Vielen Dank für Ihre Anmeldung bei LevelUP!</h1>
         <Video
-        autoPlay
-        fluid
-        controls={[
+           controls={[
           "PlayPause",
           "Seek",
           "Time",
@@ -52,14 +48,14 @@ const VerificationCompany: React.FC<
         onCanPlayThrough={() => {
           // Do stuff
         }}
+        /* poster="/video/img2.jpg" starting picture */
       >
         <source src="/video/Welcome-Company-Video.mp4" type="video/mp4" />
         </Video>
 
         <Link to="/">
             <button className="btnHome2">Back to Home</button>
-        </Link>
-      
+        </Link>      
     </div>
   );
 };

@@ -1,0 +1,12 @@
+.FAQheadline {
+    font-weight: bolder;
+    background: none!important;
+}
+.FAQTitle {
+    margin-top: 20px;
+}
+
+.FAQheadline:hover {
+    background: #e7e5e5d8!important;
+    border-radius: 30px!important;
+}

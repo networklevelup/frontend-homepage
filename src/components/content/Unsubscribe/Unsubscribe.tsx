@@ -14,7 +14,7 @@ const Unsubscribe: React.FC<IPropsGlobal & RouteComponentProps<{userId:string}>
 > = props => {
     
     useEffect(()=> {
-        fetch("http://localhost:8080/api/users/"+
+        fetch("https://backendlevelup.herokuapp.com/api/users/"+
         props.match.params.userId +
         "/unsubscribe",
         {
@@ -29,11 +29,11 @@ const Unsubscribe: React.FC<IPropsGlobal & RouteComponentProps<{userId:string}>
 
   return (
     <div className="container unsubscribePage">
-      <h1>Your cancellation of the subscription was successful.</h1>
+      <h1 className="unsubscribeH1">Your cancellation of the subscription was successful.</h1>
       <div className="unsubscribe">
-      <h2><strong>It hurts to see you going!</strong></h2>
+      <h2><strong  className="unsubscribeH2">It hurts to see you going!</strong></h2>
       <h4>With your cancellation you won't get anymore:</h4>
-      <br/>
+      
       <h4>- Job Offers</h4>
       <h4>- Event Invitations</h4>
       <h4>- Support to be recommended</h4>

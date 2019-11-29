@@ -28,8 +28,8 @@ import TermsConditions from "./Terms of Conditions/TermsConditions";
 import Login from "./Login/Login";
 import TalentProfile from './Talent Profile/TalentProfile';
 import Unsubscribe from './Unsubscribe/Unsubscribe';
-import ForgotPassword from "./ForgotPassword/ForgotPassword";
-import ResetPassword from "./ForgotPassword/ResetPassword";
+import UnsubscribeCompany from "./Unsubscribe/UnsubscribeCompany";
+import FaqDE from "./FAQ/FaqDE";
 
 const Content: React.FC = () => {
   return (
@@ -67,6 +67,7 @@ const Content: React.FC = () => {
         component={VerificationCompanies}
       />
       <Route path="/unsubscribe/:userId?" exact component={Unsubscribe}/>
+      <Route path="/unsubscribe/company/:companyId?" exact component={UnsubscribeCompany}/>
       <Route
         path="/register/user/verification"
         exact
@@ -82,8 +83,7 @@ const Content: React.FC = () => {
       <Route path="/site/notice" exact component={SiteNotice} />
       <Route path="/team" exact component={Team} />
       <Route path="/job/offer" exact component={JobOffer} />
-      <Route path="/forgotPassword" exact component={ForgotPassword}/>
-      <Route path="/resetPassword/:userId?" exact component={ResetPassword}/>
+      <Route path="/faqDE" exact component={FaqDE} />
       <Route path="*" component={NoFound} /> {/*Component 404*/}
     </Switch>
   );
