@@ -29,7 +29,7 @@ import Login from "./Login/Login";
 import TalentProfile from './Talent Profile/TalentProfile';
 import Unsubscribe from './Unsubscribe/Unsubscribe';
 import UnsubscribeCompany from "./Unsubscribe/UnsubscribeCompany";
-import FaqDE from "./FAQ/FaqDE";
+import Faq from "./FAQ/Faq";
 
 const Content: React.FC = () => {
   return (
@@ -83,7 +83,7 @@ const Content: React.FC = () => {
       <Route path="/site/notice" exact component={SiteNotice} />
       <Route path="/team" exact component={Team} />
       <Route path="/job/offer" exact component={JobOffer} />
-      <Route path="/faqDE" exact component={FaqDE} />
+      <Route path="/faq" exact component={Faq} />
       <Route path="*" component={NoFound} /> {/*Component 404*/}
     </Switch>
   );

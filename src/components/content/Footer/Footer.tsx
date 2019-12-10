@@ -70,21 +70,20 @@ const Footer: React.FC = () => {
       </ul>
       <ul className="d-inline-block footList">
 
-      {i18n.language === "de" &&
-            <Link to="/faqDE">
+          {i18n.language === "de" &&
+            <Link to="/faq">
             <li className="footList">FAQ</li>
           </Link>}
 
           {i18n.language === "es" &&
-            <Link to="/faqEN">
+            <Link to="/faq">
             <li className="footList">FAQ</li>
           </Link>}
           
           {i18n.language === "en" &&
-            <Link to="/faqEN">
+            <Link to="/faq">
             <li className="footList">FAQ</li>
           </Link>}
-
 
         <Link to="/conditions/terms">
           <li className="footList">{t("footer_Terms")}</li>
