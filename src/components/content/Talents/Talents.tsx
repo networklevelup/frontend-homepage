@@ -160,8 +160,8 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
 
       <div className="container talents2">
         <div className="work">
-          <h3>{t("talents_talents2H1")}</h3>
-          <h5>{t("talents_talents2H5")}</h5>
+          <h2>{t("talents_talents2H1")}</h2>
+          <h6>{t("talents_talents2H5")}</h6>
         </div>
         <div className="steps">
         <div className="row one">
@@ -170,7 +170,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             </div>
             <div className="col-6 hired">
               <h3 className="adjustM">{t("talents_talents2H36")}</h3>
-              <h5>{t("talents_talents2H66")}</h5>
+              <h6>{t("talents_talents2H66")}</h6>
             </div>
           </div>
           <div className="row moved">
@@ -179,7 +179,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             </div>
             <div className="col-6 hired">
               <h3 className="adjustM">{t("talents_talents2H35")}</h3>
-              <h5>{t("talents_talenst2H65")}</h5>
+              <h6>{t("talents_talenst2H65")}</h6>
             </div>
           </div>
           <div className="row three">
@@ -188,7 +188,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             </div>
             <div className="col-6 hired">
               <h3 className="adjustM">{t("talents_talents2H34")}</h3>
-              <h5>{t("talents_talenst2H64")}</h5>
+              <h6>{t("talents_talenst2H64")}</h6>
             </div>
           </div>
           <div className="row moved">
@@ -197,7 +197,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             </div>
             <div className="col-6 hired">
               <h3 className="adjustM">{t("talents_talents2H33")}</h3>
-              <h5>{t("talents_talents2H63")}</h5>
+              <h6>{t("talents_talents2H63")}</h6>
             </div>
           </div>
           <div className="row five">
@@ -208,7 +208,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
             </div>
             <div className="col-6 hired"> 
               <h3 className="adjustM">{t("talents_talents2H32")}</h3>
-              <h5>{t("talents_talents2H62")}</h5>
+              <h6>{t("talents_talents2H62")}</h6>
             </div>
           </div>
           
@@ -223,7 +223,7 @@ const Talents: React.FC<IPropsGlobal & RouteComponentProps> = props => {
 
       <div className="talents3">
         <h1>{t("talents_talents3H1")}</h1>
-        <h5>{t("talents_talents3H5")}</h5>
+        <h6>{t("talents_talents3H5")}</h6>
       </div>
 
       <div className="talents4">

@@ -19,6 +19,10 @@
   pointer-events: none;
   margin: -1px;
 }
+
+.h1Prism {
+  margin-bottom: 30px;
+}
 .center {
   text-align: center;
 }
@@ -40,7 +44,7 @@
   font-weight: bolder;
 }
 .profesionPicture {
-  margin-top: 50px; /*at beguining 15px*/
+  margin-top: 100px; /*at beguining 15px*/
 }
 .proPic {
   background-repeat: no-repeat;
@@ -49,8 +53,9 @@
   pointer-events: none;
 }
 .mb-5 {
-  text-align: right;
+  text-align: right;  
 }
+
 .forCompany {
   color: black;
   width: 50%;
@@ -115,7 +120,7 @@ span {
 .levelUp {
   text-align: center;
   margin-left: 37%;
-  margin-top: 175px; /*at beguining none*/
+  margin-top: 20px; /*at beguining none*/
   height: 46px!important;
 }
 .levelUpPicture {
@@ -145,6 +150,10 @@ span {
   pointer-events: none;
 }
 .levelup {
+  text-align: center;
+}
+
+.levelUpTitle {
   text-align: center;
 }
 .whatIs {

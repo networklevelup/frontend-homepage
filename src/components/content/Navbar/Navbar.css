@@ -28,6 +28,11 @@
   outline: none;
   background-color: transparent;
 }
+
+.navbar-nav.mr-auto {
+  margin-top:12px; 
+}
+
 #mainNav .navbar-nav .nav-item:active,
 #mainNav .navbar-nav .nav-item:focus {
   outline: none;

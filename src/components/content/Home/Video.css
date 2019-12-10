@@ -1,39 +1,6 @@
-/*these className/attributes are "inside" component/object Video*/
+Specifies the height of the content area, padding area or border area (depending on 'box-sizing') of certain boxes.
 
-.video {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.rh5v-PlayPause_icon {
-  /*image in controls buttons*/
-  width: 30px;
-  height: 30px;
-}
-span {
-  padding: 0px!important;
-}
-.rh5v-DefaultPlayer_component {
-/*video player background*/
-  background: none;
-}.rh5v-Time_component {
-  display: inline-flex;
-}
+Syntax: <viewport-length>{1,2}
 
-.rh5v-Time_duration {
-  /*Timer*/
-  color: #fff;
-}
-.rh5v-Seek_input {
-  /*time bar*/
-}
-.rh5v-Overlay_inner {
-  /*play button on screen*/
-  display: none;
-}
-
-@media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  .video {
-    height: 49vh !important;
-  }
-}
+MDN Reference
 

@@ -37,7 +37,7 @@
 .talents2 {
   margin-top: 75px;
   text-align: center;
-  background-image: url("../../../img/TalentsPage/Design2Talents.png");
+  /*background-image: url("../../../img/TalentsPage/Design2Talents.png");*/
   background-repeat: no-repeat;
   background-size: contain;
   padding-bottom: 115px;
@@ -100,7 +100,7 @@
 }
 .up {
   padding-bottom: 0px;
-  margin-left: 27px;
+  margin-left: 42px;
   pointer-events: none;
 }
 .GraphImg {
