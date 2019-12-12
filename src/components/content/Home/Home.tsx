@@ -44,12 +44,15 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
     }); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
+// Weil unsere Generation es liebt dort zu arbeiten, wo wir leben
+// Wir bringen spanische Talente mit deutschen Unternehmen zusammen und realisieren remote Zusammenarbeit in Festanstellung
+// Wir vernetzen spanische Talente mit deutschen Unternehmen 
+return (
     <div className="container">
       <div className="row home1">
         <div className="col-6 generation">
-          <h1>{t("home_generationH1")}</h1>
-          <h6>{t("home_generationH5")}</h6>
+          <h1>{t("home_generationH1")}</h1> 
+          <h5>{t("home_generationH5")}</h5>
           <Link to="/talents">
             <button className={styles.btnPurple}>{t("home_btnPurple")}</button>
           </Link>
@@ -63,7 +66,7 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
 
       <div className="row center">
         <div className="prismBackground">
-          <h1 className="h1Prism">{t("home_homeH1")}</h1>
+          <h2 className="h1Prism">{t("home_homeH1")}</h2>
           <div className="row allMatching">               
                 <div className="col-6">
                 <Link to="/register">
@@ -85,7 +88,7 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           </div>
 
           <div className="profesionPicture">
-            <h1 className="h1Profesion">{t("home_focusProfessionsH1")}</h1>
+            <h2 className="h1Profesion">{t("home_focusProfessionsH1")}</h2>
             <img
               className="proPic"
               alt=""
@@ -97,7 +100,7 @@ const Home: React.FC<IPropsGlobal & RouteComponentProps> = props => {
         </div>
 
         <div className="levelUp">
-          <h1 className="levelUpTitle">{t("home_levelUPH1")}</h1>
+          <h2 className="levelUpTitle">{t("home_levelUPH1")}</h2>
         </div>
         <div className="levelUpPicture">
         <Video

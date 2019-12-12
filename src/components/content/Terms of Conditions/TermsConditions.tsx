@@ -6,23 +6,23 @@ const TermsConditions: React.FC<RouteComponentProps> = () => {
     <div className="container text-sm-left text-center mt-5 mb-5">
       <h1>Allgemeine Geschäftsbedienungen der Internetplattform</h1>
       <br />
-      <p>1.Allgemeines</p>
+      <p>1 Allgemeines</p>
       <p>1.1</p>
       <p>
         Diese Bedingungen gelten für alle auch zukünftigen Geschäftsbeziehungen
-        zwischen der Sandra Thomas & Marcel Rödiger GbR (LevelUP), nachfolgend
-        LevelUP genannt, und dem Auftraggeber (AG), abgekürzt AG genannt, unter
+        zwischen der Sandra Thomas & Marcel Rödiger GbR, nachfolgend
+        LevelUP genannt, und dem Auftraggeber, nachfolgend AG genannt, unter
         Ausschluss entgegenstehender anderer Geschäftsbedingungen.
       </p>
       <p>1.2</p>
       <p>
-        Für die am Einsatzort gegebenenfalls notwendigen behördlichen und
-        anderen Genehmigungen sowie Zustimmungen, insbesondere nach dem
-        Arbeitszeitgesetz, hat der AG vor Arbeitsaufnahme beizubringen.
+        Für die am Einsatzort notwendigen behördlichen und
+        anderen Genehmigungen sowie Zustimmungen hat der AG vor Arbeitsaufnahme dem 
+        Talent beizubringen.
       </p>
       <p>1.3</p>
       <p>
-        Unsere Allgemeinen Geschäftsbedingungen und unsere Preisliste, sowie
+        Unsere Allgemeinen Geschäftsbedingungen und unsere ausgeschriebenen Preise, sowie
         individuell erstellte Angebote gelten ausschließlich. Entgegenstehende
         oder von unseren Geschäftsbedingungen abweichende Bedingungen des Kunden
         erkennen wir nicht an, es sei denn, wir hätten ausdrücklich schriftlich
@@ -32,7 +32,7 @@ const TermsConditions: React.FC<RouteComponentProps> = () => {
       <p>
         Unsere Geschäftsbedingungen gelten auch für alle künftigen Geschäfte mit
         dem AG in der jeweils zum Zeitpunkt des letzten Vertragsschlusses
-        gültigen Fassung. Sie gelten jedoch nur gegenüber Unternehmern im Sinne
+        gültigen Fassung. Sie gelten nur gegenüber Unternehmern im Sinne
         des § 14 BGB.
       </p>
       <p>1.5</p>
@@ -43,7 +43,7 @@ const TermsConditions: React.FC<RouteComponentProps> = () => {
         Personalvermittlungsangebote seitens LevelUP dar.
       </p>
       <br />
-      <p>2.Vertragsschluss</p>
+      <p>2 Vertragsschluss</p>
       <p>2.1</p>
       <p>
         Die auf www.network-levelup.com beschriebenen Preise sind keine
@@ -57,7 +57,7 @@ const TermsConditions: React.FC<RouteComponentProps> = () => {
         Warenkorb enthaltenen Waren ab. Ferner kann der AG das Angebot auch per
         E-Mail oder postalisch gegenüber LevelUP abgeben.
       </p>
-      <p>3. Leistungsbeschreibung, Vertragsdauer</p>
+      <p>3 Leistungsbeschreibung, Vertragsdauer</p>
       <p>3.1</p>
       <p>
         Auf der Internetplattform von LevelUP www.network-levelup.com hat der AG
@@ -245,6 +245,8 @@ const TermsConditions: React.FC<RouteComponentProps> = () => {
         Bestimmung der Parteien auszufüllen, welche dem Zweck des
         Internetplattformvertrages möglichst weitgehend entspricht.
       </p>
+      <br />
+    <p>Status 02.10.2019</p>
     </div>
   );
 };

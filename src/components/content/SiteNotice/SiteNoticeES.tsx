@@ -12,7 +12,7 @@ const SiteNoticeES: React.FC = () => {
       <p>30165 Hannover</p>
       <p>Alemania</p>
       <br />
-      <p>Teléfono: +49 (0)151 / 2230 1610</p>
+      <p>Teléfono: +49 151 2230 1610</p>
       <p>Correo electrónico: info@network-levelup.com</p>
       <p>Número de identificación fiscal: aún no concedido</p>
       <p>
@@ -30,7 +30,7 @@ const SiteNoticeES: React.FC = () => {
       <p>Shutterstock,</p>
       <p>AdobeStock,</p>
       <p>
-        <a href="http://www.freepik.com">Designed by Freepik</a>,
+        <a href="http://www.freepik.com">Designed by Freepik</a>
       </p>
       <br />
       <br />

@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
           <h1>{t("contact_dataH1")}</h1>
           <div className="first">
             <h5>{t("contact_firstH5")}</h5>
-            <h5 className="grey">+49 1739644018</h5>
+            <h5 className="grey">+49 173 9644018</h5>
           </div>
           <div className="first">
             <h5>{t("contact_firstH52")}</h5>

@@ -90,19 +90,19 @@ const Footer: React.FC = () => {
         </Link>
 
         {i18n.language === "es" && (
-          <a href="/PrivacyPolicyES.pdf" download>
+          <a href="/PrivacyPolicyES.pdf" target="_blank">
             <li className="footList">{t("footer_Privacy")}</li>
           </a>
         )}
 
         {i18n.language === "en" && (
-          <a href="/PrivacyPolicyEN.pdf" download>
+          <a href="/PrivacyPolicyEN.pdf" target="_blank">
             <li className="footList">{t("footer_Privacy")}</li>
           </a>
         )}
 
         {i18n.language === "de" && (
-          <a href="/PrivacyPolicyDE.pdf" download>
+          <a href="/PrivacyPolicyDE.pdf" target="_blank">
             <li className="footList">{t("footer_Privacy")}</li>
           </a>
         )}
