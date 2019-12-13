@@ -66,7 +66,7 @@ return (
 
       <div className="row center">
         <div className="prismBackground">
-          <h2 className="h1Prism">{t("home_homeH1")}</h2>
+        <h2 className="h1Prism">{t("home_homeH1")}</h2>
           <div className="row allMatching">               
                 <div className="col-6">
                 <Link to="/register">
@@ -100,7 +100,7 @@ return (
         </div>
 
         <div className="levelUp">
-          <h2 className="levelUpTitle">{t("home_levelUPH1")}</h2>
+          {/* <h2 className="levelUpTitle">{t("home_levelUPH1")}</h2> Video Title*/}
         </div>
         <div className="levelUpPicture">
         <Video
@@ -112,9 +112,10 @@ return (
           "Fullscreen",
           "Captions"
         ]}
+       
         poster={videoPicture + i18n.language + ".jpg"}
         onCanPlayThrough={() => {
-          // Do stuff
+          // Die Bilder des Videos liegen im Ordner: \public\img
         }}
       >
         <source src="/video/LevelUP-Video.mp4" type="video/mp4" />
