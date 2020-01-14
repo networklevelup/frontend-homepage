@@ -72,9 +72,10 @@
 .pic5Comp {
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  margin:auto;
+  width: 80%;
   pointer-events: none;
-}
+  }
 .hereForYou {
   margin-top: 96px;
 }

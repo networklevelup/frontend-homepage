@@ -111,6 +111,7 @@
 }
 .talents5 {
   width: 100%;
+  margin:auto;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -130,15 +131,15 @@
 .talentForm {
   display: inline-block;
   width: 400px;
-  height: 60px;
-  font-size: x-large;
-  border-radius: 20px;
+  height: 40px;
+  font-size: small;
+  border-radius: 10px;
   margin: 5px;
   border: 1px solid grey;
 }
 .talents6 {
   text-align: center;
-  background-color: #b2b2b2; /*OFICIAL GREY*/
+  background-color: #a8a7a7; 
 }
 .span {
   display: block;
@@ -151,14 +152,15 @@
   text-align: center;
 }
 .btnDoIt {
-  font-size: 44px;
+  font-size: 28px;
   background-color: #e72862; /*OFICIAL PINK*/
-  width: 50%;
+  width: 40%;
   color: white;
   padding-left: 15px;
   border: none;
   margin-top: 25px;
   margin-bottom: 50px;
+  border-radius: 30px;
 }
 
 /*------------- iPhone 5 ----------- */
@@ -254,7 +256,13 @@
     margin-bottom: 0px !important;
   }
   .talentForm {
-    font-size: smaller !important;
+    display: inline-block;
+    width: 400px;
+    height: 40px;
+    font-size: small;
+    border-radius: 20px;
+    margin: 5px;
+    border: 1px solid grey;
   }
   .span {
     margin-left: 0px;
