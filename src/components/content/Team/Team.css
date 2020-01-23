@@ -28,11 +28,38 @@ h5 {
 .meetTeam h5 {
   margin-bottom: 60px !important;
 }
-.groupPictures {
-  width: 90%;
-  margin-left: 9%;
-  pointer-events: none;
+
+.NameMarcel {
+  margin-top: 10px;
+  text-align: center;
+  color: #67397d;
 }
+.TextMarcel {
+  text-align: center;
+}
+.NameSandra {
+  margin-top: 10px;
+  text-align: center;
+  color: #67397d;
+}
+.TextSandra {
+  text-align: center;
+}
+
+.Picture-Marcel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.Picture-Sandra {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .hiring {
   text-align: center;
   margin-top: 100px;
@@ -53,6 +80,8 @@ h1 a {
   .target {
     margin-top: 15px !important;
     padding: 0px !important;
+    padding-left: 15px !important;
+    padding-right: 0px !important;
   }
   .target h1 {
     margin-bottom: 10px !important;
@@ -71,7 +100,7 @@ h1 a {
     margin-left: -34px;
   }
   .meetTeam {
-    margin-top: 0px;
+    margin-top: 10px;
     padding: 0px !important;
   }
   .meetTeam h5 {
@@ -86,6 +115,9 @@ h1 a {
   }
   .jobOffer {
     font-size: 12px !important;
+  }
+  .footer {
+    margin-top: 40px;
   }
 }
 
@@ -94,6 +126,7 @@ h1 a {
   .target {
     margin-top: 15px !important;
     padding: 0px !important;
+    padding-left: 15px !important;
   }
   .target h1 {
     margin-bottom: 10px !important;
@@ -112,7 +145,7 @@ h1 a {
     margin-left: -34px;
   }
   .meetTeam {
-    margin-top: 0px;
+    margin-top: 10px;
     padding: 0px !important;
   }
   .meetTeam h5 {
@@ -128,6 +161,9 @@ h1 a {
   .jobOffer {
     font-size: 12px !important;
   }
+  .footer {
+    margin-top: 50px;
+  }
 }
 
 /*--------- Samsung S6,S7,S7+ -------------*/
@@ -135,6 +171,7 @@ h1 a {
   .target {
     margin-top: 15px !important;
     padding: 0px !important;
+    padding-left: 15px !important;
   }
   .target h1 {
     margin-bottom: 10px !important;
@@ -153,7 +190,7 @@ h1 a {
     margin-left: -34px;
   }
   .meetTeam {
-    margin-top: 0px;
+    margin-top: 10px;
     padding: 0px !important;
   }
   .meetTeam h5 {
@@ -172,12 +209,10 @@ h1 a {
 }
 /*--------- Samsung S8,S8+, NOTE 8 -------------*/
 @media (min-width: 360px) and (max-height: 740px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4) {
-  .team {
-    height: 84vh;
-  }
   .target {
     margin-top: 15px !important;
     padding: 0px !important;
+    padding-left: 15px !important;
   }
   .target h1 {
     margin-bottom: 10px !important;
@@ -199,7 +234,7 @@ h1 a {
     margin-bottom: 10px;
   }
   .meetTeam {
-    margin-top: 0px;
+    margin-top: 40px;
     padding: 0px !important;
     margin-bottom: 10px;
   }
@@ -210,22 +245,25 @@ h1 a {
     margin-top: 20px;
     margin-bottom: 30px !important;
   }
-  .hiring h5, .hiring h1 {
+  .hiring h5,
+  .hiring h1 {
     margin-bottom: 6px !important;
   }
   .jobOffer {
     font-size: 12px !important;
+  }
+  .footer {
+    margin-top: 120px;
   }
 }
 
 /* Iphone 6,7,8 --------*/
 @media (min-width: 375px) and (max-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  .team {
-    height: 84vh;
-  }
+ 
   .target {
     margin-top: 15px !important;
     padding: 0px !important;
+    padding-left: 15px !important;
   }
   .target h1 {
     margin-bottom: 10px !important;
@@ -247,7 +285,7 @@ h1 a {
     margin-bottom: 10px;
   }
   .meetTeam {
-    margin-top: 0px;
+    margin-top: 30px;
     padding: 0px !important;
     margin-bottom: 10px;
   }
@@ -258,21 +296,23 @@ h1 a {
     margin-top: 20px;
     margin-bottom: 30px !important;
   }
-  .hiring h5, .hiring h1 {
+  .hiring h5,
+  .hiring h1 {
     margin-bottom: 6px !important;
   }
   .jobOffer {
     font-size: 12px !important;
+  }
+  .footer {
+    margin-top: 50px;
   }
 }
 /*--------- Iphone X -------------*/
 @media (min-width: 375px) and (max-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .team {
-    height: 84vh;
-  }
-  .target {
+   .target {
     margin-top: 15px !important;
     padding: 0px !important;
+    padding-left: 15px !important;
   }
   .target h1 {
     margin-bottom: 10px !important;
@@ -294,7 +334,7 @@ h1 a {
     margin-bottom: 10px;
   }
   .meetTeam {
-    margin-top: 0px;
+    margin-top: 40px;
     padding: 0px !important;
     margin-bottom: 10px;
   }
@@ -305,22 +345,24 @@ h1 a {
     margin-top: 20px;
     margin-bottom: 30px !important;
   }
-  .hiring h5, .hiring h1 {
+  .hiring h5,
+  .hiring h1 {
     margin-bottom: 6px !important;
   }
   .jobOffer {
     font-size: 12px !important;
+  }
+  .footer {
+    margin-top: 185px;
   }
 }
 
 /*--------- Iphone 6+,7+,8+ -------------*/
 @media (min-width: 414px) and (max-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .team {
-    height: 84vh;
-  }
   .target {
-    margin-top: 15px !important;
+    margin-top: 20px !important;
     padding: 0px !important;
+    padding-left: 15px !important;
   }
   .target h1 {
     margin-bottom: 10px !important;
@@ -342,7 +384,7 @@ h1 a {
     margin-bottom: 10px;
   }
   .meetTeam {
-    margin-top: 0px;
+    margin-top: 40px;
     padding: 0px !important;
     margin-bottom: 10px;
   }
@@ -353,101 +395,82 @@ h1 a {
     margin-top: 20px;
     margin-bottom: 30px !important;
   }
-  .hiring h5, .hiring h1 {
+  .hiring h5,
+  .hiring h1 {
     margin-bottom: 6px !important;
   }
   .jobOffer {
     font-size: 12px !important;
+  }
+  .footer {
+    margin-top: 185px;
   }
 }
 
 /* ----------------------- Landscape position (Horizontal)--------------*/
+/* ------------------- IPhone 5 ----------- */
+/* Is changed by Iphone 6,7,8 conditions */
 
 /* ------ Samsung S4,S5 ----------- */
 @media (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  .target {
-    margin-top: 15px !important;
-    padding: 0px !important;
+  .team {
+    height: 100%;
   }
-  .target h1 {
-    margin-bottom: 10px !important;
-  }
-  .target strong {
-    font-size: 0.7rem !important;
-  }
-  .span1 {
-    font-size: 0.5rem !important;
-  }
-  .target h5 {
-    margin-bottom: 5px !important;
-  }
-  .hands {
-    width: 132%;
-    margin-left: -34px;
-  }
-  .meetTeam {
-    margin-top: 0px;
-    padding: 0px !important;
-  }
-  .meetTeam h5 {
-    margin-bottom: 20px !important;
-  }
-  .hiring {
-    margin-top: 20px;
-    margin-bottom: 30px !important;
-  }
-  .hiring h5 {
-    margin-bottom: 6px !important;
-  }
-  .jobOffer {
-    font-size: 12px !important;
-  }
-}
+   .target {
+     margin-top: 15px !important;
+     padding: 0px !important;
+   }
+   .target h1 {
+     margin-bottom: 10px !important;
+   }
+   .target strong {
+     font-size: 0.7rem !important;
+   }
+   .span1 {
+     font-size: 0.5rem !important;
+   }
+   .target h5 {
+     margin-bottom: 5px !important;
+   }
+   .hands {
+     width: 131%;
+     margin-left: -34px;
+   }
+   .teamPicture {
+     margin-bottom: 10px;
+   }
+   .meetTeam {
+     margin-top: 0px;
+     padding: 0px !important;
+     margin-bottom: 10px;
+   }
+   .meetTeam h5 {
+     margin-bottom: 20px !important;
+   }
+   .hiring {
+     margin-top: 20px;
+     margin-bottom: 30px !important;
+   }
+   .hiring h5,
+   .hiring h1 {
+     margin-bottom: 6px !important;
+   }
+   .jobOffer {
+     font-size: 12px !important;
+   }
+   .footer {
+     margin-top: 20px;
+   }
+   
+ }
 
 /*--------- Samsung S6,S7,S7+ -------------*/
-@media (min-width: 360px) and (max-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4) {
-  .target {
-    margin-top: 15px !important;
-    padding: 0px !important;
-  }
-  .target h1 {
-    margin-bottom: 10px !important;
-  }
-  .target strong {
-    font-size: 0.7rem !important;
-  }
-  .span1 {
-    font-size: 0.5rem !important;
-  }
-  .target h5 {
-    margin-bottom: 5px !important;
-  }
-  .hands {
-    width: 132%;
-    margin-left: -34px;
-  }
-  .meetTeam {
-    margin-top: 0px;
-    padding: 0px !important;
-  }
-  .meetTeam h5 {
-    margin-bottom: 20px !important;
-  }
-  .hiring {
-    margin-top: 20px;
-    margin-bottom: 30px !important;
-  }
-  .hiring h5 {
-    margin-bottom: 6px !important;
-  }
-  .jobOffer {
-    font-size: 12px !important;
-  }
-}
+/* Is changed by S8, S8+, NOTE 8 conditions */
+
 /*--------- Samsung S8,S8+, NOTE 8 -------------*/
 @media (min-width: 360px) and (max-height: 740px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4) {
   .target {
-    margin-top: 15px !important;
+    margin-top: 60px !important;
     padding: 0px !important;
   }
   .target h1 {
@@ -481,20 +504,24 @@ h1 a {
     margin-top: 20px;
     margin-bottom: 30px !important;
   }
-  .hiring h5, .hiring h1 {
+  .hiring h5,
+  .hiring h1 {
     margin-bottom: 6px !important;
   }
   .jobOffer {
     font-size: 12px !important;
   }
+  .footer {
+    margin-top: 20px;
+  }
 }
 
 /* --------------- Iphone 6,7,8 --------*/
 @media (min-width: 375px) and (max-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
-  
   .target {
     margin-top: 75px !important;
     padding: 0px !important;
+    padding-left: 15px!important;
   }
   .target h1 {
     margin-bottom: 10px !important;
@@ -527,62 +554,24 @@ h1 a {
     margin-top: 20px;
     margin-bottom: 30px !important;
   }
-  .hiring h5, .hiring h1 {
+  .hiring h5,
+  .hiring h1 {
     margin-bottom: 6px !important;
   }
   .jobOffer {
     font-size: 12px !important;
+  }
+  .footer {
+    margin-top: 20px;
   }
 }
 /*--------- Iphone X -------------*/
-@media (min-width: 375px) and (max-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  .target {
-    margin-top: 15px !important;
-    padding: 0px !important;
-  }
-  .target h1 {
-    margin-bottom: 10px !important;
-  }
-  .target strong {
-    font-size: 0.7rem !important;
-  }
-  .span1 {
-    font-size: 0.5rem !important;
-  }
-  .target h5 {
-    margin-bottom: 5px !important;
-  }
-  .hands {
-    width: 131%;
-    margin-left: -34px;
-  }
-  .teamPicture {
-    margin-bottom: 10px;
-  }
-  .meetTeam {
-    margin-top: 0px;
-    padding: 0px !important;
-    margin-bottom: 10px;
-  }
-  .meetTeam h5 {
-    margin-bottom: 20px !important;
-  }
-  .hiring {
-    margin-top: 20px;
-    margin-bottom: 30px !important;
-  }
-  .hiring h5, .hiring h1 {
-    margin-bottom: 6px !important;
-  }
-  .jobOffer {
-    font-size: 12px !important;
-  }
-}
+/* Is changed by Iphone 6+,7+,8+ conditions */
 
 /*--------- Iphone 6+,7+,8+ -------------*/
 @media (min-width: 414px) and (max-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
   .target {
-    margin-top: 60px !important;
+    margin-top: 70px !important;
     padding: 0px !important;
   }
   .target h1 {
@@ -616,11 +605,11 @@ h1 a {
     margin-top: 20px;
     margin-bottom: 30px !important;
   }
-  .hiring h5, .hiring h1 {
+  .hiring h5,
+  .hiring h1 {
     margin-bottom: 6px !important;
   }
   .jobOffer {
     font-size: 12px !important;
   }
 }
-

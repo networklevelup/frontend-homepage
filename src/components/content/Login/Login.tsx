@@ -10,7 +10,6 @@ import "./NewLogin.css";
 import { IUser } from "../../../interfaces/interfaces";
 import jwt from "jsonwebtoken";
 
-
 interface IPropsGlobal {
   getToken: (token: string) => void;
   users: IUser[];
@@ -55,10 +54,9 @@ const NewLogin: React.FC<IPropsGlobal & RouteComponentProps> = props => {
       <div className="container-login100">
         <div className="wrap-login100">
           <div className="login100-form validate-form">
-            <span className="login100-form-logo">
-              <img src={logo} className="logo" alt="" />
+            <span className="login100-form-title p-b-34 p-t-27">
+              Login to LevelUP
             </span>
-            <span className="login100-form-title p-b-34 p-t-27">Log in</span>
             <div
               className="wrap-input100 validate-input"
               data-validate="Enter email"
@@ -89,13 +87,13 @@ const NewLogin: React.FC<IPropsGlobal & RouteComponentProps> = props => {
 
             <div className="container-login100-form-btn">
               <button onClick={confirmValues} className="login100-form-btn">
-                Login
+                LOGIN
               </button>
             </div>
             <span className="spanErrorLogin">{errorValue}</span>
             <div className="text-center p-t-90">
               <Link to="/register" className="txt1">
-                Not Registered? Sign up
+                Not registered yet? <strong>Sign up for free</strong>
               </Link>
             </div>
           </div>
@@ -114,7 +112,4 @@ const mapDispatchToProps = {
   getToken: actions.getToken
 };
 
-export default connect(
-  mapsStateToProps,
-  mapDispatchToProps
-)(NewLogin);
+export default connect(mapsStateToProps, mapDispatchToProps)(NewLogin);

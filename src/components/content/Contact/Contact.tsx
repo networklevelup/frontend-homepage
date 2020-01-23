@@ -15,7 +15,8 @@ const Contact: React.FC = () => {
       <div className="row contactGroup">
         <div className="col-6 data">
           <h1>{t("contact_dataH1")}</h1>
-          <div className="first">
+          <br />
+                    <div className="first">
             <h5>{t("contact_firstH5")}</h5>
             <h5 className="grey">+49 173 9644018</h5>
           </div>
@@ -23,67 +24,12 @@ const Contact: React.FC = () => {
             <h5>{t("contact_firstH52")}</h5>
             <h5 className="grey">info@network-levelup.com</h5>
           </div>
+          <br />
+          
           <div className="second">
             <h5>{t("contact_secondH5")}</h5>
             <h5 className="grey">Apenrader Straße 37</h5>
             <h5 className="grey">30165 Hannover</h5>
-          </div>
-          <div className="third">
-            <h5>{t("contact_thirdH5")}</h5>
-          </div>
-          <div className="socialMedia">
-            <ul className="d-inline-block">
-              <a
-                className="FB"
-                target="_blank"
-                href="https://www.facebook.com/network.levelup/"
-                rel="noopener noreferrer"
-              > {/*rel="noopener noreferrer" should be added to links containing target="_blank" as a precaution against reverse tabnabbing.*/}
-                <li className="SocialList">
-                  <img src={FB} alt=""/>
-                </li>
-              </a>
-              <a
-                className="IG"
-                target="_blank"
-                href="https://www.instagram.com/network.levelup/"
-                rel="noopener noreferrer"
-              >
-                <li className="SocialList">
-                  <img src={IG} alt=""/>
-                </li>
-              </a>
-              <a
-                className="LK"
-                target="_blank"
-                href="https://www.linkedin.com/company/network-levelup"
-                rel="noopener noreferrer"
-              >
-                <li className="SocialList">
-                  <img src={LK} alt=""/>
-                </li>
-              </a>
-              <a
-                className="XG"
-                target="_blank"
-                href="https://www.xing.com/companies/network-levelup"
-                rel="noopener noreferrer"
-              >
-                <li className="SocialList">
-                  <img src={XG} alt=""/>
-                </li>
-              </a>
-              <a
-                className="YT"
-                target="_blank"
-                href="https://www.youtube.com/channel/UC02i1gSEb4gAyBQ-ki6GcHQ/featured"
-                rel="noopener noreferrer"
-              >
-                <li className="SocialList">
-                  <img src={YT} alt=""/>
-                </li>
-              </a>
-            </ul>
           </div>
         </div>
         <div className="col-6 contactPicture">

@@ -32,6 +32,10 @@
 .moreMargin {
   margin-bottom: 27px;
 }
+
+.UnserPlus {
+  margin-top:10px;
+}
 .companies3 {
   padding: 0px;
 }
@@ -86,6 +90,8 @@
   margin-top: 45px !important;
   border-radius: 30px !important;
   background-color: #57b368 !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
 .btnSignUp {
   display: inline-block;

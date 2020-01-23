@@ -62,7 +62,8 @@ a {
 }
 
 .p-t-90 a:visited {
-    color: #fff;
+    color: rgb(255, 255, 255);
+    opacity: 1.0;
 }
 
 
@@ -200,10 +201,11 @@ iframe {
   [ Utility ]*/
 
 .txt1 {
-    font-family: Poppins-Regular;
-    font-size: 13px;
-    color: black;
+    font-family: MyriadPro!important;
+    font-size: 14px;
+    color: white;
     line-height: 1.5;
+  
 }
 
 
@@ -270,31 +272,14 @@ iframe {
     width: 100%;
 }
 
-.login100-form-logo {
-    font-size: 60px;
-    color: #333333;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #fff;
-    margin: 0 auto;
-}
-
 .login100-form-title {
-    font-family: Poppins-Medium;
+    font-family: MyriadPro!important;
     font-size: 30px;
     color: #fff;
     line-height: 1.2;
     text-align: center;
-    text-transform: uppercase;
     display: block;
+    margin-bottom: 30px;
 }
 
 
@@ -480,8 +465,8 @@ textarea:focus {
 }
 
 .login100-form-btn {
-    font-family: Poppins-Medium;
-    font-size: 16px;
+    font-family: MyriadPro!important;
+    font-size: 1rem;
     color: #555555;
     line-height: 1.2;
     display: -webkit-box;
@@ -491,15 +476,13 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 5px!important;
+    padding-left: 50px!important;
+    padding-right: 50px!important;
     min-width: 120px;
-    height: 50px;
-    border-radius: 25px;
-    background: #9152f8;
-    background: -webkit-linear-gradient(bottom, #57b368, #67397d);
-    background: -o-linear-gradient(bottom, #57b368, #67397d);
-    background: -moz-linear-gradient(bottom, #57b368, #67397d);
-    background: linear-gradient(to bottom, #57b368, #67397d);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background: #b2b2b2;
     position: relative;
     z-index: 1;
     -webkit-transition: all 0.4s;

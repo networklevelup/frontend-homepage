@@ -60,8 +60,8 @@ const ForCompanies: React.FC<IPropsGlobal & RouteComponentProps> = props => {
                 </h6>
               </div>
               <div>
-                <h4>
-                  <strong>{t("companies_comparabilityH4Strong")}</strong>
+                <h4 className="UnserPlus">
+                  <strong> {t("companies_comparabilityH4Strong")}</strong>
                 </h4>
                 <h6>{t("companies_comparabilityH52")}</h6>
               </div>
@@ -79,8 +79,9 @@ const ForCompanies: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           <div className="row">
             <div className="col-6 comparability secondText">
               <h2>{t("companies_companies3H2")}</h2>
-              <h6 className="moreMargin">{t("companies_companies3H5")}</h6>
+              <h6 className="moreMargin">{t("companies_companies3H5")}</h6> 
               <h6>{t("companies_companies3H52")}</h6>
+              <h6>{t("companies_companies3H53")}</h6>
               <img src={telegram} className="signUp" alt="" />
               <Link to="/register">
                 <button onClick={change} className="btnSignUp">
