@@ -4,6 +4,7 @@ import { IGlobalState } from "../../../reducers/reducers";
 import { connect } from "react-redux";
 import { RouteComponentProps } from "react-router";
 import { DefaultPlayer as Video } from "react-html5video";
+import { useTranslation } from "react-i18next";
 import "react-html5video/dist/styles.css";
 import "../Home/Video.css";
 import "./Verification.css";
@@ -35,9 +36,10 @@ const Verification: React.FC<
     }); // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const { t } = useTranslation();
   return (
-    <div className="container  verificationUser">
-      <h1>Welcome to LevelUP!</h1>
+    <div className="container verificationUser">
+      <h1>{t("VerificationUser1")}</h1>
       <Video        
         controls={[
           "PlayPause",

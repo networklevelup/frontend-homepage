@@ -41,12 +41,12 @@ const Form: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           {!stateValue && <h5>{t("companyRegister_formularyH5")}</h5>}
 
           <button className="btnTalent" onClick={showTalentRegister}>
-            {!stateValue && <h3>I'm a talent</h3>}
-            {stateValue && <h3 className="clicked">I'm a talent</h3>}
+            {!stateValue && <h3>{t("talentRegister_Headline")}</h3>}
+            {stateValue && <h3 className="clicked">{t("talentRegister_Headline")}</h3>}
           </button>
           <button className="btnCompany" onClick={showCompanyRegister}>
-            {stateValue && <h3>I'm a company</h3>}
-            {!stateValue && <h3 className="clicked">I'm a company</h3>}
+            {stateValue && <h3>{t("companyRegister_Headline")}</h3>}
+            {!stateValue && <h3 className="clicked">{t("companyRegister_Headline")}</h3>}
           </button>
 
           {stateValue && <Route component={TalentRegister} />}
@@ -63,12 +63,12 @@ const Form: React.FC<IPropsGlobal & RouteComponentProps> = props => {
           {!stateValue && <h5>{t("companyRegister_formularyH5")}</h5>}
 
           <button className="btnTalent" onClick={showTalentRegister}>
-            {!stateValue && <h3>I'm a talent</h3>}
-            {stateValue && <h3>I'm a talent</h3>}
+            {!stateValue && <h3>{t("talentRegister_Headline")}</h3>}
+            {stateValue && <h3>{t("talentRegister_Headline")}</h3>}
           </button>
           <button className="btnCompany" onClick={showCompanyRegister}>
-            {stateValue && <h3>I'm a company</h3>}
-            {!stateValue && <h3 className="clicked">I'm a company</h3>}
+            {stateValue && <h3>{t("companyRegister_Headline")}</h3>}
+            {!stateValue && <h3 className="clicked">{t("companyRegister_Headline")}</h3>}
           </button>
 
           {!stateValue && <Route component={CompaniesRegister} />}
